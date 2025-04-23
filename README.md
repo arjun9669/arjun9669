@@ -1,16 +1,18 @@
-## Hi there 👋
+# 👋 Hi, I'm Arjun Kumar
 
-<!--
-**arjun9669/arjun9669** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 **Aspiring Data Analyst**  
+📊 Skilled in **Python**, **SQL**, **Excel**, **Tableau**, and **Power BI**  
+🔍 Passionate about transforming raw data into meaningful insights  
+💻 Currently working on real-world data projects and case studies  
+🚀 Focused on data storytelling, problem-solving, and continuous learning  
+📍 Based in India | 🌍 Open to remote and international roles
 
-Here are some ideas to get you started:
+## 🔧 Projects I'm Working On
+- SQL case studies for E-commerce, Banking, HR analytics, and more
+- Python projects involving data cleaning, analysis, and visualization
+- Streamlit dashboards with real-time data simulation
+- Machine learning use cases and model deployment
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📫 Let's Connect
+- [LinkedIn](https://www.linkedin.com/in/arjun-analytics/)
+- 📬 arjunkguru2969@gmail.com
