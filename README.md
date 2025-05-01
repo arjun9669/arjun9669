@@ -2,10 +2,11 @@
 
 ## 🚀 About Me
 I'm an **Aspiring Data Analyst** with a strong foundation in **Python, SQL, Excel, Tableau**, and **Power BI**.  
-I specialize in converting complex data into clear, actionable insights to drive smart business decisions.
+I enjoy transforming raw data into clear, actionable insights that drive smarter decisions.
 
-📍 Based in India | 🌏 Open to remote & international opportunities  
-💡 Currently focused on real-world case studies, dashboards, and data-driven projects.
+📍 Based in India | 🌐 Open to remote & international opportunities  
+💼 Currently working on real-world dashboards, case studies, and ML-driven apps.  
+🌐 **Portfolio**: [my-data-story.lovable.app](https://my-data-story.lovable.app)
 
 ---
 
@@ -20,18 +21,19 @@ I specialize in converting complex data into clear, actionable insights to drive
 ---
 
 ## 📌 Projects
-- 📊 **SQL Case Studies**: E-commerce, Banking, HR Analytics & more  
-- 🧪 **Python Analysis Projects**: Data cleaning, transformation, EDA  
-- 📈 **Interactive Dashboards**: Streamlit + Real-time weather simulations  
-- 🧠 **Machine Learning**: Regression models, chatbot with RAG pipeline  
+- 📊 **SQL Projects**: Retail, HR, Banking, and E-commerce case studies  
+- 🐍 **Python Work**: Data wrangling, cleaning, and visualization notebooks  
+- 🌦️ **Interactive Apps**: Streamlit dashboard with real-time weather simulation  
+- 🤖 **Machine Learning**: Regression models and a chatbot powered by RAG + PDFs  
 
-📂 Check out my pinned repositories below for detailed walkthroughs!
+📂 Check out my pinned repositories below for full walkthroughs.
 
 ---
 
 ## 📫 Let's Connect
 - 🔗 [LinkedIn](https://www.linkedin.com/in/arjun-analytics/)
 - 📧 arjunkguru2969@gmail.com
+- 🌐 [my-data-story.lovable.app](https://my-data-story.lovable.app)
 
 ---
 
