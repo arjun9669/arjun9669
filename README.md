@@ -59,13 +59,8 @@
 ## 💼 Featured Projects
 
 <p align="center">
-  <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="120" alt="Mario typing at computer" />
-</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="80"/>
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="80"/>
-  <img src="https://media.giphy.com/media/8JTFsZmnTR1Rs1JFVP/giphy.gif" width="80"/>
+  <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="100" alt="Mario typing at computer" />
+  <br><em style="color: #999">Turning ideas into data-driven solutions ✨</em>
 </p>
 
 | 🎮 Project | 📝 Description | 🧰 Stack | 🔗 Link |
