@@ -58,10 +58,7 @@
 
 ## 💼 Featured Projects
 
-<p align="center">
-  <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="100" alt="Mario typing at computer" />
-  <br><em style="color: #999">Turning ideas into data-driven solutions ✨</em>
-</p>
+
 
 | 🎮 Project | 📝 Description | 🧰 Stack | 🔗 Link |
 |------------|----------------|----------|---------|
