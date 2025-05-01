@@ -6,7 +6,9 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/-Portfolio-9b87f5?style=for-the-badge&logo=internetexplorer&logoColor=white"/></a>
+  <a href="https://my-data-story.lovable.app">
+  <img src="https://img.icons8.com/fluency/48/domain.png" width="40" alt="Portfolio"/>
+</a>
   <a href="mailto:arjunkguru2969@gmail.com">
   <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" width="40" alt="Email"/>
 </a>
