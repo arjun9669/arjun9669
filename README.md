@@ -1,353 +1,276 @@
-import { MessageSquare, Terminal, Code, Zap } from "lucide-react";
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,15&height=200&section=header&text=Arjun%20Kumar&fontSize=70&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=Data%20Analyst%20%7C%20Insights%20Specialist%20%7C%20Lvl%2099&descSize=22&descAlignY=60" />
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arjun-analytics/)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://my-data-story.lovable.app)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arjunkguru2969@gmail.com)
+  ![Profile Views](https://komarev.com/ghpvc/?username=arjun9669&style=for-the-badge&color=blueviolet)
+</div>
 
-const GitHubStats = () => {
-  return (
-    <section className="py-16" id="github-stats">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-cyan-400 gamer-text-shadow">📊 Achievement Stats</h2>
-        
-        <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
-          {/* Enhanced chat window container with cyber glow effect */}
-          <div className="chat-window bg-gray-900 w-full rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.5)] p-6 overflow-hidden">
-            {/* Chat header */}
-            <div className="chat-header flex items-center gap-2 border-b border-gray-700 pb-3 mb-4">
-              <Terminal className="text-cyan-400" />
-              <h3 className="text-xl font-bold text-white">Terminal@ArjunKumar:~$ <span className="text-cyan-400">stats --detailed</span></h3>
-            </div>
-            
-            {/* Chat messages */}
-            <div className="chat-messages space-y-6">
-              {/* System message */}
-              <div className="chat-message system">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-xs text-cyan-400 animate-pulse">SYS</div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[80%]">
-                    <p className="text-gray-400 text-sm mb-1">System <span className="text-xs opacity-50">10:42</span></p>
-                    <p className="text-white typewriter-text">Initializing developer profile... <span className="text-green-400">2+ years of contributions verified</span>.</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Stats message - GitHub Stats with glowing border */}
-              <div className="chat-message stats">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-cyan-900 flex items-center justify-center text-xs text-cyan-400">
-                    <Zap className="h-4 w-4" />
-                  </div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[90%] w-full border border-cyan-900/50 glow-cyan">
-                    <p className="text-gray-400 text-sm mb-2">Statistics <span className="text-xs opacity-50">10:43</span></p>
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 animate-pulse rounded-md"></div>
-                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
-                        <div className="flex flex-wrap items-center gap-2 text-gray-200">
-                          <span className="text-cyan-400">➤</span> Profile: <span className="text-white font-mono">arjun9669</span>
-                        </div>
-                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
-                          <span className="text-cyan-400">➤</span> Experience: <span className="text-green-400 font-mono">2+ years</span>
-                        </div>
-                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
-                          <span className="text-cyan-400">➤</span> Repositories: <span className="text-purple-400 font-mono">25+</span>
-                        </div>
-                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
-                          <span className="text-cyan-400">➤</span> Commits: <span className="text-yellow-400 font-mono">500+</span>
-                        </div>
-                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
-                          <span className="text-cyan-400">➤</span> Stars: <span className="text-yellow-400 font-mono">50+</span>
-                        </div>
-                        <div className="h-2 w-full bg-gray-800 mt-4 rounded-full overflow-hidden">
-                          <div className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 w-[75%] rounded-full"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Stats message - Streak Stats with animated background */}
-              <div className="chat-message streak">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-cyan-900 flex items-center justify-center text-xs text-cyan-400">
-                    <Code className="h-4 w-4" />
-                  </div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[90%] w-full border border-cyan-900/50 glow-cyan">
-                    <p className="text-gray-400 text-sm mb-2">Contribution Streak <span className="text-xs opacity-50">10:44</span></p>
-                    <div className="stats-container relative overflow-hidden">
-                      <div className="stats-grid absolute inset-0 z-0"></div>
-                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
-                        <div className="flex flex-col gap-3">
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-400">Current streak:</span>
-                            <span className="text-cyan-400 font-mono">15 days</span>
-                          </div>
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-400">Longest streak:</span>
-                            <span className="text-cyan-400 font-mono">45 days</span>
-                          </div>
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-400">Total contributions:</span>
-                            <span className="text-cyan-400 font-mono">500+</span>
-                          </div>
-                          <div className="mt-2">
-                            <div className="flex gap-1">
-                              {[...Array(30)].map((_, i) => (
-                                <div 
-                                  key={i} 
-                                  className={`h-4 w-4 rounded-sm ${
-                                    i < 15 ? 
-                                    `bg-cyan-${Math.min(900, 300 + i * 40)}` : 
-                                    'bg-gray-800'
-                                  }`}
-                                ></div>
-                              ))}
-                            </div>
-                            <div className="flex justify-between text-xs text-gray-500 mt-1">
-                              <span>30 days ago</span>
-                              <span>Today</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Language stats with gradient overlay */}
-              <div className="chat-message languages">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-cyan-900 flex items-center justify-center text-xs text-cyan-400">
-                    <MessageSquare className="h-4 w-4" />
-                  </div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[90%] w-full border border-cyan-900/50 glow-cyan">
-                    <p className="text-gray-400 text-sm mb-2">Language Analysis <span className="text-xs opacity-50">10:45</span></p>
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-cyan-500/5 to-green-500/10 rounded-md"></div>
-                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
-                        <div className="space-y-3">
-                          <div>
-                            <div className="flex justify-between mb-1">
-                              <span className="text-gray-300">Python</span>
-                              <span className="text-cyan-400">45%</span>
-                            </div>
-                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                              <div className="h-full bg-blue-500 w-[45%] rounded-full"></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between mb-1">
-                              <span className="text-gray-300">SQL</span>
-                              <span className="text-cyan-400">30%</span>
-                            </div>
-                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                              <div className="h-full bg-purple-500 w-[30%] rounded-full"></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between mb-1">
-                              <span className="text-gray-300">JavaScript/TypeScript</span>
-                              <span className="text-cyan-400">15%</span>
-                            </div>
-                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                              <div className="h-full bg-yellow-500 w-[15%] rounded-full"></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between mb-1">
-                              <span className="text-gray-300">Others</span>
-                              <span className="text-cyan-400">10%</span>
-                            </div>
-                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                              <div className="h-full bg-green-500 w-[10%] rounded-full"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Final system message */}
-              <div className="chat-message system">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-xs text-cyan-400">SYS</div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[80%]">
-                    <p className="text-gray-400 text-sm mb-1">System <span className="text-xs opacity-50">10:46</span></p>
-                    <p className="text-white">Analysis complete: <span className="text-green-400">2+ years of professional development activity confirmed</span>. Skill proficiency level: <span className="text-cyan-400">Advanced</span>.</p>
-                  </div>
-                </div>
-              </div>
+# 🎮 Player Profile: Arjun Kumar
 
-              {/* Contribution graph */}
-              <div className="chat-message graph mt-8">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-purple-900 flex items-center justify-center text-xs text-cyan-400">
-                    <Zap className="h-4 w-4" />
-                  </div>
-                  <div className="message-bubble bg-gray-800 p-3 rounded-lg max-w-[90%] w-full border border-purple-900/50 glow-purple">
-                    <p className="text-gray-400 text-sm mb-2">Activity Graph <span className="text-xs opacity-50">10:47</span></p>
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 animate-pulse rounded-md"></div>
-                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
-                        <div className="grid grid-cols-12 gap-1">
-                          {[...Array(84)].map((_, i) => {
-                            // Create a pattern of contributions
-                            let intensity = 0;
-                            if (i % 7 === 3 || i % 7 === 4) intensity = 3;
-                            else if (i % 7 === 2 || i % 7 === 5) intensity = 2;
-                            else if (i % 7 === 1 || i % 7 === 6) intensity = 1;
-                            
-                            return (
-                              <div 
-                                key={i} 
-                                className={`h-3 w-3 rounded-sm ${
-                                  intensity === 0 ? 'bg-gray-800' : 
-                                  intensity === 1 ? 'bg-cyan-900' : 
-                                  intensity === 2 ? 'bg-cyan-700' : 
-                                  'bg-cyan-500'
-                                }`}
-                              ></div>
-                            );
-                          })}
-                        </div>
-                        <div className="flex justify-between text-xs text-gray-500 mt-2">
-                          <span>May</span>
-                          <span>Jun</span>
-                          <span>Jul</span>
-                          <span>Aug</span>
-                          <span>Sep</span>
-                          <span>Oct</span>
-                          <span>Nov</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<img align="right" alt="Data Analysis" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjg1cGNxaGo5b2hoZW1lZjR6dXBnamhzbGJremhkMXdjMTd5Z2xlZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPEqDGUULpEU0aQ/giphy.gif" width="360px" height="240px" />
 
-              {/* User message - typing indicator */}
-              <div className="chat-message user">
-                <div className="flex items-start gap-3 justify-end">
-                  <div className="message-bubble bg-cyan-900/40 p-3 rounded-lg">
-                    <p className="text-gray-300 text-sm">
-                      <span className="typing-indicator">
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                      </span>
-                    </p>
-                  </div>
-                  <div className="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center text-xs text-white">YOU</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-12 max-w-2xl mx-auto text-center">
-            <p className="text-cyan-300 gamer-text">
-              My 2+ years of coding contributions reflect my commitment to building impactful data projects.
-              Check out my repositories for detailed examples of my work.
-            </p>
-          </div>
-        </div>
+**Class**: Data Analyst | **Specialization**: Insights Specialist | **XP Level**: 5+ Years
+
+I'm a **Data Wizard** with the unique ability to transform complex datasets into epic strategic insights. My skill tree includes:
+
+- 🔍 **Pattern Recognition** - Extracting meaningful patterns from chaotic data dungeons
+- 📊 **Visualization Mastery** - Crafting legendary dashboards that tell data stories
+- 💡 **Strategic Insights** - Converting raw numbers into business-winning power moves
+- 🧪 **A/B Testing** - Running controlled experiments to maximize business effectiveness
+
+🌍 **Current Server**: India | **Status**: Open to Remote & International Quests  
+🌱 **Current Quest**: Leveling up in **Machine Learning** and **AI-powered analytics**
+
+<br clear="both">
+
+## ⚔️ Equipment & Skills
+
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <h3 align="center">Analysis Weapons</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/></a>
       </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center">Visualization Magic</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Matplotlib-3F4F75?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Seaborn-76B900?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn"/></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center">Python Scrolls</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/></a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      <h3 align="center">Data Vaults</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center">Cloud Power-Ups</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3 align="center">Support Items</h3>
+      <div align="center">
+        <a href="#"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="JIRA"/></a>
+        <a href="#"><img src="https://img.shields.io/badge/Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" alt="Office"/></a>
+      </div>
+    </td>
+  </tr>
+</table>
 
-      <style>
-        {`
-          .gamer-text-shadow {
-            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4);
-          }
-          
-          .gamer-text {
-            text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
-          }
-          
-          .typing-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-          }
-          
-          .dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: #00FFFF;
-            animation: typing-animation 1.4s infinite ease-in-out;
-            opacity: 0.7;
-          }
-          
-          .dot:nth-child(1) {
-            animation-delay: 0s;
-          }
-          
-          .dot:nth-child(2) {
-            animation-delay: 0.2s;
-          }
-          
-          .dot:nth-child(3) {
-            animation-delay: 0.4s;
-          }
-          
-          @keyframes typing-animation {
-            0%, 100% {
-              transform: scale(0.8);
-              opacity: 0.5;
-            }
-            50% {
-              transform: scale(1.2);
-              opacity: 1;
-            }
-          }
-          
-          .glow-cyan {
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-          }
-          
-          .glow-purple {
-            box-shadow: 0 0 10px rgba(149, 76, 233, 0.3);
-          }
-          
-          .typewriter-text {
-            overflow: hidden;
-            border-right: .15em solid cyan;
-            white-space: nowrap;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-            animation-fill-mode: forwards;
-            max-width: fit-content;
-          }
-          
-          @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-          }
-          
-          @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: cyan; }
-          }
-          
-          .stats-grid {
-            background-image: 
-              linear-gradient(rgba(6, 37, 61, 0.3) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(6, 37, 61, 0.3) 1px, transparent 1px);
-            background-size: 20px 20px;
-            z-index: 0;
-            animation: grid-move 15s linear infinite;
-          }
-          
-          @keyframes grid-move {
-            0% {
-              transform: translateY(0);
-            }
-            100% {
-              transform: translateY(20px);
-            }
-          }
-        `}
-      </style>
-    </section>
-  );
-};
+## ⚡ Skill Tree Progress
 
-export default GitHubStats;
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">Python</td>
+      <td>
+        <img src="https://progress-bar.dev/95/?width=400&color=3776AB" alt="Python Proficiency" width="400px">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SQL</td>
+      <td>
+        <img src="https://progress-bar.dev/95/?width=400&color=4479A1" alt="SQL Proficiency" width="400px">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Excel</td>
+      <td>
+        <img src="https://progress-bar.dev/90/?width=400&color=217346" alt="Excel Proficiency" width="400px">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Power BI</td>
+      <td>
+        <img src="https://progress-bar.dev/85/?width=400&color=F2C811" alt="Power BI Proficiency" width="400px">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Tableau</td>
+      <td>
+        <img src="https://progress-bar.dev/80/?width=400&color=E97627" alt="Tableau Proficiency" width="400px">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Machine Learning</td>
+      <td>
+        <img src="https://progress-bar.dev/70/?width=400&color=F7931E" alt="Machine Learning Proficiency" width="400px">
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🏆 Epic Quests Completed
+
+<table border="0">
+  <tr>
+    <td width="50%">
+      <h3 align="center">SQL Dungeon Master</h3>
+      <p align="center">
+        <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
+        </a>
+      </p>
+      <p align="center">
+        Conquered advanced SQL challenges across retail, banking, and e-commerce domains with complex queries and data modeling.
+      </p>
+      <p align="center">
+        <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
+          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <a href="https://my-data-story.lovable.app" target="_blank">
+          <img src="https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+        </a>
+      </p>
+      <p align="center"><strong>Gear Used:</strong> SQL, PostgreSQL, Data Modeling</p>
+    </td>
+    <td width="50%">
+      <h3 align="center">Python Data Sorcery</h3>
+      <p align="center">
+        <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
+        </a>
+      </p>
+      <p align="center">
+        Conjured a collection of Jupyter notebooks demonstrating data cleaning, visualization, and statistical analysis spells.
+      </p>
+      <p align="center">
+        <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
+          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <a href="https://my-data-story.lovable.app" target="_blank">
+          <img src="https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+        </a>
+      </p>
+      <p align="center"><strong>Gear Used:</strong> Python, Pandas, NumPy, Matplotlib</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Weather Oracle Dashboard</h3>
+      <p align="center">
+        <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
+          <img src="https://raw.githubusercontent.com/streamlit/streamlit/develop/app/static/streamlit-logo-secondary-colormark-darktext.png" width="100" alt="Streamlit Project"/>
+        </a>
+      </p>
+      <p align="center">
+        Crafted a Streamlit-powered real-time weather simulation and forecasting dashboard with historical data analysis.
+      </p>
+      <p align="center">
+        <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
+          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <a href="https://my-data-story.lovable.app" target="_blank">
+          <img src="https://img.shields.io/badge/Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+        </a>
+      </p>
+      <p align="center"><strong>Gear Used:</strong> Streamlit, Python, Plotly, Pandas</p>
+    </td>
+    <td width="50%">
+      <h3 align="center">Machine Learning Artifacts</h3>
+      <p align="center">
+        <a href="https://github.com/arjun9669/ml-models" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" width="100" alt="ML Project"/>
+        </a>
+      </p>
+      <p align="center">
+        Forged regression models and a chatbot powered by Retrieval-Augmented Generation (RAG) with PDF data sources.
+      </p>
+      <p align="center">
+        <a href="https://github.com/arjun9669/ml-models" target="_blank">
+          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
+        <a href="https://my-data-story.lovable.app" target="_blank">
+          <img src="https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+        </a>
+      </p>
+      <p align="center"><strong>Gear Used:</strong> Python, Machine Learning, NLP, RAG</p>
+    </td>
+  </tr>
+</table>
+
+## 📊 Achievement Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&count_private=true&hide_border=true&title_color=00FFFF&icon_color=00FFFF&text_color=c9d1d9&bg_color=0d1117" alt="Arjun Kumar's GitHub Stats" height="180em" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=black-ice&hide_border=true&stroke=00FFFF&background=0D1117&ring=00FFFF&fire=00FFFF&currStreakLabel=00FFFF" alt="GitHub Streak Stats" height="180em" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=arjun9669&theme=radical&no-frame=true&row=1&column=6&margin-w=8&margin-h=8" alt="GitHub Trophies" width="100%" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&bg_color=0d1117&color=00FFFF&line=00FFFF&point=FFFFFF&area=true&hide_border=true" width="90%" />
+</div>
+
+## 📚 Current Skill Training
+
+<div align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/Advanced_NLP-for_Market_Analysis-00FFFF?style=for-the-badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Time_Series_Forecasting-with_Deep_Learning-00FFAA?style=for-the-badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Big_Data-Processing_with_Spark-00AAFF?style=for-the-badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Data_Engineering-ETL_Pipelines-AA00FF?style=for-the-badge"/>
+  </a>
+</div>
+
+## 📫 Join My Party
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/arjun-analytics/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:arjunkguru2969@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://my-data-story.lovable.app">
+    <img src="https://img.shields.io/badge/Portfolio-00FFFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://github.com/arjun9669">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,15&height=100&section=footer" width="100%" />
+</div>
