@@ -7,29 +7,44 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://my-data-story.lovable.app">
-  <img src="https://img.icons8.com/fluency/48/domain.png" width="40" alt="Portfolio"/>
-</a>
+    <img src="https://img.icons8.com/fluency/48/domain.png" width="40" alt="Portfolio"/>
+  </a>
   <a href="mailto:arjunkguru2969@gmail.com">
-  <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" width="40" alt="Email"/>
-</a>
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" width="40" alt="Email"/>
+  </a>
   <img src="https://komarev.com/ghpvc/?username=arjun9669&style=for-the-badge&color=brightgreen" alt="Profile views"/>
 </p>
 
 ---
 
-## 👨‍💻 About Me
+## 🧠 About Me
 
-> 🎯 Passionate about unlocking business value with data. Skilled in transforming messy datasets into interactive visual stories and predictive solutions.
+🎯 I’m Arjun — a data analyst passionate about transforming raw data into clean insights. 
 
-- 🧠 **Tools I Use**: Python, SQL, Tableau, Power BI, Excel
-- ⚙️ **Core Areas**: Data Analysis, Visualization, ML, Dashboarding
-- 🌐 **Looking for**: Remote & global opportunities
+📊 I turn spreadsheets into dashboards, queries into strategies, and ML models into action.
+
+- 🧰 Tools: Python, SQL, Excel, Power BI, Tableau
+- 📈 Skills: EDA, Regression, Dashboarding, ML, Automation
+- 🌍 Open to remote & global roles
 
 ---
 
-## 🧰 Tech Toolbox
+## 💼 Projects That Matter
 
-### 📊 Analytics & BI
+> 🚀 Real data. Real solutions. Real business impact.
+
+| 📌 Project | 💬 Summary | ⚙️ Stack | 🔗 Link |
+|-----------|-----------|--------|--------|
+| **SQL Case Studies** | Retail, banking & e-comm case studies using SQL joins, CTEs, and window functions | PostgreSQL | [GitHub](https://github.com/arjun9669/sql-case-studies) |
+| **Python Data Analysis** | Data wrangling, insights & visualizations across multiple datasets | Pandas, Matplotlib | [GitHub](https://github.com/arjun9669/python-data-analysis) |
+| **Weather Dashboard** | Streamlit app simulating temperature predictions using regression | Streamlit, Sklearn | [GitHub](https://github.com/arjun9669/weather-dashboard) |
+| **ML + RAG Chatbot** | PDF-based chatbot with FAISS + HuggingFace for document Q&A | FAISS, Transformers | [GitHub](https://github.com/arjun9669/ml-models) |
+
+---
+
+## 🔧 Tech Stack
+
+### 📊 Analytics & Visualization
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
@@ -47,7 +62,7 @@
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
 </p>
 
-### 🧰 Productivity Tools
+### 🛠 Productivity & Tools
 <p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
@@ -56,20 +71,8 @@
 
 ---
 
-## 💼 Featured Projects
+## 📊 GitHub Highlights
 
-
-
-| 🎮 Project | 📝 Description | 🧰 Stack | 🔗 Link |
-|------------|----------------|----------|---------|
-| **📊 SQL Case Studies** | Real-world scenarios in retail, banking, and e-commerce domains. Complex joins, window functions, and optimization. | PostgreSQL, DBeaver | [🔗 GitHub](https://github.com/arjun9669/sql-case-studies) |
-| **📈 Python Data Analysis** | Exploratory Data Analysis (EDA) with insights, statistics, and clean visualizations. | Pandas, Matplotlib, Seaborn | [🔗 GitHub](https://github.com/arjun9669/python-data-analysis) |
-| **🌦️ Weather Dashboard** | Real-time Streamlit app predicting temperature using regression with interactive UI. | Streamlit, Sklearn, Plotly | [🔗 GitHub](https://github.com/arjun9669/weather-dashboard) |
-| **🤖 ML + RAG Chatbot** | PDF-based semantic search chatbot with FAISS & Transformers. Query and respond from documents. | HuggingFace, FAISS, Streamlit | [🔗 GitHub](https://github.com/arjun9669/ml-models) |
-
----
-
-## 📊 GitHub Activity
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=tokyonight&hide_border=true" height="180"/>
@@ -81,14 +84,14 @@
 
 ---
 
-## 📚 Currently Exploring
+## 🔍 Currently Exploring
 
-- 🔍 Advanced NLP for Competitive Intelligence
-- 📉 Time Series Forecasting for Real-time KPIs
+- 🧠 Building NLP solutions for business search & summaries
+- 📉 Forecasting KPIs with time series models
 
 ---
 
-## 🤝 Let's Connect
+## 🤝 Let’s Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/">🔗 LinkedIn</a> &nbsp;|&nbsp;
