@@ -59,11 +59,17 @@
 ## 💼 Featured Projects
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="60"/>
+  <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="120" alt="Mario typing at computer" />
 </p>
 
-| Project | Description | Stack | Link |
-|--------|-------------|-------|------|
+<p align="center">
+  <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="80"/>
+  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="80"/>
+  <img src="https://media.giphy.com/media/8JTFsZmnTR1Rs1JFVP/giphy.gif" width="80"/>
+</p>
+
+| 🎮 Project | 📝 Description | 🧰 Stack | 🔗 Link |
+|------------|----------------|----------|---------|
 | **📊 SQL Case Studies** | Real-world scenarios in retail, banking, and e-commerce domains. Complex joins, window functions, and optimization. | PostgreSQL, DBeaver | [🔗 GitHub](https://github.com/arjun9669/sql-case-studies) |
 | **📈 Python Data Analysis** | Exploratory Data Analysis (EDA) with insights, statistics, and clean visualizations. | Pandas, Matplotlib, Seaborn | [🔗 GitHub](https://github.com/arjun9669/python-data-analysis) |
 | **🌦️ Weather Dashboard** | Real-time Streamlit app predicting temperature using regression with interactive UI. | Streamlit, Sklearn, Plotly | [🔗 GitHub](https://github.com/arjun9669/weather-dashboard) |
