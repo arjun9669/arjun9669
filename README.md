@@ -91,16 +91,11 @@
 ---
 
 ## 🤝 Let's Connect
+
 <p align="center">
-  <a href="https://www.linkedin.com/in/arjun-analytics/">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166973395-19676cd8-f8ec-4abf-83ff-da8243505b82.png"/>
-  </a>
-  <a href="mailto:arjunkguru2969@gmail.com">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166972683-f5f8a10f-8880-4323-8130-68e598906d5f.png"/>
-  </a>
-  <a href="https://my-data-story.lovable.app">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166974096-7aeecad4-483e-4c85-983f-f4b37b3f794e.png"/>
-  </a>
+  <a href="https://www.linkedin.com/in/arjun-analytics/">🔗 LinkedIn</a> &nbsp;|&nbsp;
+  <a href="mailto:arjunkguru2969@gmail.com">📧 Email</a> &nbsp;|&nbsp;
+  <a href="https://my-data-story.lovable.app">🌐 Portfolio</a>
 </p>
 
 <p align="center">
