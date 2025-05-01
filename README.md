@@ -1,4 +1,4 @@
-# 👋 Hey, I'm Arjun Kumar
+# 👋 Hey there, I'm Arjun Kumar
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=250&section=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=white&desc=Turning%20Data%20Into%20Decisions&descSize=24&descAlignY=60" />
@@ -13,21 +13,22 @@
 
 ---
 
-## 💡 Who Am I?
+## 👨‍💻 About Me
 
-✨ A curious mind obsessed with decoding data stories and building meaningful visuals. 
+> 🚀 I'm **Arjun Kumar**, a data analyst on a mission to transform messy data into powerful stories.
 
-- 📌 **Data Analyst** with strong command of **Python, SQL, Power BI, Tableau, Excel**
-- 💼 Passionate about solving business problems through analytics
-- 🌱 Always learning—currently diving into **NLP** and **Time Series Forecasting**
+🎯 What I do:
+- 📈 Visualize trends, patterns & business KPIs with Python, Tableau, and Power BI
+- 📦 Clean and prep large datasets with pandas, SQL & Excel
+- 🤖 Build ML models and dashboards with Streamlit & Scikit-learn
 
-📍 India | 🌍 Open to global roles | 🔗 Portfolio above 👆
+📍 India | 🌍 Open to remote & global roles
 
 ---
 
-## 🚀 Tech Arsenal
+## 🧰 Tech Toolbox
 
-### 🧰 Tools of the Trade
+### 📊 Analytics & BI
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
@@ -36,7 +37,7 @@
   <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 </p>
 
-### 📚 Libraries I Love
+### 🧪 Libraries I Use Often
 <p align="center">
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
@@ -45,7 +46,7 @@
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
 </p>
 
-### 🔧 Extra Tools
+### 🧰 Other Tools
 <p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
@@ -54,46 +55,42 @@
 
 ---
 
-## 🧠 Featured Projects
+## 💼 Featured Projects
 
 <table>
   <tr>
-    <td width="50%">
-      <h4 align="center">📊 SQL Case Studies</h4>
-      <p align="center">Complex queries + real business problems from retail, banking & e-commerce</p>
-      <p align="center">
-        <a href="https://github.com/arjun9669/sql-case-studies">View Code</a>
-      </p>
+    <td align="center">
+      <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="180" /><br>
+      <strong>SQL Case Studies</strong><br>
+      Real-world use cases in retail, banking & e-commerce.<br>
+      <a href="https://github.com/arjun9669/sql-case-studies">🔗 GitHub</a>
     </td>
-    <td width="50%">
-      <h4 align="center">📈 Python Data Analysis</h4>
-      <p align="center">Exploratory notebooks with data cleaning, EDA & statistics</p>
-      <p align="center">
-        <a href="https://github.com/arjun9669/python-data-analysis">View Code</a>
-      </p>
+    <td align="center">
+      <img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif" width="180" /><br>
+      <strong>Python EDA Projects</strong><br>
+      Data cleaning, feature analysis, and insights.<br>
+      <a href="https://github.com/arjun9669/python-data-analysis">🔗 GitHub</a>
     </td>
   </tr>
   <tr>
-    <td width="50%">
-      <h4 align="center">🌦️ Weather Dashboard</h4>
-      <p align="center">Built using Streamlit with regression & real-time visuals</p>
-      <p align="center">
-        <a href="https://github.com/arjun9669/weather-dashboard">View Code</a>
-      </p>
+    <td align="center">
+      <img src="https://media.giphy.com/media/iicDrNGWxHmDrIni6j/giphy.gif" width="180" /><br>
+      <strong>Weather Dashboard</strong><br>
+      Streamlit app with temperature prediction.<br>
+      <a href="https://github.com/arjun9669/weather-dashboard">🔗 GitHub</a>
     </td>
-    <td width="50%">
-      <h4 align="center">🧠 ML & Chatbot</h4>
-      <p align="center">Machine Learning + RAG chatbot with PDF QA + FAISS</p>
-      <p align="center">
-        <a href="https://github.com/arjun9669/ml-models">View Code</a>
-      </p>
+    <td align="center">
+      <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" width="180" /><br>
+      <strong>ML + RAG Chatbot</strong><br>
+      Smart PDF-based Q&A using FAISS & Transformers.<br>
+      <a href="https://github.com/arjun9669/ml-models">🔗 GitHub</a>
     </td>
   </tr>
 </table>
 
 ---
 
-## 📈 GitHub Activity
+## 📊 GitHub Highlights
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=tokyonight&hide_border=true" height="180"/>
@@ -105,14 +102,15 @@
 
 ---
 
-## 🛠️ Currently Building
+## 🧠 Currently Learning
 
-- 🔍 NLP for competitive insights
-- 📊 Forecasting future trends with Time Series
+- 🤖 Advanced NLP for competitive analysis
+- 📈 Time series forecasting for business metrics
 
 ---
 
-## 🤝 Let’s Collaborate!
+## 🤝 Let’s Connect
+
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/">
     <img height="60" src="https://user-images.githubusercontent.com/46517096/166973395-19676cd8-f8ec-4abf-83ff-da8243505b82.png"/>
