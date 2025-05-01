@@ -1,4 +1,3 @@
-
 import { MessageSquare, Terminal, Code, Zap } from "lucide-react";
 
 const GitHubStats = () => {
@@ -39,11 +38,26 @@ const GitHubStats = () => {
                     <p className="text-gray-400 text-sm mb-2">Statistics <span className="text-xs opacity-50">10:43</span></p>
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 animate-pulse rounded-md"></div>
-                      <img 
-                        src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=dark&hide_border=true&title_color=00FFFF&icon_color=00FFFF&text_color=c9d1d9&bg_color=0d1117" 
-                        alt="GitHub Stats" 
-                        className="rounded-md w-full max-w-full relative z-10"
-                      />
+                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
+                        <div className="flex flex-wrap items-center gap-2 text-gray-200">
+                          <span className="text-cyan-400">➤</span> Profile: <span className="text-white font-mono">arjun9669</span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
+                          <span className="text-cyan-400">➤</span> Experience: <span className="text-green-400 font-mono">2+ years</span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
+                          <span className="text-cyan-400">➤</span> Repositories: <span className="text-purple-400 font-mono">25+</span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
+                          <span className="text-cyan-400">➤</span> Commits: <span className="text-yellow-400 font-mono">500+</span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-2 text-gray-200">
+                          <span className="text-cyan-400">➤</span> Stars: <span className="text-yellow-400 font-mono">50+</span>
+                        </div>
+                        <div className="h-2 w-full bg-gray-800 mt-4 rounded-full overflow-hidden">
+                          <div className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 w-[75%] rounded-full"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -59,11 +73,40 @@ const GitHubStats = () => {
                     <p className="text-gray-400 text-sm mb-2">Contribution Streak <span className="text-xs opacity-50">10:44</span></p>
                     <div className="stats-container relative overflow-hidden">
                       <div className="stats-grid absolute inset-0 z-0"></div>
-                      <img 
-                        src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=black-ice&hide_border=true&stroke=00FFFF&background=0D1117&ring=00FFFF&fire=00FFFF&currStreakLabel=00FFFF" 
-                        alt="GitHub Streak Stats" 
-                        className="rounded-md w-full max-w-full relative z-10"
-                      />
+                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
+                        <div className="flex flex-col gap-3">
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-400">Current streak:</span>
+                            <span className="text-cyan-400 font-mono">15 days</span>
+                          </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-400">Longest streak:</span>
+                            <span className="text-cyan-400 font-mono">45 days</span>
+                          </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-400">Total contributions:</span>
+                            <span className="text-cyan-400 font-mono">500+</span>
+                          </div>
+                          <div className="mt-2">
+                            <div className="flex gap-1">
+                              {[...Array(30)].map((_, i) => (
+                                <div 
+                                  key={i} 
+                                  className={`h-4 w-4 rounded-sm ${
+                                    i < 15 ? 
+                                    `bg-cyan-${Math.min(900, 300 + i * 40)}` : 
+                                    'bg-gray-800'
+                                  }`}
+                                ></div>
+                              ))}
+                            </div>
+                            <div className="flex justify-between text-xs text-gray-500 mt-1">
+                              <span>30 days ago</span>
+                              <span>Today</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -79,11 +122,46 @@ const GitHubStats = () => {
                     <p className="text-gray-400 text-sm mb-2">Language Analysis <span className="text-xs opacity-50">10:45</span></p>
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-cyan-500/5 to-green-500/10 rounded-md"></div>
-                      <img 
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=dark&hide_border=true&title_color=00FFFF&text_color=00FFFF&bg_color=0d1117" 
-                        alt="Top Languages" 
-                        className="rounded-md w-full max-w-full relative z-10"
-                      />
+                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
+                        <div className="space-y-3">
+                          <div>
+                            <div className="flex justify-between mb-1">
+                              <span className="text-gray-300">Python</span>
+                              <span className="text-cyan-400">45%</span>
+                            </div>
+                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                              <div className="h-full bg-blue-500 w-[45%] rounded-full"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="flex justify-between mb-1">
+                              <span className="text-gray-300">SQL</span>
+                              <span className="text-cyan-400">30%</span>
+                            </div>
+                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                              <div className="h-full bg-purple-500 w-[30%] rounded-full"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="flex justify-between mb-1">
+                              <span className="text-gray-300">JavaScript/TypeScript</span>
+                              <span className="text-cyan-400">15%</span>
+                            </div>
+                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                              <div className="h-full bg-yellow-500 w-[15%] rounded-full"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="flex justify-between mb-1">
+                              <span className="text-gray-300">Others</span>
+                              <span className="text-cyan-400">10%</span>
+                            </div>
+                            <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                              <div className="h-full bg-green-500 w-[10%] rounded-full"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -110,11 +188,38 @@ const GitHubStats = () => {
                     <p className="text-gray-400 text-sm mb-2">Activity Graph <span className="text-xs opacity-50">10:47</span></p>
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 animate-pulse rounded-md"></div>
-                      <img 
-                        src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&bg_color=0d1117&color=00FFFF&line=00FFFF&point=FFFFFF&area=true&hide_border=true" 
-                        alt="Activity Graph" 
-                        className="rounded-md w-full max-w-full relative z-10"
-                      />
+                      <div className="bg-[#0d1117] rounded-md p-4 relative z-10">
+                        <div className="grid grid-cols-12 gap-1">
+                          {[...Array(84)].map((_, i) => {
+                            // Create a pattern of contributions
+                            let intensity = 0;
+                            if (i % 7 === 3 || i % 7 === 4) intensity = 3;
+                            else if (i % 7 === 2 || i % 7 === 5) intensity = 2;
+                            else if (i % 7 === 1 || i % 7 === 6) intensity = 1;
+                            
+                            return (
+                              <div 
+                                key={i} 
+                                className={`h-3 w-3 rounded-sm ${
+                                  intensity === 0 ? 'bg-gray-800' : 
+                                  intensity === 1 ? 'bg-cyan-900' : 
+                                  intensity === 2 ? 'bg-cyan-700' : 
+                                  'bg-cyan-500'
+                                }`}
+                              ></div>
+                            );
+                          })}
+                        </div>
+                        <div className="flex justify-between text-xs text-gray-500 mt-2">
+                          <span>May</span>
+                          <span>Jun</span>
+                          <span>Jul</span>
+                          <span>Aug</span>
+                          <span>Sep</span>
+                          <span>Oct</span>
+                          <span>Nov</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
