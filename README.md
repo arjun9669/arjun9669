@@ -191,19 +191,24 @@
 
 ---
 
-<h2 align="center">📫 Let's Connect!</h2>
+## 📫 Let's Connect
 
-<div align="center">
+<p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166973395-19676cd8-f8ec-4abf-83ff-da8243505b82.png"/>
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="mailto:arjunkguru2969@gmail.com">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166972683-f5f8a10f-8880-4323-8130-68e598906d5f.png"/>
+    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
   <a href="https://my-data-story.lovable.app">
-    <img height="60" src="https://user-images.githubusercontent.com/46517096/166974096-7aeecad4-483e-4c85-983f-f4b37b3f794e.png"/>
+    <img src="https://img.shields.io/badge/-Portfolio-217346?style=for-the-badge&logo=internetexplorer&logoColor=white"/>
   </a>
-</div>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
+</p>
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
