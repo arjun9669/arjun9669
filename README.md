@@ -208,8 +208,3 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
 </p>
-
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
-</div>
