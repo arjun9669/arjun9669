@@ -26,44 +26,185 @@
 
 <br clear="both">
 
-## 📝 Latest Blogs on Medium
+---
 
-🚀 I regularly write about data analysis, machine learning, and NLP. Here are my latest blog posts:
+<h2 align="center">🛠️ My Tech Stack & Skills</h2>
 
-| Title | Description | Link |
-|-------|-------------|------|
-| 🩺 **[Heart Disease Prediction in Python](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58)** | Built a classification model using real-world health data | [Read on Medium](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58) |
-| 📈 **[SQL Case Studies That Got Me Job-Ready](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d)** | Real-world analytics case studies using SQL queries | [Read on Medium](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d) |
-| 🌦️ **[Real-Time Weather App + Chatbot](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d)** | Full-stack project with ML regression + RAG chatbot | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d) |
-| 🤖 **[Smart PDF Chatbot Using Hugging Face & FAISS](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937)** | Created a document Q&A bot using semantic search | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937) |
-| 🐍 **[Top 7 Python Tricks for Data Analysts](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd)** | Handy Pandas and Python tips I use daily | [Read on Medium](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd) |
+<h3>Analysis & Visualization</h3>
 
-📌 *Want to collaborate on data projects or blogs? Reach out on [LinkedIn](https://www.linkedin.com/in/arjun-analytics)!*
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+</div>
 
-## 📝 Latest Blogs on Medium
+<h3>Python Libraries</h3>
 
-🚀 I regularly write about data analysis, machine learning, and NLP. Here are my latest blog posts:
+<div align="center">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-3F4F75?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+</div>
 
-| Title | Description | Link |
-|-------|-------------|------|
-| 🩺 **[Heart Disease Prediction in Python](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58)** | Built a classification model using real-world health data | [Read on Medium](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58) |
-| 📈 **[SQL Case Studies That Got Me Job-Ready](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d)** | Real-world analytics case studies using SQL queries | [Read on Medium](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d) |
-| 🌦️ **[Real-Time Weather App + Chatbot](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d)** | Full-stack project with ML regression + RAG chatbot | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d) |
-| 🤖 **[Smart PDF Chatbot Using Hugging Face & FAISS](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937)** | Created a document Q&A bot using semantic search | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937) |
-| 🐍 **[Top 7 Python Tricks for Data Analysts](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd)** | Handy Pandas and Python tips I use daily | [Read on Medium](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd) |
+<h3>Other Tools</h3>
 
-📌 *Want to collaborate on data projects or blogs? Reach out on [LinkedIn](https://www.linkedin.com/in/arjun-analytics)!*
+<div align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" />
+</div>
 
-## 📝 Latest Blogs on Medium
+<br>
 
-🚀 I regularly write about data analysis, machine learning, and NLP. Here are my latest blog posts:
+<h2 align="center">🔥 Skill Proficiency</h2>
 
-| Title | Description | Link |
-|-------|-------------|------|
-| 🩺 **[Heart Disease Prediction in Python](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58)** | Built a classification model using real-world health data | [Read on Medium](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58) |
-| 📈 **[SQL Case Studies That Got Me Job-Ready](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d)** | Real-world analytics case studies using SQL queries | [Read on Medium](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d) |
-| 🌦️ **[Real-Time Weather App + Chatbot](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d)** | Full-stack project with ML regression + RAG chatbot | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d) |
-| 🤖 **[Smart PDF Chatbot Using Hugging Face & FAISS](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937)** | Created a document Q&A bot using semantic search | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937) |
-| 🐍 **[Top 7 Python Tricks for Data Analysts](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd)** | Handy Pandas and Python tips I use daily | [Read on Medium](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd) |
+<div align="center">
+  <p>Python    ⭐⭐⭐⭐⭐ 5/5</p>
+  <p>SQL       ⭐⭐⭐⭐⭐ 5/5</p>
+  <p>Excel     ⭐⭐⭐⭐⭐ 5/5</p>
+  <p>Power BI  ⭐⭐⭐⭐⚫ 4/5</p>
+  <p>Tableau   ⭐⭐⭐⭐⚫ 4/5</p>
+  <p>ML/AI     ⭐⭐⭐⚫⚫ 3/5</p>
+</div>
 
-📌 *Want to collaborate on data projects or blogs? Reach out on [LinkedIn](https://www.linkedin.com/in/arjun-analytics)!*
+---
+
+<h2 align="center">📈 GitHub Stats & Activity</h2>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=tokyonight&hide_border=true" height="180"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=arjun9669&theme=tokyonight&no-frame=true&row=1&column=6" width="100%" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&theme=tokyo-night&hide_border=true" width="90%"/>
+</div>
+
+---
+
+<h2 align="center">🚀 Featured Projects</h2>
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%">
+        <h3 align="center">SQL Case Studies</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Advanced SQL analysis across retail, banking and e-commerce domains</p>
+        </div>
+      </td>
+      <td width="50%">
+        <h3 align="center">Python Data Analysis</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Comprehensive data cleaning, visualization and statistical analysis notebooks</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%">
+        <h3 align="center">Interactive Weather Dashboard</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Streamlit Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/LIVE-44c?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Streamlit-powered real-time weather simulation and analytics dashboard</p>
+        </div>
+      </td>
+      <td width="50%">
+        <h3 align="center">Machine Learning Models</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/ml-models" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/ml-models" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Regression models and an intelligent RAG-powered chatbot with PDF analysis</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+<h2 align="center">📘 Currently Working On</h2>
+
+<div align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/>
+  </a>
+</div>
+
+<br>
+
+---
+
+## 📫 Let's Connect
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/arjun-analytics/">
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:arjunkguru2969@gmail.com">
+    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://my-data-story.lovable.app">
+    <img src="https://img.shields.io/badge/-Portfolio-217346?style=for-the-badge&logo=internetexplorer&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
+</p>. 
