@@ -32,10 +32,10 @@
 
 | Title | Description | Link |
 |-------|-------------|------|
-| 🩺 **Heart Disease Prediction in Python** | Built a classification model using real-world health data | [Read on Medium](https://medium.com/@arjunkguru2969/heart-disease-prediction-ml-project-example-link) |
-| 📈 **SQL Case Studies That Got Me Job-Ready** | Real-world analytics case studies using SQL queries | [Read on Medium](https://medium.com/@arjunkguru2969/sql-case-study-example-link) |
-| 🌦️ **Real-Time Weather App + Chatbot** | Full-stack project with ML regression + RAG chatbot | [Read on Medium](https://medium.com/@arjunkguru2969/real-time-ml-weather-chatbot-project) |
-| 🤖 **Smart PDF Chatbot Using Hugging Face & FAISS** | Created a document Q&A bot using semantic search | [Read on Medium](https://medium.com/@arjunkguru2969/pdf-chatbot-huggingface-faiss-nlp) |
-| 🐍 **Top 7 Python Tricks for Data Analysts** | Handy Pandas and Python tips I use daily | [Read on Medium](https://medium.com/@arjunkguru2969/python-tips-for-data-analysts-blog) |
+| 🩺 **[Heart Disease Prediction in Python](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58)** | Built a classification model using real-world health data | [Read on Medium](https://medium.com/@arjunkguru2969/how-i-built-a-heart-disease-prediction-model-in-python-e57a46043e58) |
+| 📈 **[SQL Case Studies That Got Me Job-Ready](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d)** | Real-world analytics case studies using SQL queries | [Read on Medium](https://medium.com/@arjunkguru2969/sql-case-studies-that-got-me-job-ready-511b7a013c7d) |
+| 🌦️ **[Real-Time Weather App + Chatbot](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d)** | Full-stack project with ML regression + RAG chatbot | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-real-time-weather-prediction-dashboard-and-pdf-chatbot-with-machine-learning-nlp-d025e3102d1d) |
+| 🤖 **[Smart PDF Chatbot Using Hugging Face & FAISS](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937)** | Created a document Q&A bot using semantic search | [Read on Medium](https://medium.com/@arjunkguru2969/building-a-smart-pdf-q-a-chatbot-with-hugging-face-faiss-9cc5d4452937) |
+| 🐍 **[Top 7 Python Tricks for Data Analysts](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd)** | Handy Pandas and Python tips I use daily | [Read on Medium](https://medium.com/@arjunkguru2969/top-7-python-tricks-every-data-analyst-should-know-d13a7fa29cdd) |
 
 📌 *Want to collaborate on data projects or blogs? Reach out on [LinkedIn](https://www.linkedin.com/in/arjun-analytics)!*
