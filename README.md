@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=250&section=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=white&desc=Aspiring%20Data%20Analyst%20|%20Insights%20Explorer&descSize=20&descAlignY=60" />
 
-  <p align="center"> this is my personal github profile dont remove anything and add the medium links in this
+  <p align="center">
     <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
     <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/-Portfolio-9b87f5?style=for-the-badge&logo=internetexplorer&logoColor=white"/></a>
     <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
