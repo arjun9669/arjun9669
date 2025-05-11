@@ -73,6 +73,55 @@
 </div>
 
 ---
+<h2 align="center">📁 My Machine Learning Projects</h2>
+
+<table align="center">
+  <tr>
+    <th>Project</th>
+    <th>Type</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Cereal Data Analysis</td>
+    <td>EDA</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Cereal_Data_Analysis">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Customer Churn Prediction</td>
+    <td>Decision Tree</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Churn_Prediction">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Customer Churn Advanced</td>
+    <td>Logistic Regression</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Churn_Advanced">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Customer Segmentation</td>
+    <td>KMeans Clustering</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Segmentation_KMeans">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>House Price Prediction</td>
+    <td>Regression (Linear, RF)</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/House_Price_Prediction">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Loan Approval Prediction</td>
+    <td>XGBoost Classifier</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Loan_Approval_XGBoost">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Heart Disease Prediction</td>
+    <td>Classification Comparison</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Heart_Disease_Prediction">🔗 View</a></td>
+  </tr>
+  <tr>
+    <td>Model Comparison & GridSearchCV</td>
+    <td>Model Tuning + ROC</td>
+    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Model_Comparison_GridSearch">🔗 View</a></td>
+  </tr>
+</table>
 
 <h2 align="center">📈 GitHub Stats & Activity</h2>
 
