@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=250&section=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=white&desc=Aspiring%20Data%20Analyst%20|%20Insights%20Explorer&descSize=20&descAlignY=60" />
 
