@@ -15,11 +15,9 @@
   <h2>💡 About Me</h2>
   <img align="right" alt="Data Analysis" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZjNzgxZDI4NDFjNTdlOGZmMDE0ZGRlMWEwNDk3NWY1NDYwNWVhZiZjdD1z/3oKIPEqDGUULpEU0aQ/giphy.gif" width="300" height="200" />
   <p align="left" style="margin-right: 20px; text-align: justify;">
-    I'm a passionate <b>Data Analyst</b> who transforms raw data into clear, actionable insights.
-    <br><br>
+    I'm a passionate <b>Data Analyst</b> who transforms raw data into clear, actionable insights.<br><br>
     My expertise spans <b>Python, SQL, Excel, Tableau</b>, and <b>Power BI</b>, allowing me to deliver
-    comprehensive data solutions that drive informed business decisions.
-    <br><br>
+    comprehensive data solutions that drive informed business decisions.<br><br>
     📍 Based in <b>India</b>, open to <b>remote & international opportunities</b>
   </p>
 </div>
@@ -31,7 +29,6 @@
 <h2 align="center">🛠️ My Tech Stack & Skills</h2>
 
 <h3>Analysis & Visualization</h3>
-
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
@@ -42,7 +39,6 @@
 </div>
 
 <h3>Python Libraries</h3>
-
 <div align="center">
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
@@ -52,17 +48,15 @@
 </div>
 
 <h3>Other Tools</h3>
-
 <div align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
   <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" />
 </div>
 
-<br>
+---
 
 <h2 align="center">🔥 Skill Proficiency</h2>
-
 <div align="center">
   <p>Python    ⭐⭐⭐⭐⭐ 5/5</p>
   <p>SQL       ⭐⭐⭐⭐⭐ 5/5</p>
@@ -156,32 +150,23 @@
   </table>
 </div>
 
+---
+
+<h2 align="center">📘 Currently Working On</h2>
 
 <div align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/>
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/>
-  </a>
+  <a href="#"><img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/></a>
 </div>
-
-<br>
 
 ---
 
-## 📢 Let's Connect
+## 📫 Let's Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/arjun-analytics/">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:arjunkguru2969@gmail.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://my-data-story.lovable.app">
-    <img src="https://img.shields.io/badge/-Portfolio-217346?style=for-the-badge&logo=internetexplorer&logoColor=white"/>
-  </a>
+  <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/-Portfolio-217346?style=for-the-badge&logo=internetexplorer&logoColor=white"/></a>
 </p>
 
 <p align="center">
