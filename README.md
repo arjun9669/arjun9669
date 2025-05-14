@@ -73,159 +73,6 @@
 </div>
 
 ---
-<h2 align="center">📁 My Machine Learning Projects</h2>
-
-<table align="center">
-  <tr>
-    <th>Project</th>
-    <th>Type</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>Cereal Data Analysis</td>
-    <td>EDA</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Cereal_Data_Analysis">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Customer Churn Prediction</td>
-    <td>Decision Tree</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Churn_Prediction">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Customer Churn Advanced</td>
-    <td>Logistic Regression</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Churn_Advanced">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Customer Segmentation</td>
-    <td>KMeans Clustering</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Customer_Segmentation_KMeans">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>House Price Prediction</td>
-    <td>Regression (Linear, RF)</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/House_Price_Prediction">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Loan Approval Prediction</td>
-    <td>XGBoost Classifier</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Loan_Approval_XGBoost">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Heart Disease Prediction</td>
-    <td>Classification Comparison</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Heart_Disease_Prediction">🔗 View</a></td>
-  </tr>
-  <tr>
-    <td>Model Comparison & GridSearchCV</td>
-    <td>Model Tuning + ROC</td>
-    <td><a href="https://github.com/arjun9669/machine-learning-projects/tree/main/ML/Model_Comparison_GridSearch">🔗 View</a></td>
-  </tr>
-</table>
-
-<h2 align="center">📈 GitHub Stats & Activity</h2>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=tokyonight&hide_border=true" height="180"/>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arjun9669&theme=tokyonight&no-frame=true&row=1&column=6" width="100%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&theme=tokyo-night&hide_border=true" width="90%"/>
-</div>
-
----
-
-<h2 align="center">🚀 Featured Projects</h2>
-
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-        <h3 align="center">SQL Case Studies</h3>
-        <div align="center">
-          <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
-          </a>
-          <p>
-            <a href="https://github.com/arjun9669/sql-case-studies" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Advanced SQL analysis across retail, banking and e-commerce domains</p>
-        </div>
-      </td>
-      <td width="50%">
-        <h3 align="center">Python Data Analysis</h3>
-        <div align="center">
-          <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
-          </a>
-          <p>
-            <a href="https://github.com/arjun9669/python-data-analysis" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Comprehensive data cleaning, visualization and statistical analysis notebooks</p>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%">
-        <h3 align="center">Interactive Weather Dashboard</h3>
-        <div align="center">
-          <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Streamlit Project"/>
-          </a>
-          <p>
-            <a href="https://github.com/arjun9669/weather-dashboard" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/LIVE-44c?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Streamlit-powered real-time weather simulation and analytics dashboard</p>
-        </div>
-      </td>
-      <td width="50%">
-        <h3 align="center">Machine Learning Models</h3>
-        <div align="center">
-          <a href="https://github.com/arjun9669/ml-models" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
-          </a>
-          <p>
-            <a href="https://github.com/arjun9669/ml-models" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-ff9?style=for-the-badge&logo=github&logoColor=black"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-44c?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Regression models and an intelligent RAG-powered chatbot with PDF analysis</p>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-<h2 align="center">📘 Currently Working On</h2>
 
 <h2 align="center">🚀 Featured Projects</h2>
 
@@ -309,12 +156,24 @@
   </table>
 </div>
 
+---
+
+<h2 align="center">📘 Currently Working On</h2>
+
+<div align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/>
+  </a>
+</div>
 
 <br>
 
 ---
 
-## 📫 Let's Connect
+## 📢 Let's Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/">
@@ -330,4 +189,4 @@
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
-</p>. 
+</p>
