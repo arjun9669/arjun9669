@@ -11,11 +11,17 @@
 
 ---
 
-## 💡 About Me
+<div align="center">
+  <h2>💡 About Me</h2>
+  <img align="right" alt="Data Analysis" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZjNzgxZDI4NDFjNTdlOGZmMDE0ZGRlMWEwNDk3NWY1NDYwNWVhZiZjdD1z/3oKIPEqDGUULpEU0aQ/giphy.gif" width="300" height="200" />
+  <p align="left" style="margin-right: 20px; text-align: justify;">
+    I'm a passionate <b>Data Analyst</b> who transforms raw data into clear, actionable insights.<br><br>
+    My expertise spans <b>Python, SQL, Excel, Tableau</b>, and <b>Power BI</b>, allowing me to deliver comprehensive data solutions that drive informed business decisions.<br><br>
+    📍 Based in <b>India</b>, open to <b>remote & international opportunities</b>
+  </p>
+</div>
 
-I'm a passionate **Data Analyst** who transforms raw data into clear, actionable insights.  
-I work with **Python, SQL, Excel, Tableau, and Power BI** to deliver meaningful solutions.  
-📍 Based in **India** | 🌏 Open to **remote & international opportunities**
+<br clear="both">
 
 ---
 
