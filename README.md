@@ -9,155 +9,129 @@
   </p>
 </div>
 
-<br>
+---
 
-<div align="center">
-  <h2>💡 About Me</h2>
-  <img align="right" alt="Data Analysis" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZjNzgxZDI4NDFjNTdlOGZmMDE0ZGRlMWEwNDk3NWY1NDYwNWVhZiZjdD1z/3oKIPEqDGUULpEU0aQ/giphy.gif" width="300" height="200" />
-  <p align="left" style="margin-right: 20px; text-align: justify;">
-    I'm a passionate <b>Data Analyst</b> who transforms raw data into clear, actionable insights.<br><br>
-    My expertise spans <b>Python, SQL, Excel, Tableau</b>, and <b>Power BI</b>, allowing me to deliver
-    comprehensive data solutions that drive informed business decisions.<br><br>
-    📍 Based in <b>India</b>, open to <b>remote & international opportunities</b>
-  </p>
-</div>
+## 💡 About Me
 
-<br clear="both">
+I'm a passionate **Data Analyst** who transforms raw data into clear, actionable insights.  
+I work with **Python, SQL, Excel, Tableau, and Power BI** to deliver meaningful solutions.  
+📍 Based in **India** | 🌏 Open to **remote & international opportunities**
 
 ---
 
-<h2 align="center">🛠️ My Tech Stack & Skills</h2>
+## 🛠️ My Tech Stack & Skills
 
-<h3>Analysis & Visualization</h3>
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
-</div>
+**Tools & Tech**  
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=postgresql&logoColor=white&style=for-the-badge)
+![Power BI](https://img.shields.io/badge/-Power_BI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge)
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge)
+![Excel](https://img.shields.io/badge/-Excel-217346?logo=microsoft-excel&logoColor=white&style=for-the-badge)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge)
 
-<h3>Python Libraries</h3>
-<div align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-3F4F75?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-</div>
-
-<h3>Other Tools</h3>
-<div align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/JIRA-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
-  <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" />
-</div>
+**Python Libraries**  
+![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-3F4F75?logo=python&logoColor=white&style=for-the-badge)
+![Scikit-Learn](https://img.shields.io/badge/-Scikit_Learn-F7931E?logo=scikit-learn&logoColor=white&style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white&style=for-the-badge)
 
 ---
 
-<h2 align="center">🔥 Skill Proficiency</h2>
-<div align="center">
-  <p>Python    ⭐⭐⭐⭐⭐ 5/5</p>
-  <p>SQL       ⭐⭐⭐⭐⭐ 5/5</p>
-  <p>Excel     ⭐⭐⭐⭐⭐ 5/5</p>
-  <p>Power BI  ⭐⭐⭐⭐⚫ 4/5</p>
-  <p>Tableau   ⭐⭐⭐⭐⚫ 4/5</p>
-  <p>ML/AI     ⭐⭐⭐⚫⚫ 3/5</p>
-</div>
+## 🔥 Skill Proficiency
+
+- Python: ⭐⭐⭐⭐⭐  
+- SQL: ⭐⭐⭐⭐⭐  
+- Excel: ⭐⭐⭐⭐⭐  
+- Power BI: ⭐⭐⭐⭐⚫  
+- Tableau: ⭐⭐⭐⭐⚫  
+- ML/AI: ⭐⭐⭐⚫⚫  
 
 ---
 
-<h2 align="center">🚀 Featured Projects</h2>
+## 🚀 Featured Projects
 
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-        <h3 align="center">SQL Case Studies</h3>
-        <div align="center">
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">SQL Case Studies</h3>
+      <div align="center">
+        <a href="https://github.com/arjun9669/SQL" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
+        </a>
+        <p>
           <a href="https://github.com/arjun9669/SQL" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
+            <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
           </a>
-          <p>
-            <a href="https://github.com/arjun9669/SQL" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Advanced SQL analysis across retail, banking, and e-commerce domains.</p>
-        </div>
-      </td>
-
-      <td width="50%">
-        <h3 align="center">Python Data Analysis</h3>
-        <div align="center">
+          <a href="https://my-data-story.lovable.app" target="_blank">
+            <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+          </a>
+        </p>
+        <p>Advanced SQL analysis across retail, banking, and e-commerce domains.</p>
+      </div>
+    </td>
+    <td width="50%">
+      <h3 align="center">Python Data Analysis</h3>
+      <div align="center">
+        <a href="https://github.com/arjun9669/Python" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
+        </a>
+        <p>
           <a href="https://github.com/arjun9669/Python" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
+            <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
           </a>
-          <p>
-            <a href="https://github.com/arjun9669/Python" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Comprehensive data cleaning, visualization, and statistical analysis notebooks.</p>
-        </div>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="50%">
-        <h3 align="center">Interactive Weather Dashboard</h3>
-        <div align="center">
+          <a href="https://my-data-story.lovable.app" target="_blank">
+            <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+          </a>
+        </p>
+        <p>Comprehensive data cleaning, visualization, and statistical analysis notebooks.</p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Weather Dashboard + Chatbot</h3>
+      <div align="center">
+        <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Weather Streamlit"/>
+        </a>
+        <p>
           <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Streamlit Project"/>
+            <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
           </a>
-          <p>
-            <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/LIVE-green?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Streamlit-powered real-time weather simulation and chatbot with PDF analytics.</p>
-        </div>
-      </td>
-
-      <td width="50%">
-        <h3 align="center">Machine Learning Models</h3>
-        <div align="center">
+          <a href="https://my-data-story.lovable.app" target="_blank">
+            <img src="https://img.shields.io/badge/LIVE-green?style=for-the-badge&logoColor=white"/>
+          </a>
+        </p>
+        <p>Streamlit-powered weather simulator + RAG chatbot with PDF analytics.</p>
+      </div>
+    </td>
+    <td width="50%">
+      <h3 align="center">Machine Learning Models</h3>
+      <div align="center">
+        <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
+        </a>
+        <p>
           <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
+            <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
           </a>
-          <p>
-            <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
-              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
-            </a>
-            <a href="https://my-data-story.lovable.app" target="_blank">
-              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
-            </a>
-          </p>
-          <p>Regression models and an intelligent RAG-powered chatbot with PDF analysis.</p>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+          <a href="https://my-data-story.lovable.app" target="_blank">
+            <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+          </a>
+        </p>
+        <p>Regression, classification, tuning, and real-world ML case studies.</p>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ---
 
-<h2 align="center">📘 Currently Working On</h2>
+## 📘 Currently Working On
 
-<div align="center">
-  <a href="#"><img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/></a>
-</div>
+<a href="#"><img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/></a>
+<a href="#"><img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/></a>
 
 ---
 
