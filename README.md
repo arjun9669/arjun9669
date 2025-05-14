@@ -156,9 +156,6 @@
   </table>
 </div>
 
----
-
-<h2 align="center">📘 Currently Working On</h2>
 
 <div align="center">
   <a href="#">
