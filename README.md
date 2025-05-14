@@ -227,14 +227,88 @@
 
 <h2 align="center">📘 Currently Working On</h2>
 
+<h2 align="center">🚀 Featured Projects</h2>
+
 <div align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge"/>
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge"/>
-  </a>
+  <table>
+    <tr>
+      <td width="50%">
+        <h3 align="center">SQL Case Studies</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/SQL" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" alt="SQL Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/SQL" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Advanced SQL analysis across retail, banking, and e-commerce domains.</p>
+        </div>
+      </td>
+
+      <td width="50%">
+        <h3 align="center">Python Data Analysis</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/Python" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Python Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/Python" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Comprehensive data cleaning, visualization, and statistical analysis notebooks.</p>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="50%">
+        <h3 align="center">Interactive Weather Dashboard</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="Streamlit Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/LIVE-green?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Streamlit-powered real-time weather simulation and chatbot with PDF analytics.</p>
+        </div>
+      </td>
+
+      <td width="50%">
+        <h3 align="center">Machine Learning Models</h3>
+        <div align="center">
+          <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
+          </a>
+          <p>
+            <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
+              <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
+            </a>
+            <a href="https://my-data-story.lovable.app" target="_blank">
+              <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+            </a>
+          </p>
+          <p>Regression models and an intelligent RAG-powered chatbot with PDF analysis.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
+
 
 <br>
 
