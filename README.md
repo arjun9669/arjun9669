@@ -113,7 +113,7 @@
       </div>
     </td>
     <td width="50%">
-      <h3 align="center">Machine Learning Models</h3>
+      <h3 align="center">Machine Learning Projects</h3>
       <div align="center">
         <a href="https://github.com/arjun9669/machine-learning-projects" target="_blank">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="100" alt="ML Project"/>
@@ -127,6 +127,25 @@
           </a>
         </p>
         <p>Regression, classification, tuning, and real-world ML case studies.</p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" width="100%">
+      <h3 align="center">Power BI Dashboards</h3>
+      <div align="center">
+        <a href="https://github.com/arjun9669/powerbi-projects" target="_blank">
+          <img src="https://img.icons8.com/color/96/power-bi.png" width="100" alt="Power BI"/>
+        </a>
+        <p>
+          <a href="https://github.com/arjun9669/powerbi-projects" target="_blank">
+            <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
+          </a>
+          <a href="https://my-data-story.lovable.app" target="_blank">
+            <img src="https://img.shields.io/badge/DEMO-4B0082?style=for-the-badge&logoColor=white"/>
+          </a>
+        </p>
+        <p>Interactive dashboards built in Power BI — covering fraud detection, healthcare, and fake review analysis.</p>
       </div>
     </td>
   </tr>
