@@ -151,11 +151,11 @@
     <td width="50%">
       <h3 align="center">Excel Dashboard Project</h3>
       <div align="center">
-        <a href="https://github.com/arjun9669/excel-projects" target="_blank">
+        <a href="https://github.com/arjun9669/Excel" target="_blank">
           <img src="https://img.icons8.com/color/96/microsoft-excel-2019.png" width="100" alt="Excel Dashboard"/>
         </a>
         <p>
-          <a href="https://github.com/arjun9669/excel-projects" target="_blank">
+          <a href="https://github.com/arjun9669/Excel" target="_blank">
             <img src="https://img.shields.io/badge/CODE-black?style=for-the-badge&logo=github&logoColor=white"/>
           </a>
           <a href="https://my-data-story.lovable.app" target="_blank">
@@ -177,7 +177,7 @@
 
 ---
 
-## 📫 Let's Connect
+## 📨 Let's Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
@@ -188,4 +188,3 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
 </p>
-
