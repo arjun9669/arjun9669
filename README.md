@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=250&section=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=white&desc=Aspiring%20Data%20Analyst%20|%20Insights%20Explorer&descSize=20&descAlignY=60" alt="Header Capsule" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=250§ion=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=white&desc=Aspiring%20Data%20Analyst%20|%20Insights%20Explorer&descSize=20&descAlignY=60" alt="Header Capsule" />
 
   <p align="center">
     <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -64,16 +64,11 @@
       <td><b>ML/AI:</b> ⭐⭐⭐⚫⚫</td>
     </tr>
   </table>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzMxY2Y3ZjQ4NjE2MjE4Y2E5ZjQ5N2U3MTY1NDg1MjE1Y2E0YzcxNiZjdD1n/26BRv0ThflsHCqDrO/giphy.gif" alt="Skills GIF" width="300" />
 </div>
 
 ---
 
 ## 🚀 Featured Projects
-
-<div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzMxY2Y3ZjQ4NjE2MjE4Y2E5ZjQ5N2U3MTY1NDg1MjE1Y2E0YzcxNiZjdD1n/l0MYt5jPRARRRykrm/giphy.gif" alt="Projects GIF" width="200" />
-</div>
 
 <table>
   <tr>
@@ -197,7 +192,6 @@
 <div align="center">
   <a href="#"><img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge" alt="NLP Project"/></a>
   <a href="#"><img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge" alt="Time Series Project"/></a>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzMxY2Y3ZjQ4NjE2MjE4Y2E5ZjQ5N2U3MTY1NDg1MjE1Y2E0YzcxNiZjdD1n/3oKIPnAiaMCws8nOsE/giphy.gif" alt="Working On GIF" width="300" />
 </div>
 
 ---
@@ -211,5 +205,5 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" alt="Footer Capsule" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100§ion=footer" alt="Footer Capsule" width="100%"/>
 </p>
