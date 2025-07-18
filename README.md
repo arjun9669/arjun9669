@@ -64,11 +64,16 @@
       <td><b>ML/AI:</b> ⭐⭐⭐⚫⚫</td>
     </tr>
   </table>
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Skills GIF" width="300" />
 </div>
 
 ---
 
 ## 🚀 Featured Projects
+
+<div align="center">
+  <img src="https://media.giphy.com/media/EQeA1u6Y0BN0uDekuA/giphy.gif" alt="Projects GIF" width="200" />
+</div>
 
 <table>
   <tr>
@@ -192,6 +197,7 @@
 <div align="center">
   <a href="#"><img src="https://img.shields.io/badge/🔍_Advanced_NLP-for_Competitive_Analysis-3776AB?style=for-the-badge" alt="NLP Project"/></a>
   <a href="#"><img src="https://img.shields.io/badge/📊_Time_Series-Forecasting_Models-217346?style=for-the-badge" alt="Time Series Project"/></a>
+  <img src="https://media.giphy.com/media/oPNq5A3IZC6bugJXeS/giphy.gif" alt="Working On GIF" width="300" />
 </div>
 
 ---
