@@ -1,139 +1,150 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:00bc8c&height=200&section=header&text=Arjun%20Kumar&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=Data%20Analyst%20in%20Dubai&descSize=20&descAlignY=55" style="border-radius: 15px;" />
+  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:FFD700,50:E91E63,100:00BCD4&height=220&section=header&text=Arjun%20Kumar&fontSize=90&fontAlignY=40&animation=twinkling&fontColor=FFFFFF&desc=Data%20Maestro%20of%20Dubai&descSize=25&descAlignY=65&stroke=2&strokeColor=FFFFFF" style="border-radius: 20px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);" />
   <br>
-  <p>
-    <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-    <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Portfolio-9b59b6?style=for-the-badge&logo=chrome&logoColor=white"/></a>
-    <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-    <img src="https://komarev.com/ghpvc/?username=arjun9669&style=for-the-badge&color=brightgreen" alt="Profile Views"/>
+  <p style="margin: 10px 0;">
+    <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white&color=0077B5" /></a>
+    <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Portfolio-9B59B6?style=plastic&logo=chrome&logoColor=white&color=9B59B6" /></a>
+    <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=plastic&logo=gmail&logoColor=white&color=EA4335" /></a>
+    <img src="https://komarev.com/ghpvc/?username=arjun9669&style=plastic&color=00FF00&label=Views" alt="Profile Views" />
   </p>
 </div>
 
-# 🌟 Arjun Kumar - Data Analyst & Insights Explorer
+# 🌌 Arjun Kumar - Data Visionary
 
-**Unlocking Data's Potential** | 📍 **Dubai, United Arab Emirates**  
-🌍 Open to Remote & International Collaborations
+**Mastering Data in the Heart of Dubai** | 📍 **Dubai, United Arab Emirates**  
+🌍 **Global Collaborations Welcome**
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=ffffff&text_color=ffffff&icon_color=00bc8c" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=radical&hide_border=true&background=0D1117&stroke=ffffff&ring=00bc8c&fire=00bc8c&currStreakLabel=ffffff&currStreakNum=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" alt="Streak Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=dracula&hide_border=true&bg_color=1C2526&title_color=FF69B4&text_color=FFFFFF&icon_color=00BCD4" alt="GitHub Stats" style="border-radius: 15px;" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arjun9669&theme=dracula&hide_border=true&background=1C2526&stroke=FF69B4&ring=00BCD4&fire=FF4500&currStreakLabel=FFFFFF&currStreakNum=FFFFFF" alt="Streak Stats" style="border-radius: 15px;" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arjun9669&theme=radical&no-bg=true&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=arjun9669&theme=dracula&no-bg=true&margin-w=15&margin-h=15&column=3" alt="Trophies" />
 </div>
 
 ---
 
-## 💡 About Me
+## 🎨 About Me
 
 <div align="center">
-  <img align="right" src="https://media.giphy.com/media/lPQTfptHL3IcM5M7jK/giphy.gif" width="280" height="180" alt="Data Analytics GIF" style="border-radius: 10px; margin-left: 20px;" />
-  <p align="left" style="max-width: 500px; text-align: justify; line-height: 1.6;">
-    Passionate <strong>Data Analyst</strong> turning complex data into actionable insights. Expert in <strong>Python, SQL, Tableau, Power BI, and Excel</strong>. Based in vibrant <strong>Dubai, UAE</strong>, I deliver data-driven solutions for global challenges. Let's collaborate to make data magic happen!
+  <img align="right" src="https://media.giphy.com/media/3o7TKTDnH2y0kb0vQ0/giphy.gif" width="300" height="200" alt="Futuristic Data Flow" style="border-radius: 15px; margin-left: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); transform: rotate(5deg);" />
+  <p align="left" style="max-width: 550px; text-align: justify; font-size: 17px; background: linear-gradient(135deg, #1C2526, #2E4053); padding: 15px; border-radius: 15px; color: #FFFFFF; text-shadow: 1px 1px 2px #000000;">
+    I’m a <strong>Data Analyst</strong> who transforms raw data into dazzling insights that power decisions. With expertise in <strong>Python, SQL, Tableau, Power BI, and Excel</strong>, I craft futuristic solutions from the dazzling skyline of <strong>Dubai, UAE</strong>. Ready to ignite global innovation—let’s create data magic together! ✨
   </p>
 </div>
 <br clear="both">
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=ffffff&text_color=ffffff" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=dracula&hide_border=true&bg_color=1C2526&title_color=FF69B4&text_color=FFFFFF" alt="Top Languages" style="border-radius: 15px;" />
 </div>
 
 ---
 
-## 🛠️ Skills & Tech Stack
+## 🔧 Tech Arsenal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,postgres,excel,tableau,powerbi,jupyter,pandas,numpy,matplotlib,sklearn,streamlit" />
+  <img src="https://skillicons.dev/icons?i=python,postgres,excel,tableau,powerbi,jupyter,pandas,numpy,matplotlib,sklearn,streamlit&perline=11" style="margin: 5px;" />
 </div>
 
-- **Proficiency Levels**:
-  - Python: ⭐⭐⭐⭐⭐
-  - SQL: ⭐⭐⭐⭐⭐
-  - Excel: ⭐⭐⭐⭐⭐
-  - Power BI: ⭐⭐⭐⭐☆
-  - Tableau: ⭐⭐⭐⭐☆
-  - ML/AI: ⭐⭐⭐☆☆
+- **Skill Mastery**:
+  - Python: 🌟🌟🌟🌟🌟
+  - SQL: 🌟🌟🌟🌟🌟
+  - Excel: 🌟🌟🌟🌟🌟
+  - Power BI: 🌟🌟🌟🌟☆
+  - Tableau: 🌟🌟🌟🌟☆
+  - ML/AI: 🌟🌟🌟☆☆
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Showcase Projects
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>SQL Case Studies</strong><br>
-      <a href="https://github.com/arjun9669/SQL"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/SQL"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-8e44ad?style=for-the-badge&logoColor=white"/></a><br>
-      Advanced analytics in retail, banking, e-commerce.
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>Python Data Analysis</strong><br>
-      <a href="https://github.com/arjun9669/Python"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/Python"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-8e44ad?style=for-the-badge&logoColor=white"/></a><br>
-      Cleaning, visualization, statistical insights.
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>Weather Dashboard + Chatbot</strong><br>
-      <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Live-27ae60?style=for-the-badge&logoColor=white"/></a><br>
-      Streamlit app with RAG chatbot for PDF analytics.
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>Machine Learning Projects</strong><br>
-      <a href="https://github.com/arjun9669/machine-learning-projects"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/machine-learning-projects"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-8e44ad?style=for-the-badge&logoColor=white"/></a><br>
-      Regression, classification, real-world ML cases.
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>Power BI Dashboards</strong><br>
-      <a href="https://github.com/arjun9669/powerbi-projects"><img src="https://img.icons8.com/color/96/power-bi.png" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/powerbi-projects"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-8e44ad?style=for-the-badge&logoColor=white"/></a><br>
-      Interactive dashboards for fraud detection, healthcare.
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <strong>Excel Dashboard</strong><br>
-      <a href="https://github.com/arjun9669/Excel"><img src="https://img.icons8.com/color/96/microsoft-excel-2019.png" width="60" /></a><br>
-      <a href="https://github.com/arjun9669/Excel"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-      <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-8e44ad?style=for-the-badge&logoColor=white"/></a><br>
-      Retail sales dashboard with 20+ analysis questions.
-    </td>
-  </tr>
-</table>
-
----
-
-## 📘 Currently Exploring
 <div align="center">
-  <img src="https://img.shields.io/badge/🔍_Advanced_NLP_Competitive_Analysis-3776AB?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/📊_Time_Series_Forecasting_Models-27ae60?style=for-the-badge&logoColor=white"/>
+  <table>
+    <tr>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">SQL Case Studies</h3>
+        <a href="https://github.com/arjun9669/SQL"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/SQL"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-9B59B6?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Deep dives into retail, banking, e-commerce data.</p>
+      </td>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">Python Data Analysis</h3>
+        <a href="https://github.com/arjun9669/Python"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/Python"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-9B59B6?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Visualizations and stats with Python flair.</p>
+      </td>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">Weather Dashboard + Chatbot</h3>
+        <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Live-00FF00?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Streamlit weather app with AI chatbot.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">Machine Learning Projects</h3>
+        <a href="https://github.com/arjun9669/machine-learning-projects"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/machine-learning-projects"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-9B59B6?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Predictive models and optimization.</p>
+      </td>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">Power BI Dashboards</h3>
+        <a href="https://github.com/arjun9669/powerbi-projects"><img src="https://img.icons8.com/color/96/power-bi.png" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/powerbi-projects"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-9B59B6?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Interactive dashboards for analytics.</p>
+      </td>
+      <td align="center" width="33%" style="padding: 15px; background: #2E4053; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <h3 style="color: #FF69B4;">Excel Dashboard</h3>
+        <a href="https://github.com/arjun9669/Excel"><img src="https://img.icons8.com/color/96/microsoft-excel-2019.png" width="60" style="transition: transform 0.3s;" /></a><br>
+        <a href="https://github.com/arjun9669/Excel"><img src="https://img.shields.io/badge/Code-000000?style=plastic&logo=github&logoColor=FF69B4" /></a>
+        <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Demo-9B59B6?style=plastic&logoColor=FFFFFF" /></a><br>
+        <p style="color: #FFFFFF;">Retail sales with 20+ insights.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<style>
+  img[src*="devicon"], img[src*="icons8"] {
+    transition: transform 0.3s ease-in-out;
+  }
+  img[src*="devicon"]:hover, img[src*="icons8"]:hover {
+    transform: scale(1.2) rotate(10deg);
+  }
+</style>
+
+---
+
+## 🌠 Currently Exploring
+
+<div align="center">
+  <a href="#"><img src="https://img.shields.io/badge/🔮_Advanced_NLP-FF69B4?style=plastic&logoColor=FFFFFF" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/📈_Time_Series-00BCD4?style=plastic&logoColor=FFFFFF" /></a>
 </div>
 
 ---
 
-## 📬 Let's Connect
-<div align="center">
+## 🌍 Connect with Me
+
+<div align="center" style="background: linear-gradient(135deg, #1C2526, #2E4053); padding: 20px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);">
   <p>
-    <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-    <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-    <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Portfolio-9b59b6?style=for-the-badge&logo=chrome&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/arjun-analytics/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white&color=0077B5" /></a>
+    <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=plastic&logo=gmail&logoColor=white&color=EA4335" /></a>
+    <a href="https://my-data-story.lovable.app"><img src="https://img.shields.io/badge/Portfolio-9B59B6?style=plastic&logo=chrome&logoColor=white&color=9B59B6" /></a>
   </p>
-  <em>Got a data puzzle? Let's solve it together! 🚀</em>
+  <p style="color: #FFFFFF; font-size: 18px; font-weight: bold; text-shadow: 1px 1px 2px #000000;">Ready to revolutionize your data? Let’s connect! 🚀</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/arjun9669/arjun9669/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
+  <img src="https://github.com/arjun9669/arjun9669/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation" style="border-radius: 15px;" />
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:00bc8c&height=100&section=footer&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:FFD700,50:E91E63,100:00BCD4&height=120&section=footer&animation=twinkling" style="border-radius: 20px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);" />
 </div>
