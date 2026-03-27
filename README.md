@@ -1,99 +1,103 @@
 <!-- ============== Animated Header Banner ============== -->
 <div align="center">
   <img 
-    src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=300&section=header&text=Arjun%20Kumar&fontSize=90&fontAlignY=40&animation=sliceLeft&fontColor=white&desc=Data Analyst in Dubai • Turning Data into Decisions&descSize=20&descAlignY=70" 
-    alt="Arjun Kumar Banner"
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=300&section=header&text=Arjun%20Kumar&fontSize=90&fontAlignY=40&animation=sliceLeft&fontColor=white&desc=AI%20Engineer%20%7C%20RAG%20Systems%20%7C%20Dubai&descSize=20&descAlignY=70" 
   />
 </div>
 
 ---
 
 <div align="center">
-  <!-- Social / Contact Buttons -->
-  <a href="https://www.linkedin.com/in/arjun-analytics/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/arjun-analytics/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
   &nbsp;
-  <a href="https://my-data-story.lovable.app" target="_blank"><img src="https://img.shields.io/badge/Portfolio-9b87f5?style=for-the-badge&logo=internetexplorer&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://my-data-story.lovable.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-9b87f5?style=for-the-badge&logo=internetexplorer&logoColor=white"/>
+  </a>
   &nbsp;
-  <a href="mailto:arjunkguru2969@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=arjun9669&style=for-the-badge&color=brightgreen" alt="Profile Views"/>
+  <a href="mailto:arjunkguru2969@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
 </div>
 
 ---
 
-## 👋 Hi, I’m Arjun 🧠
+## 👋 Hi, I’m Arjun
 
-- Based in **Dubai, United Arab Emirates** — a melting pot of culture and innovation.
-- Passionate about **extracting insights from data**, making dashboards people love, and using visuals to tell stories.
-- My tools of choice: **Power BI, Python, SQL, Excel, Tableau**, with a dash of ML & data wrangling.
+AI Engineer based in **Dubai, United Arab Emirates**, focused on building **production-grade AI systems** using LLMs, RAG architectures, and scalable backend pipelines.
+
+I don’t just analyze data — I build systems that **retrieve, reason, and respond**.
+
+---
+
+## 🧠 Core Expertise
+
+- Retrieval-Augmented Generation (**RAG**) Systems  
+- LLM-based Applications & AI Pipelines  
+- Embeddings & Vector Databases (FAISS, ChromaDB)  
+- Backend APIs using FastAPI  
+- End-to-End ML Systems (Data → Model → Deployment)  
+- AI + Data Integration for real-world applications  
 
 ---
 
 ## ⚙️ Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white&style=for-the-badge" alt="SQL"/>
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge" alt="Power BI"/>
-  <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge" alt="Tableau"/>
-  <img src="https://img.shields.io/badge/Excel-217346?logo=microsoft-excel&logoColor=white&style=for-the-badge" alt="Excel"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white&style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white&style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/FAISS-005571?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ChromaDB-3C873A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?logo=huggingface&logoColor=black&style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge"/>
 </p>
 
-**What I build with these tools:**
-- Complex dashboards with interactivity & live data filtering  
-- End-to-end data transformations, modeling & predictions  
-- UI‑driven storytelling: making insights obvious at a glance
+---
+
+## 💼 Experience
+
+### 🏢 Data Science Intern — Imarticus Learning  
+**Jan 2025 – Aug 2025**
+
+- Built a **real-time weather prediction application** using Python & Streamlit  
+- Developed a **RAG-based chatbot** using FAISS and HuggingFace embeddings  
+- Designed **interactive dashboards** integrating ML outputs  
+- Implemented complete pipelines from **data preprocessing → model → UI deployment**
 
 ---
 
-## 📊 GitHub Stats
+## 🚀 Flagship Projects
 
-<div align="center">
-
-![Arjun’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
+### 🔥 Glass Expert AI — Domain-Specific RAG System
+- Built an AI assistant using **RAG architecture** for domain-specific knowledge retrieval  
+- Integrated embeddings + vector database + LLM response pipeline  
+- Designed modular system for scalability and real-world use  
 
 ---
 
-## 🚀 My Projects
-
-Here are some of the works I'm most proud of — with live previews, interactive dashboards, and real‑world impact.
-
-| Project | What I Did | Key Highlights |
-|---------|-------------|----------------|
-| **Budget 2025‑2026 Dashboard** | Built a full Power BI dashboard analyzing India’s budget allocations department‑wise with growth comparisons and interactive controls. | Storytelling visuals + clean DAX + user‑friendly slicers |
-| **Healthcare Claims Fraud Detection** | Detected anomalies in claims data, mapped risky providers, built heatmaps & alert visuals. | Merged datasets + clean modeling + visual risk scoring |
-| **Fake Product Review Detection** | Built dashboards to show impact of spam reviews, reviewer behavior, verified vs unverified review trends. | UX design focus + review patterns visualizations |
-| **Fraud Detection with ML Prediction** | Visualised model predictions vs actual fraud cases; built dashboards to compare demographic factors. | Accuracy & error analysis visuals + model score displays |
-
-> For each of these, check the `powerbi-projects` repo in my GitHub — there are `.pbix`, datasets & screenshots you can explore live.
+### 🤖 Agentic RAG System
+- Developed multi-step AI workflows for reasoning-based responses  
+- Implemented pipeline: **retrieval → context refinement → generation**  
+- Structured system using modular components for extensibility  
 
 ---
 
-## 🌱 What I’m Learning & Building
-
-- Advanced **Time Series Forecasting** (ARIMA, Prophet, etc.)  
-- NLP / Text Embeddings & RAG‑style models  
-- Automation for dashboards (CI / version control)  
-- More real‑world portfolio pieces including ML projects, BI workflows
+### 🌦️ AI Weather Prediction App
+- End-to-end ML application with real-time user interface  
+- Built using **Streamlit + regression models**  
+- Simulates live predictions based on user inputs  
 
 ---
 
-## 📬 Want to Connect?
-
-I love collaborating, learning, and meeting folks in data.  
-Feel free to reach out:
-
-[LinkedIn](https://www.linkedin.com/in/arjun-analytics/) • Email: arjunkguru2969@gmail.com • Portfolio: my‑data‑story.lovable.app
+### 🛡️ Fraud Detection ML Dashboard
+- Combined machine learning outputs with Power BI dashboards  
+- Visualized anomalies, risk segments, and fraud patterns  
+- Connected ML predictions to business decision-making  
 
 ---
 
-<p align="center"><i>“Data is more than numbers — it’s stories waiting to be told.”</i></p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3776AB,100:217346&height=100&section=footer" width="100%"/>
-</p>
+## 🧠 System Thinking (How I Build AI)
