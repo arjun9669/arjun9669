@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="135" viewBox="0 0 1200 135" role="img" aria-label="Animated footer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#020617"/><stop offset="50%" stop-color="#0f172a"/><stop offset="100%" stop-color="#3b0764"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/><stop offset="50%" stop-color="#38bdf8" stop-opacity=".5"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="135" rx="18" fill="url(#bg)"/>
+  <g opacity=".16">
+    <polygon points="-120,0 -20,0 120,135 20,135" fill="#38bdf8"><animateTransform attributeName="transform" type="translate" from="0 0" to="1320 0" dur="7s" repeatCount="indefinite"/></polygon>
+    <polygon points="-220,0 -150,0 -10,135 -80,135" fill="#8b5cf6"><animateTransform attributeName="transform" type="translate" from="1320 0" to="0 0" dur="9s" repeatCount="indefinite"/></polygon>
+  </g>
+  <text x="600" y="48" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="19" font-weight="700">BUILD • LEARN • SHIP • SCALE</text>
+  <rect x="410" y="72" width="380" height="4" rx="2" fill="#334155"/>
+  <rect x="505" y="72" width="190" height="4" rx="2" fill="url(#beam)" filter="url(#glow)">
+    <animate attributeName="x" values="390;620;390" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="150;240;150" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="600" y="108" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="12">TRANSFORMING COMPLEX INFORMATION INTO INTELLIGENT BUSINESS VALUE</text>
+</svg>
