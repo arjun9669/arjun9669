@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<img width="100%" src="./assets/arjun-ai-banner.gif" alt="Arjun Kumar — AI Engineer animated banner"/>
+<img width="100%" src="./assets/arjun-ai-banner.svg" alt="Arjun Kumar — AI Engineer animated banner"/>
 
 <br/><br/>
 
@@ -32,7 +32,7 @@
 
 ## 👋 About Me
 
-<img align="right" width="340" src="./assets/ai-workflow.gif" alt="Animated production AI workflow"/>
+<img align="right" width="340" src="./assets/ai-workflow.svg" alt="Animated production AI workflow"/>
 
 I am an **AI Engineer based in Dubai, UAE**, specializing in **Generative AI, Retrieval-Augmented Generation, agentic systems, machine learning and AI backend development**.
 
@@ -456,10 +456,6 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 ---
 
-## ✨ Custom Visual Identity
-
-The animated header, AI workflow and footer were designed specifically for this profile and are stored in the repository under `assets/`. This removes dependence on the older capsule, typing and Giphy animations while keeping the profile fast, branded and consistent.
-
 # 📈 GitHub Analytics
 
 <div align="center">
@@ -509,6 +505,6 @@ I am interested in collaborating on **Generative AI applications, enterprise RAG
 
 ### “Transforming complex information into practical, intelligent business value.”
 
-<img width="100%" src="./assets/footer-pulse.gif" alt="Animated build, learn, ship and scale footer"/>
+<img width="100%" src="./assets/footer-pulse.svg" alt="Animated build, learn, ship and scale footer"/>
 
 </div>
