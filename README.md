@@ -1,15 +1,13 @@
 <!--
   GitHub Profile README for arjun9669
-  Modernized AI Engineer profile
+  Custom animated edition — all primary animations are stored inside this repository.
 -->
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:020617,45:0f172a,100:7c3aed&text=ARJUN%20KUMAR&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Generative%20AI%20%E2%80%A2%20RAG%20%E2%80%A2%20Agentic%20Systems&descAlignY=60&descSize=18&animation=fadeIn" alt="Arjun Kumar — AI Engineer"/>
+<img width="100%" src="./assets/arjun-ai-banner.gif" alt="Arjun Kumar — AI Engineer animated banner"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=900&color=38BDF8&center=true&vCenter=true&multiline=false&width=920&lines=Building+production-grade+AI+applications;Designing+enterprise+RAG+and+multi-agent+systems;Turning+complex+data+into+intelligent+products" alt="Typing introduction"/>
-
-<br/>
+<br/><br/>
 
 <a href="https://www.linkedin.com/in/arjun-analytics">
   <img src="https://img.shields.io/badge/LinkedIn-Arjun%20Kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -34,7 +32,7 @@
 
 ## 👋 About Me
 
-<img align="right" width="310" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZjNzgxZDI4NDFjNTdlOGZmMDE0ZGRlMWEwNDk3NWY1NDYwNWVhZiZjdD1z/3oKIPEqDGUULpEU0aQ/giphy.gif" alt="Data and AI animation"/>
+<img align="right" width="340" src="./assets/ai-workflow.gif" alt="Animated production AI workflow"/>
 
 I am an **AI Engineer based in Dubai, UAE**, specializing in **Generative AI, Retrieval-Augmented Generation, agentic systems, machine learning and AI backend development**.
 
@@ -458,6 +456,10 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 ---
 
+## ✨ Custom Visual Identity
+
+The animated header, AI workflow and footer were designed specifically for this profile and are stored in the repository under `assets/`. This removes dependence on the older capsule, typing and Giphy animations while keeping the profile fast, branded and consistent.
+
 # 📈 GitHub Analytics
 
 <div align="center">
@@ -507,6 +509,6 @@ I am interested in collaborating on **Generative AI applications, enterprise RAG
 
 ### “Transforming complex information into practical, intelligent business value.”
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=135&color=0:020617,45:0f172a,100:7c3aed&section=footer" alt="Footer"/>
+<img width="100%" src="./assets/footer-pulse.gif" alt="Animated build, learn, ship and scale footer"/>
 
 </div>
