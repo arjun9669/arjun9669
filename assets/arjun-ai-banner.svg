@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Arjun Kumar AI Engineer animated banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="48%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity=".42"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".42"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#38bdf8" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="tinyGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="48 48" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="210" cy="154" r="160" fill="url(#cyanGlow)">
+    <animate attributeName="cx" values="190;235;190" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="955" cy="170" r="190" fill="url(#violetGlow)">
+    <animate attributeName="cx" values="995;930;995" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <g stroke="#38bdf8" stroke-opacity=".20" stroke-width="1">
+    <path d="M70 74 L170 112 L112 214 L220 250 L300 197"/>
+    <path d="M930 66 L1020 110 L970 218 L1090 244"/>
+    <path d="M840 64 L895 133 L825 210 L910 265"/>
+  </g>
+
+  <g fill="#7dd3fc" filter="url(#tinyGlow)">
+    <circle cx="70" cy="74" r="3"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="170" cy="112" r="4"><animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="112" cy="214" r="3"><animate attributeName="r" values="2;4;2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="250" r="4"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="197" r="3"><animate attributeName="r" values="2;5;2" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="66" r="3"><animate attributeName="r" values="2;5;2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1020" cy="110" r="4"><animate attributeName="opacity" values=".4;1;.4" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="970" cy="218" r="3"><animate attributeName="r" values="2;5;2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1090" cy="244" r="4"><animate attributeName="opacity" values=".4;1;.4" dur="2.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g transform="translate(150 160)">
+    <circle r="68" fill="none" stroke="#38bdf8" stroke-width="3" stroke-opacity=".8">
+      <animate attributeName="r" values="62;72;62" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".35;1;.35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="46" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+    <polygon points="0,-34 29,-17 29,17 0,34 -29,17 -29,-17" fill="#111827" stroke="#7dd3fc" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="0" y="10" fill="#f8fafc" font-family="monospace" font-size="30" font-weight="700" text-anchor="middle">AI</text>
+  </g>
+
+  <text x="260" y="110" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" letter-spacing="1">ARJUN KUMAR</text>
+  <text x="263" y="151" fill="#38bdf8" font-family="monospace" font-size="28" font-weight="700" letter-spacing="2">AI ENGINEER</text>
+
+  <rect x="260" y="181" width="690" height="4" rx="2" fill="#334155"/>
+  <rect x="260" y="181" width="130" height="4" rx="2" fill="#8b5cf6" filter="url(#softGlow)">
+    <animate attributeName="x" values="260;820;260" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="130;70;130" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <g font-family="monospace" font-size="18" fill="#cbd5e1">
+    <text x="263" y="224">GENERATIVE AI • ENTERPRISE RAG • AGENTIC SYSTEMS
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.27;.33;.94;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="263" y="224" opacity="0">LANGCHAIN • FASTAPI • VECTOR DATABASES
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.30;.36;.60;.66" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="263" y="224" opacity="0">FROM DATA ANALYTICS TO PRODUCTION AI
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.63;.69;.93;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <text x="263" y="262" fill="#94a3b8" font-family="monospace" font-size="14">DUBAI, UNITED ARAB EMIRATES</text>
+
+  <g transform="translate(1000 262)">
+    <circle r="6" fill="#22c55e" filter="url(#tinyGlow)">
+      <animate attributeName="r" values="4;7;4" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="17" y="5" fill="#bbf7d0" font-family="monospace" font-size="13">OPEN TO AI COLLABORATION</text>
+  </g>
+
+  <text x="1135" y="33" fill="#7dd3fc" font-family="monospace" font-size="13" text-anchor="end">BUILD • SHIP • SCALE</text>
+</svg>
