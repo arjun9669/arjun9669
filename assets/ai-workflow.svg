@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-label="Animated production AI workflow">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/><stop offset="55%" stop-color="#0f172a"/><stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="720" height="360" rx="24" fill="url(#bg)"/>
+  <g stroke="#38bdf8" stroke-opacity=".08">
+    <path d="M-80 0 L280 360 M0 0 L360 360 M80 0 L440 360 M160 0 L520 360 M240 0 L600 360 M320 0 L680 360 M400 0 L760 360">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="70 0" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="360" y="34" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="18" font-weight="700">PRODUCTION AI WORKFLOW</text>
+
+  <circle cx="360" cy="180" r="118" fill="none" stroke="#475569" stroke-width="2"/>
+  <circle cx="360" cy="180" r="70" fill="none" stroke="#8b5cf6" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="360" cy="180" r="50" fill="#0f172a" stroke="#7dd3fc" stroke-width="3">
+    <animate attributeName="r" values="48;56;48" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="360" y="177" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="30" font-weight="700">AI</text>
+  <text x="360" y="203" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="12">ENGINE</text>
+
+  <g id="orbit">
+    <g transform="translate(360 62)"><circle r="25" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/><text y="5" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="15" font-weight="700">1</text><text y="-39" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">DATA</text></g>
+    <g transform="translate(472 144)"><circle r="25" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/><text y="5" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="15" font-weight="700">2</text><text x="48" y="5" text-anchor="middle" fill="#0ea5e9" font-family="monospace" font-size="13" font-weight="700">RETRIEVE</text></g>
+    <g transform="translate(429 276)"><circle r="25" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/><text y="5" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="15" font-weight="700">3</text><text x="18" y="48" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="13" font-weight="700">REASON</text></g>
+    <g transform="translate(291 276)"><circle r="25" fill="#0f172a" stroke="#ec4899" stroke-width="2"/><text y="5" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="15" font-weight="700">4</text><text x="-8" y="48" text-anchor="middle" fill="#f472b6" font-family="monospace" font-size="13" font-weight="700">ACT</text></g>
+    <g transform="translate(248 144)"><circle r="25" fill="#0f172a" stroke="#22c55e" stroke-width="2"/><text y="5" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="15" font-weight="700">5</text><text x="-49" y="5" text-anchor="middle" fill="#4ade80" font-family="monospace" font-size="13" font-weight="700">DEPLOY</text></g>
+    <animateTransform attributeName="transform" type="rotate" from="0 360 180" to="360 360 180" dur="24s" repeatCount="indefinite"/>
+  </g>
+
+  <circle r="7" fill="#f8fafc" filter="url(#glow)">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M360 62 C435 70 500 110 472 144 C520 205 490 255 429 276 C360 320 325 305 291 276 C235 252 205 200 248 144 C270 98 320 70 360 62"/>
+  </circle>
+
+  <text x="360" y="341" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="13">DATA → RETRIEVAL → REASONING → ACTION → DEPLOYMENT</text>
+</svg>
