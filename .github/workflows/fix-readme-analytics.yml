@@ -1,0 +1,61 @@
+name: Fix README Analytics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-readme-analytics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair-analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Replace broken analytics cards
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+
+          replacement = '''# 📈 GitHub Analytics
+
+          <div align="center">
+
+          <img width="49%" src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&cache_seconds=86400" alt="Arjun Kumar GitHub statistics"/>
+
+          <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" alt="Most used GitHub languages"/>
+
+          <br/><br/>
+
+          <img width="60%" src="https://streak-stats.demolab.com?user=arjun9669&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub contribution streak"/>
+
+          <br/><br/>
+
+          <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph"/>
+
+          </div>'''
+
+          pattern = r'# 📈 GitHub Analytics\n\n<div align="center">.*?</div>(?=\n\n---\n\n# 🌐 Languages)'
+          updated, count = re.subn(pattern, replacement, text, count=1, flags=re.S)
+          if count != 1:
+              raise SystemExit('GitHub Analytics section was not found exactly once.')
+
+          path.write_text(updated, encoding='utf-8')
+
+      - name: Commit README repair
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Fix broken GitHub analytics cards"
+          git push
