@@ -460,17 +460,17 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 <div align="center">
 
-<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=arjun9669&theme=tokyonight" alt="GitHub profile details"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=arjun9669&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&cache_seconds=86400" alt="Arjun Kumar GitHub statistics"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjun9669&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" alt="Most used GitHub languages"/>
 
 <br/><br/>
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arjun9669&theme=tokyonight" alt="Repositories per language"/>
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arjun9669&theme=tokyonight" alt="Most committed languages"/>
+<img width="60%" src="https://streak-stats.demolab.com?user=arjun9669&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub contribution streak"/>
 
 <br/><br/>
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arjun9669&theme=tokyonight" alt="GitHub statistics"/>
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=arjun9669&theme=tokyonight&utcOffset=4" alt="Productive commit time"/>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph"/>
 
 </div>
 
