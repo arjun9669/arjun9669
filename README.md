@@ -34,17 +34,19 @@
 
 <img align="right" width="340" src="./assets/ai-workflow.svg" alt="Animated production AI workflow"/>
 
-I am an **AI Engineer based in Dubai, UAE**, specializing in **Generative AI, Retrieval-Augmented Generation, agentic systems, machine learning and AI backend development**.
+I am an **AI Engineer based in Dubai, UAE**, currently working at **Clever Feed IT Services** on practical enterprise AI initiatives across **document intelligence, Retrieval-Augmented Generation (RAG), multilingual AI workflows, automation, AI adoption, and proof-of-concept delivery**.
 
-My career progressed from large-scale data analytics and automation to machine learning engineering and production AI. I focus on building practical systems that improve knowledge retrieval, automate complex workflows and convert business information into intelligent products.
+My experience spans the full AI journey — from large-scale data analytics and machine learning to production-grade LLM applications, private document-grounded systems, vector search, local models, and multi-agent architectures.
 
+- Build and evaluate **enterprise AI and document-intelligence solutions**
+- Support **AI adoption and employee enablement** for real-world business teams
+- Develop **OCR + RAG + vector-search** workflows for private knowledge systems
+- Work with **multilingual AI** and multilingual embeddings, including **BGE-M3**
+- Designed **Router, Planner, Executor and Synthesizer** agent workflows
 - Built an enterprise RAG solution supporting **500+ queries per day**
 - Reduced technical knowledge-retrieval time by approximately **50%**
 - Improved document-query accuracy by approximately **60%**
-- Designed **Router, Planner, Executor and Synthesizer** agent workflows
-- Deployed local LLM solutions using **LLaMA and Ollama**
 - Worked with operational datasets containing more than **2 million records**
-- Built solutions across experimentation, API development and deployment
 
 <br clear="right"/>
 
@@ -103,11 +105,13 @@ My career progressed from large-scale data analytics and automation to machine l
 
 <img src="https://img.shields.io/badge/Generative%20AI-7C3AED?style=for-the-badge&logo=openai&logoColor=white" alt="Generative AI"/>
 <img src="https://img.shields.io/badge/Enterprise%20RAG-0369A1?style=for-the-badge" alt="Enterprise RAG"/>
-<img src="https://img.shields.io/badge/Agentic%20AI-0F766E?style=for-the-badge" alt="Agentic AI"/>
-<img src="https://img.shields.io/badge/Multi--Agent%20Systems-C2410C?style=for-the-badge" alt="Multi-Agent Systems"/>
-<img src="https://img.shields.io/badge/LLM%20Applications-4338CA?style=for-the-badge" alt="LLM Applications"/>
-<img src="https://img.shields.io/badge/Semantic%20Search-0284C7?style=for-the-badge" alt="Semantic Search"/>
-<img src="https://img.shields.io/badge/Prompt%20Engineering-BE123C?style=for-the-badge" alt="Prompt Engineering"/>
+<img src="https://img.shields.io/badge/Document%20Intelligence-0F766E?style=for-the-badge" alt="Document Intelligence"/>
+<img src="https://img.shields.io/badge/Multilingual%20AI-1D4ED8?style=for-the-badge" alt="Multilingual AI"/>
+<img src="https://img.shields.io/badge/Agentic%20AI-C2410C?style=for-the-badge" alt="Agentic AI"/>
+<img src="https://img.shields.io/badge/Multi--Agent%20Systems-4338CA?style=for-the-badge" alt="Multi-Agent Systems"/>
+<img src="https://img.shields.io/badge/OCR%20%26%20Semantic%20Search-0284C7?style=for-the-badge" alt="OCR and Semantic Search"/>
+<img src="https://img.shields.io/badge/AI%20Automation-BE123C?style=for-the-badge" alt="AI Automation"/>
+<img src="https://img.shields.io/badge/AI%20Enablement-047857?style=for-the-badge" alt="AI Enablement"/>
 <img src="https://img.shields.io/badge/LoRA%20%26%20PEFT-6D28D9?style=for-the-badge" alt="LoRA and PEFT"/>
 
 </div>
@@ -132,15 +136,18 @@ My career progressed from large-scale data analytics and automation to machine l
 
 </div>
 
-### Vector Search & Knowledge Systems
+### Document Intelligence, RAG & Multilingual AI
 
 <div align="center">
 
+<img src="https://img.shields.io/badge/OCR-0F766E?style=flat-square" alt="OCR"/>
+<img src="https://img.shields.io/badge/BGE--M3-1D4ED8?style=flat-square" alt="BGE-M3"/>
+<img src="https://img.shields.io/badge/Multilingual%20Embeddings-7C3AED?style=flat-square" alt="Multilingual Embeddings"/>
+<img src="https://img.shields.io/badge/Hybrid%20Retrieval-0369A1?style=flat-square" alt="Hybrid Retrieval"/>
+<img src="https://img.shields.io/badge/Vector%20Search-0284C7?style=flat-square" alt="Vector Search"/>
 <img src="https://img.shields.io/badge/ChromaDB-E11D48?style=flat-square" alt="ChromaDB"/>
 <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white" alt="FAISS"/>
 <img src="https://img.shields.io/badge/Pinecone-111827?style=flat-square&logo=pinecone&logoColor=white" alt="Pinecone"/>
-<img src="https://img.shields.io/badge/Embeddings-7C3AED?style=flat-square" alt="Embeddings"/>
-<img src="https://img.shields.io/badge/Hybrid%20Retrieval-0369A1?style=flat-square" alt="Hybrid Retrieval"/>
 <img src="https://img.shields.io/badge/Reranking-0F766E?style=flat-square" alt="Reranking"/>
 
 </div>
@@ -183,7 +190,7 @@ My career progressed from large-scale data analytics and automation to machine l
 
 </details>
 
-<details open>
+<details>
 <summary><strong>🤖 AI Engineer — MTA Building Materials Trading, Dubai</strong></summary>
 
 <br/>
@@ -216,15 +223,14 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 **July 2024 – December 2024**
 
-- Developed classification and regression models using Python
-- Built and optimized more than **10 machine-learning models**
-- Consistently achieved model accuracy above **85%**
-- Engineered data pipelines processing over **1 million records**
-- Prepared structured and unstructured data for ML and Generative AI workflows
-- Converted business requirements into data-driven technical solutions
-- Reduced manual reporting effort by approximately **30%**
+- Developed and productionized **AI/ML classification and regression solutions** using Python
+- Built and optimized more than **10 machine-learning models**, consistently achieving accuracy above **85%**
+- Engineered scalable **AI data pipelines** processing over **1 million records**
+- Prepared structured and unstructured datasets for **machine-learning and Generative AI workflows**
+- Translated business requirements into practical **AI/ML engineering solutions**
+- Reduced manual reporting effort by approximately **30%** through data and model-driven automation
 - Built predictive models with more than **80% forecasting accuracy**
-- Supported business planning and resource-allocation decisions
+- Supported business planning and resource-allocation decisions with AI-assisted analytical outputs
 
 **Technologies:**  
 `Python` `Pandas` `NumPy` `Scikit-learn` `TensorFlow` `SQL` `Feature Engineering` `Predictive Modeling`
@@ -238,13 +244,13 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 **January 2024 – June 2024**
 
-- Created ML-ready pipelines for cleaning, merging and validating data
+- Built **AI/ML-ready data pipelines** for cleaning, merging, validation and model preparation
 - Processed datasets containing more than **500,000 records**
-- Maintained strong data integrity for downstream ML workflows
-- Conducted exploratory analysis across more than **15 datasets**
-- Performed feature engineering and targeted feature selection
+- Maintained strong data integrity for downstream **AI and machine-learning workflows**
+- Conducted exploratory analysis across more than **15 datasets** to identify model-ready patterns and features
+- Performed feature engineering and targeted feature selection for supervised-learning workflows
 - Improved average model performance by approximately **12%**
-- Supported classification, regression and data-preprocessing tasks
+- Supported classification, regression, preprocessing and model-evaluation tasks across AI/ML projects
 
 **Technologies:**  
 `Python` `Pandas` `NumPy` `Scikit-learn` `EDA` `Feature Engineering` `Data Cleaning`
@@ -345,25 +351,24 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 </td>
 
 <td width="50%" valign="top">
-<h3>🌦️ Weather Prediction & AI Chatbot</h3>
+<h3>🌐 Multilingual Document Intelligence & RAG</h3>
 
-<p>Machine-learning weather-prediction application combined with retrieval-augmented question answering.</p>
+<p>Private document-grounded AI workflows designed for multilingual knowledge retrieval, document understanding and secure enterprise use.</p>
 
 <strong>Key capabilities</strong>
 <ul>
-<li>Weather regression model</li>
-<li>Interactive Streamlit application</li>
-<li>FAISS vector search</li>
-<li>SentenceTransformer embeddings</li>
-<li>Context-based chatbot responses</li>
+<li>OCR-based document extraction</li>
+<li>Retrieval-Augmented Generation (RAG)</li>
+<li>Multilingual language-model workflows</li>
+<li>BGE-M3 multilingual embeddings</li>
+<li>Vector search and document grounding</li>
+<li>Secure deployment patterns for private knowledge systems</li>
 </ul>
 
 <p><strong>Stack:</strong><br/>
-<code>Python</code> <code>Scikit-learn</code> <code>Streamlit</code> <code>FAISS</code> <code>SentenceTransformers</code></p>
+<code>Python</code> <code>OCR</code> <code>RAG</code> <code>BGE-M3</code> <code>Vector Search</code> <code>FastAPI</code></p>
 
-<a href="https://github.com/arjun9669/Weather-Prediction-And-Chat-BOT">
-<img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Weather Prediction and Chatbot repository"/>
-</a>
+<img src="https://img.shields.io/badge/Professional%20Project-Source%20Private-7C3AED?style=for-the-badge" alt="Professional project — private source"/>
 </td>
 </tr>
 </table>
@@ -470,24 +475,20 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 ---
 
-# 📈 GitHub Analytics
+# 📊 GitHub Portfolio Snapshot
 
 <div align="center">
 
-<img width="49%" src="./assets/github-overview-card.svg" alt="Arjun Kumar GitHub overview"/>
-
-<img width="49%" src="./assets/github-language-card.svg" alt="Arjun Kumar technology focus"/>
-
-<br/><br/>
-
-<img width="60%" src="https://streak-stats.demolab.com?user=arjun9669&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub contribution streak"/>
+<img width="49%" src="./assets/github-overview-card.svg" alt="Arjun Kumar GitHub portfolio overview"/>
+<img width="49%" src="./assets/github-language-card.svg" alt="Arjun Kumar AI technology focus"/>
 
 <br/><br/>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=arjun9669&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph"/>
+<a href="https://github.com/arjun9669?tab=repositories">
+<img src="https://img.shields.io/badge/Explore%20the%20Full%20Portfolio-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Arjun Kumar repositories"/>
+</a>
 
 </div>
-
 ---
 
 # 🌐 Languages

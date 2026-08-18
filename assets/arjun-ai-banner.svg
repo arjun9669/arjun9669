@@ -78,13 +78,13 @@
   </rect>
 
   <g font-family="monospace" font-size="18" fill="#cbd5e1">
-    <text x="263" y="224">GENERATIVE AI • ENTERPRISE RAG • AGENTIC SYSTEMS
+    <text x="263" y="224">GENERATIVE AI • DOCUMENT INTELLIGENCE • ENTERPRISE RAG
       <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.27;.33;.94;1" dur="12s" repeatCount="indefinite"/>
     </text>
-    <text x="263" y="224" opacity="0">LANGCHAIN • FASTAPI • VECTOR DATABASES
+    <text x="263" y="224" opacity="0">MULTILINGUAL AI • AUTOMATION • AGENTIC SYSTEMS
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.30;.36;.60;.66" dur="12s" repeatCount="indefinite"/>
     </text>
-    <text x="263" y="224" opacity="0">FROM DATA ANALYTICS TO PRODUCTION AI
+    <text x="263" y="224" opacity="0">BUILDING PRACTICAL ENTERPRISE AI PRODUCTS
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.63;.69;.93;1" dur="12s" repeatCount="indefinite"/>
     </text>
   </g>
