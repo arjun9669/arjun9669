@@ -210,7 +210,7 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 </details>
 
 <details>
-<summary><strong>🧠 Machine Learning Associate — LRB Infotech, Abu Dhabi · Remote</strong></summary>
+<summary><strong>🧠 AI Engineer Associate — LRB Infotech, Abu Dhabi · Remote</strong></summary>
 
 <br/>
 
@@ -232,7 +232,7 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 </details>
 
 <details>
-<summary><strong>📈 Machine Learning Intern — LRB Infotech, Abu Dhabi · Remote</strong></summary>
+<summary><strong>📈 AI Engineer Intern — LRB Infotech, Abu Dhabi · Remote</strong></summary>
 
 <br/>
 
