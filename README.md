@@ -170,6 +170,20 @@ My career progressed from large-scale data analytics and automation to machine l
 # 💼 Professional Experience
 
 <details open>
+<summary><strong>🤖 AI Engineer — Clever Feed IT Services, Dubai, UAE</strong></summary>
+
+<br/>
+
+**July 2026 – Present**
+
+*Building and evaluating AI-enabled product and client solutions across document intelligence, automation, multilingual AI workflows, and proof-of-concept delivery.*
+
+- Support AI adoption initiatives for **Mubarak Marine** through employee training on practical AI tools, departmental AI software evaluation, and AI-assisted **2D-to-3D presentation workflows**.
+- Contribute to the design of **private document-grounded systems** using OCR, Retrieval-Augmented Generation (RAG), multilingual language models, vector search, and secure cloud deployment patterns.
+
+</details>
+
+<details open>
 <summary><strong>🤖 AI Engineer — MTA Building Materials Trading, Dubai</strong></summary>
 
 <br/>
