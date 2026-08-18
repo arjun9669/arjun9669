@@ -1,0 +1,50 @@
+name: Insert Current Experience
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/insert-current-experience.yml
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Insert Clever Feed role
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          s = p.read_text()
+          if 'Clever Feed IT Services' in s:
+              raise SystemExit(0)
+          anchor = '# 💼 Professional Experience\n\n'
+          block = '''<details open>
+          <summary><strong>🤖 AI Engineer — Clever Feed IT Services, Dubai, UAE</strong></summary>
+
+          <br/>
+
+          **July 2026 – Present**
+
+          *Building and evaluating AI-enabled product and client solutions across document intelligence, automation, multilingual AI workflows, and proof-of-concept delivery.*
+
+          - Support AI adoption initiatives for **Mubarak Marine** through employee training on practical AI tools, departmental AI software evaluation, and AI-assisted **2D-to-3D presentation workflows**.
+          - Contribute to the design of **private document-grounded systems** using OCR, Retrieval-Augmented Generation (RAG), multilingual language models, vector search, and secure cloud deployment patterns.
+
+          </details>
+
+          '''
+          if anchor not in s:
+              raise SystemExit('Professional Experience heading not found')
+          s = s.replace(anchor, anchor + block, 1)
+          p.write_text(s)
+          PY
+      - name: Commit update
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add README.md
+          git diff --cached --quiet || git commit -m "Add Clever Feed AI Engineer experience"
+          git push
