@@ -18,6 +18,9 @@
 <a href="https://my-data-story.lovable.app/">
   <img src="https://img.shields.io/badge/Portfolio-View%20Portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
 </a>
+<a href="https://doc-genius-local.lovable.app/">
+  <img src="https://img.shields.io/badge/Live%20AI%20Demo-Doc%20Genius%20Local-0D9488?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Try Doc Genius Local live demo"/>
+</a>
 <a href="https://github.com/arjun9669?tab=repositories">
   <img src="https://img.shields.io/badge/Repositories-Explore-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositories"/>
 </a>
@@ -53,6 +56,7 @@ My public projects demonstrate Python/ML foundations, document-grounded RAG work
 
 | Project | Public evidence |
 |---|---|
+| **Doc Genius Local** (hosted demo) | [Launch live document Q&A](https://doc-genius-local.lovable.app/) · [Separate reference implementation](./projects/groundeddesk-ai/README.md) |
 | **Glass Expert AI** (team project) | [Initial RAG pipeline contribution](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a) · [React UI and API contributions](https://github.com/MTAAI/Glass_Engineer/commit/75f7be7c6dc95690b8f0929a5381d29a4aa66ee9) · [Arjun branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) |
 | **AI Market Research Desk** (owned) | [Code and setup](https://github.com/arjun9669/ai-research-desk) · [GitHub Actions history](https://github.com/arjun9669/ai-research-desk/actions) |
 | **Agentic RAG** (collaborative prototype) | [Router, Planner, Executor and Synthesizer source](https://github.com/zainmuhammadaimta/Agentic_rag/tree/main/src/agents) |
@@ -238,13 +242,18 @@ Contributed to **Glass Expert AI**, a bilingual domain-focused RAG application f
 
 # 🚀 Featured AI Projects
 
-### 📚 [GroundedDesk AI — Document Intelligence Demo](./projects/groundeddesk-ai/README.md)
+### 📚 [Doc Genius Local — Live Document Intelligence Demo](https://doc-genius-local.lovable.app/)
 
-**Independently owned, inspectable retrieval application.** Responsive in-browser document Q&A with TXT/Markdown/PDF import, overlapping passage chunking, lexical/BM25-style relevance ranking, source-linked evidence, refusal handling, example corpus, and automated Node.js retrieval tests. The demo works without API keys and does not send document text to a backend.
+**[Launch the hosted demo →](https://doc-genius-local.lovable.app/)**
 
-- [Read the source and run locally](./projects/groundeddesk-ai/README.md) · [Retrieval engine](./projects/groundeddesk-ai/retrieval.mjs) · [Automated tests](./projects/groundeddesk-ai/tests/retrieval.test.mjs)
-- **Tech:** JavaScript ES modules, browser document extraction, citation provenance, local search, CI.
-- **Transparent scope:** Extractive search baseline, not a generative LLM, production RAG stack or cloud deployment. Public hosting can be configured separately.
+An independently owned browser-based document-question-answering demonstration created in Lovable. It is designed to ingest sample documents or visitor-supplied TXT, Markdown, and PDF files, rank relevant passages using lexical BM25-style retrieval, and present extractive answers with source citations. The default experience does **not** need a hosted generative LLM.
+
+- [Live app](https://doc-genius-local.lovable.app/) · [Lovable project](https://lovable.dev/projects/fd559d48-e6da-4a1e-86c3-13dc30ca15ef)
+- **Scope:** In-browser extractive retrieval baseline, not a generative LLM or independently measured production RAG platform. Public hosting is separate from app-internal document storage; don't upload confidential files unless you've personally verified the privacy behavior.
+
+#### Related reproducible reference implementation
+
+[GroundedDesk AI — standalone source, tests, and local setup](./projects/groundeddesk-ai/README.md) shows a **separate** vanilla JavaScript implementation of the same extractive citation concept. It is **not the exact source code deployed by Lovable**; the live React/TypeScript application is managed in the linked Lovable project. [Inspect the reference retrieval engine](./projects/groundeddesk-ai/retrieval.mjs) and [its tests](./projects/groundeddesk-ai/tests/retrieval.test.mjs).
 
 ### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
