@@ -60,7 +60,17 @@ function bestSentence(content, terms) {
     const score = terms.reduce((n, term) => n + Number(words.has(term)), 0);
     if (score > bestScore) { best = sentence; bestScore = score; }
   }
-  return best.length > 420 ? best.slice(0, 417) + "…" : best;
+  // A citation must be a verbatim substring of its source. Don't append an
+  // ellipsis (which was not in the document). For long unpunctuated passages,
+  // select a window around a matched search term instead of blindly cutting
+  // off the first 420 characters.
+  if (best.length <= 420) return best;
+  const lower = best.toLowerCase();
+  const firstMatch = terms.map(term => lower.indexOf(term.toLowerCase()))
+    .filter(position => position >= 0)
+    .sort((a, b) => a - b)[0] ?? 0;
+  const start = Math.max(0, Math.min(firstMatch - 80, best.length - 420));
+  return best.slice(start, start + 420);
 }
 
 export function answerQuestion(question, index, maxSources = 3) {
