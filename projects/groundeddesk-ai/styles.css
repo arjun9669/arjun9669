@@ -90,6 +90,12 @@ h3{font-size:18px;letter-spacing:-.45px;margin:5px 0 0}
 .result-heading span{color:#168b7b;font-size:11px;font-weight:800}
 .copy-button{background:#f4f7f8;border:1px solid #e5ecee;color:#546677;padding:8px 10px;border-radius:6px;font-size:11px}
 .answer-box{white-space:pre-wrap;border-left:3px solid #20b39c;background:#f5fbf9;border-radius:0 9px 9px 0;padding:16px;color:#284050;font-size:13px;line-height:1.8}
+.cited-answer-paragraph{margin:0 0 12px;white-space:normal;line-height:1.9}
+.cited-answer-paragraph:last-child{margin-bottom:0}
+.inline-citation{border:1px solid #96cfc4;color:#05695e;background:#e8f8f4;border-radius:5px;padding:2px 7px;margin-right:4px;font-size:12px;font-weight:800}
+.inline-citation:hover,.inline-citation:focus-visible{background:#c5eee5;color:#063d3a}
+.source-card:focus{outline:3px solid #2b9f91;outline-offset:3px}
+
 .evidence-heading{font-size:11px;letter-spacing:1px;color:#6d8092;font-weight:800;margin:24px 0 10px}
 .source-card{border:1px solid #e5ecf0;background:#fff;border-radius:9px;padding:14px;margin-top:8px}
 .source-top{display:flex;gap:8px;align-items:center}
