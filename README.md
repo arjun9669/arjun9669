@@ -36,66 +36,28 @@
 
 I am an **AI Engineer based in Dubai, UAE**, currently working at **Clever Feed IT Services** on practical enterprise AI initiatives across **document intelligence, Retrieval-Augmented Generation (RAG), multilingual AI workflows, automation, AI adoption, and proof-of-concept delivery**.
 
-My experience spans the full AI journey — from large-scale data analytics and machine learning to production-grade LLM applications, private document-grounded systems, vector search, local models, and multi-agent architectures.
+My public projects demonstrate Python/ML foundations, document-grounded RAG workflows, agent orchestration prototypes, API development, and scheduled AI automation. I focus on measurable, reproducible engineering rather than unverified production claims.
 
 - Build and evaluate **enterprise AI and document-intelligence solutions**
 - Support **AI adoption and employee enablement** for real-world business teams
 - Develop **OCR + RAG + vector-search** workflows for private knowledge systems
 - Work with **multilingual AI** and multilingual embeddings, including **BGE-M3**
 - Designed **Router, Planner, Executor and Synthesizer** agent workflows
-- Built an enterprise RAG solution supporting **500+ queries per day**
-- Reduced technical knowledge-retrieval time by approximately **50%**
-- Improved document-query accuracy by approximately **60%**
 - Worked with operational datasets containing more than **2 million records**
 
 <br clear="right"/>
 
 ---
 
-## ⚡ Professional Impact
+## 🔎 Verifiable Engineering Evidence
 
-<div align="center">
+| Project | Public evidence |
+|---|---|
+| **Glass Expert AI** (team project) | [Initial RAG pipeline contribution](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a) · [React UI and API contributions](https://github.com/MTAAI/Glass_Engineer/commit/75f7be7c6dc95690b8f0929a5381d29a4aa66ee9) · [Arjun branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) |
+| **AI Market Research Desk** (owned) | [Code and setup](https://github.com/arjun9669/ai-research-desk) · [GitHub Actions history](https://github.com/arjun9669/ai-research-desk/actions) |
+| **Agentic RAG** (collaborative prototype) | [Router, Planner, Executor and Synthesizer source](https://github.com/zainmuhammadaimta/Agentic_rag/tree/main/src/agents) |
 
-<table>
-<tr>
-<td align="center" width="25%">
-  <h2>500+</h2>
-  <sub>Enterprise AI queries daily</sub>
-</td>
-<td align="center" width="25%">
-  <h2>50%</h2>
-  <sub>Faster knowledge retrieval</sub>
-</td>
-<td align="center" width="25%">
-  <h2>60%</h2>
-  <sub>Improved query accuracy</sub>
-</td>
-<td align="center" width="25%">
-  <h2>2M+</h2>
-  <sub>Records analyzed</sub>
-</td>
-</tr>
-<tr>
-<td align="center">
-  <h2>10+</h2>
-  <sub>ML models developed</sub>
-</td>
-<td align="center">
-  <h2>85%+</h2>
-  <sub>Model accuracy achieved</sub>
-</td>
-<td align="center">
-  <h2>40%+</h2>
-  <sub>Manual processing reduced</sub>
-</td>
-<td align="center">
-  <h2>15+ hrs</h2>
-  <sub>Operational effort saved weekly</sub>
-</td>
-</tr>
-</table>
-
-</div>
+**Evidence note:** Public repository code and recorded benchmarks demonstrate the existence of features and experiments; they do not by themselves validate deployment scale, business savings, uptime or employer performance metrics. For team repositories, contributions are credited at commit/branch level.
 
 ---
 
@@ -197,22 +159,16 @@ My experience spans the full AI journey — from large-scale data analytics and 
 
 **November 2025 – March 2026**
 
-Developed enterprise AI solutions for technical knowledge retrieval, intelligent query processing and business-workflow automation.
+Contributed to **Glass Expert AI**, a bilingual domain-focused RAG application for technical glass science and engineering questions.
 
-- Built the domain-specific **Glass Expert AI** production RAG system
-- Reduced technical knowledge-retrieval time by approximately **50%**
-- Designed a multi-agent system using Router, Planner, Executor and Synthesizer agents
-- Supported more than **500 daily enterprise interactions**
-- Integrated **ChromaDB** with FastAPI-based REST services
-- Delivered sub-two-second response latency for AI-powered queries
-- Applied **LoRA-based PEFT** for domain-specific model optimization
-- Improved model relevance scores by approximately **35%**
-- Implemented MiniLM embeddings and hybrid retrieval
-- Deployed local LLaMA models through Ollama for private inference
-- Received leadership recognition for technical excellence
+- Implemented and iterated on document ingestion, chunking, embeddings, retrieval and FastAPI integration.
+- Added or improved React-based interface and technical query endpoints.
+- Worked on bilingual retrieval, hybrid search with BM25 and reciprocal rank fusion, reranking, caching, API administration and evaluation.
+- Wrote retrieval and API tests; benchmark results and methodology are documented in the linked team repository.
+- [Review attributable work in the Arjun branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) and [earlier implementation commit](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a).
 
-**Technologies:**  
-`Python` `FastAPI` `LangChain` `ChromaDB` `Hugging Face` `LLaMA` `Ollama` `LoRA` `PEFT`
+**Technologies represented by project code:**  
+`Python` `FastAPI` `PostgreSQL/pgvector` `Redis` `React` `RAG` `Docker` `BGE-M3`
 
 </details>
 
@@ -282,96 +238,29 @@ Developed enterprise AI solutions for technical knowledge retrieval, intelligent
 
 # 🚀 Featured AI Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3>📈 AI Market Research Desk</h3>
+### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
-<p>Automated AI-powered market-research system that monitors selected DFM stocks, detects technical signals and sends plain-English Telegram alerts.</p>
+**Collaborative project; see attributable commits.** Implements a React/FastAPI application for document-based glass science questions, using PostgreSQL/pgvector retrieval, reranking, Redis, JWT authentication, English/Farsi support, and recorded RAG evaluations. The repository also contains fine-tuning and LLM-serving code, developed collaboratively.
 
-<strong>Key capabilities</strong>
-<ul>
-<li>RSI, MACD and moving-average analysis</li>
-<li>Claude-generated market summaries</li>
-<li>Telegram alert delivery</li>
-<li>Signal-change tracking</li>
-<li>Scheduled GitHub Actions workflow</li>
-</ul>
+- [My development branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) · [RAG ingestion and API implementation](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a) · [Frontend and engineering API contribution](https://github.com/MTAAI/Glass_Engineer/commit/75f7be7c6dc95690b8f0929a5381d29a4aa66ee9)
+- **Stack:** Python, FastAPI, PostgreSQL/pgvector, Redis, retrieval/reranking, React, Docker.
+- **Evaluation transparency:** [Recorded benchmark results](https://github.com/MTAAI/Glass_Engineer/tree/main/data/evaluation/results) include version-specific quality and latency; these are experiments, not guaranteed real-world service levels.
 
-<p><strong>Stack:</strong><br/>
-<code>Python</code> <code>Pandas</code> <code>Claude API</code> <code>yfinance</code> <code>GitHub Actions</code></p>
+### 📈 [AI Market Research Desk — Scheduled AI Summaries](https://github.com/arjun9669/ai-research-desk)
 
-<a href="https://github.com/arjun9669/ai-research-desk">
-<img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="AI Market Research Desk repository"/>
-</a>
-</td>
+An independently maintained automation pipeline that gathers market data, derives RSI/MACD/moving-average signals, summarizes their context with Claude when configured, and sends Telegram notifications. Falls back to non-LLM templated summaries when an API key is not configured. It is informational software, **not** a trading system.
 
-<td width="50%" valign="top">
-<h3>🔍 Glass Expert AI</h3>
+- [Workflow and run history](https://github.com/arjun9669/ai-research-desk/actions)
+- **Stack:** Python, Pandas, yfinance, Claude API (optional), Telegram, GitHub Actions.
 
-<p>Production-grade enterprise RAG system for domain-specific technical knowledge retrieval and intelligent document querying.</p>
+### 🤝 [Agentic RAG System — Multi-Agent Prototype](https://github.com/zainmuhammadaimta/Agentic_rag)
 
-<strong>Key capabilities</strong>
-<ul>
-<li>Hybrid semantic and keyword retrieval</li>
-<li>ChromaDB vector storage</li>
-<li>MiniLM embeddings</li>
-<li>Local LLaMA inference</li>
-<li>FastAPI REST integration</li>
-<li>500+ enterprise queries daily</li>
-</ul>
+Collaborative prototype of Router, Planner, Executor and Synthesizer stages for retrieval-grounded answers. The repository has incomplete API components and falls back to vector search instead of fully implementing the advertised SQL routing; it should not yet be described as production-ready.
 
-<p><strong>Stack:</strong><br/>
-<code>Python</code> <code>FastAPI</code> <code>LangChain</code> <code>ChromaDB</code> <code>LLaMA</code> <code>Ollama</code></p>
+- [Agent source modules](https://github.com/zainmuhammadaimta/Agentic_rag/tree/main/src/agents)
+- **Stack:** Python, Ollama, multi-step orchestration, vector retrieval.
 
-<img src="https://img.shields.io/badge/Professional%20Project-Source%20Private-7C3AED?style=for-the-badge" alt="Professional project — private source"/>
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-<h3>🤝 Agentic RAG System</h3>
-
-<p>Multi-agent AI architecture for processing complex queries through coordinated planning, routing, execution and response synthesis.</p>
-
-<strong>Key capabilities</strong>
-<ul>
-<li>Router Agent</li>
-<li>Planner Agent</li>
-<li>Executor Agent</li>
-<li>Synthesizer Agent</li>
-<li>Context-aware task execution</li>
-<li>Multi-step reasoning workflows</li>
-</ul>
-
-<p><strong>Stack:</strong><br/>
-<code>Python</code> <code>CrewAI</code> <code>LangChain</code> <code>OpenAI API</code> <code>Pinecone</code></p>
-
-<img src="https://img.shields.io/badge/Professional%20Project-Source%20Private-7C3AED?style=for-the-badge" alt="Professional project — private source"/>
-</td>
-
-<td width="50%" valign="top">
-<h3>🌐 Multilingual Document Intelligence & RAG</h3>
-
-<p>Private document-grounded AI workflows designed for multilingual knowledge retrieval, document understanding and secure enterprise use.</p>
-
-<strong>Key capabilities</strong>
-<ul>
-<li>OCR-based document extraction</li>
-<li>Retrieval-Augmented Generation (RAG)</li>
-<li>Multilingual language-model workflows</li>
-<li>BGE-M3 multilingual embeddings</li>
-<li>Vector search and document grounding</li>
-<li>Secure deployment patterns for private knowledge systems</li>
-</ul>
-
-<p><strong>Stack:</strong><br/>
-<code>Python</code> <code>OCR</code> <code>RAG</code> <code>BGE-M3</code> <code>Vector Search</code> <code>FastAPI</code></p>
-
-<img src="https://img.shields.io/badge/Professional%20Project-Source%20Private-7C3AED?style=for-the-badge" alt="Professional project — private source"/>
-</td>
-</tr>
-</table>
+> Professional experience and project details are listed below. Public evidence is linked wherever possible; please distinguish employer-reported outcomes from independent project benchmarks.
 
 ---
 
