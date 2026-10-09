@@ -149,6 +149,7 @@ footer a{color:#7bdbca;font-weight:700}
 .generation-controls button:disabled{opacity:.56;cursor:not-allowed}
 .generation-disclaimer{font-size:11px;font-weight:800;letter-spacing:.25px;color:#966018;padding-bottom:8px;border-bottom:1px solid #e6dac0}
 .generated-answer{font-size:14px;line-height:1.9;white-space:pre-wrap;color:#172d32}
+.generation-evaluation{grid-column:1/-1;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;background:#f0f9f6;color:#204f4a;border:1px solid #bfdbd3;border-radius:8px;padding:14px;font:12px/1.75 ui-monospace,SFMono-Regular,monospace}
 .chat-history{margin:0 18px 12px;border:1px solid #dce9e6;border-radius:8px;background:#f7fbfa}
 .chat-history summary{cursor:pointer;padding:10px 12px;font-size:12px;font-weight:700;color:#305c58}
 .chat-history summary span{color:#47897c;margin-left:6px}
