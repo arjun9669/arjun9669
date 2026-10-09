@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light"/>
   <meta name="theme-color" content="#0b1726"/>
   <meta name="description" content="GroundedDesk AI — private browser-side document intelligence and citation-aware evidence search."/>
-  <title>GroundedDesk AI | Cited Document Intelligence</title>
+  <title>GroundedDesk AI 3.0 | Local Document Intelligence</title>
   <link rel="stylesheet" href="./styles.css"/>
   <script defer type="module" src="./app.mjs"></script>
 </head>
@@ -66,6 +66,23 @@
           </div>
           <pre class="evaluation-output" id="evaluation-output" hidden aria-live="polite"></pre>
         </section>
+        <section class="generation-settings" aria-labelledby="local-llm-heading">
+          <div>
+            <p class="micro-label">EXPERIMENTAL · GENERATION ON YOUR DEVICE</p>
+            <h3 id="local-llm-heading">GroundedDesk AI 3.0 · local generative answers</h3>
+            <p>Optional Qwen2.5 0.5B WebGPU model turns retrieved evidence into short cited sentences. No API keys, cloud inference or subscriptions. The initial model download is large (approximately 800 MB), and some mobile browsers cannot run it. Existing extractive mode stays available.</p>
+            <p id="generation-status" role="status" aria-live="polite">Extractive answers active. Local generator is off.</p>
+          </div>
+          <div class="generation-controls">
+            <label for="answer-mode">Answer mode</label>
+            <select id="answer-mode">
+              <option value="extractive">Extractive · exact document quotes</option>
+              <option value="generative" disabled>Local AI · cited draft (experimental)</option>
+            </select>
+            <button type="button" id="enable-generation">Load free local Qwen model (WebGPU)</button>
+            <button type="button" id="clear-conversation">Clear session conversation</button>
+          </div>
+        </section>
         <div class="panel-grid">
           <aside class="panel library" aria-labelledby="library-title">
             <div class="panel-title"><div><p class="micro-label">DOCUMENT LIBRARY</p><h3 id="library-title">Sources <span id="doc-count" class="count-badge">0</span></h3></div><button type="button" class="text-button" id="clear-docs">Clear all</button></div>
@@ -85,6 +102,10 @@
               <div><p class="micro-label">EVIDENCE WORKBENCH</p><h3 id="chat-title">Ask a question</h3></div>
               <span class="ready-badge">● Ready to search</span>
             </div>
+            <details id="chat-history" class="chat-history">
+              <summary>Recent questions in this tab <span id="history-count">0</span></summary>
+              <ul id="history-list" aria-label="Recent questions"></ul>
+            </details>
             <div class="answer-space" id="answer-space" aria-live="polite">
               <div class="initial-state" id="initial-state">
                 <div class="initial-icon" aria-hidden="true">⌁</div>
@@ -114,9 +135,9 @@
           <div class="architecture-main">
             <p class="micro-label">RETRIEVAL PIPELINE</p>
             <div class="pipeline" aria-label="Document retrieval flow"><span>01 · Extract</span><span class="arrow">→</span><span>02 · Chunk</span><span class="arrow">→</span><span>03 · Rank</span><span class="arrow">→</span><span>04 · Cite</span></div>
-            <p>Documents are processed inside your browser. Keyword mode uses BM25-style lexical passage ranking. Optional hybrid mode downloads a public MiniLM embedding model, computes vectors on your device, and combines keyword and cosine-similarity rankings through reciprocal-rank fusion. All answers remain verbatim excerpts with citations, not AI-generated explanations. The model/library download needs internet access, but document text is not sent to an inference server. Relevance and test-set scores are not production accuracy claims.</p>
+            <p>Documents are processed inside your browser. Keyword mode uses BM25-style lexical passage ranking, while optional hybrid retrieval fuses local MiniLM embeddings with keyword ranking. Extractive answers are verbatim citations by default. Experimental 3.0 uses a separate local Qwen 0.5B WebGPU language model to draft cited sentences from retrieved excerpts; source-ID checks cannot guarantee factual correctness, and invalid outputs fall back to extracts. Public model/library downloads need internet access, but document text is not sent to an inference server. Relevance and test-set scores are not production accuracy claims.</p>
           </div>
-          <div class="architecture-aside"><p class="micro-label">ENGINEERING NOTES</p><ul><li><strong>Private by default</strong> — no shared document storage</li><li><strong>Inspectable</strong> — ranking source and tests in repository</li><li><strong>Honest limitations</strong> — keyword matching is not semantic reasoning</li><li><strong>PDF dependency</strong> — PDF.js library loaded from a third-party CDN</li><li><strong>Optional semantics</strong> — local MiniLM WASM inference needs an initial Hugging Face/CDN model download and compatible device</li></ul></div>
+          <div class="architecture-aside"><p class="micro-label">ENGINEERING NOTES</p><ul><li><strong>Private by default</strong> — no shared document storage</li><li><strong>Inspectable</strong> — ranking source and tests in repository</li><li><strong>Honest limitations</strong> — keyword matching is not semantic reasoning</li><li><strong>PDF dependency</strong> — PDF.js library loaded from a third-party CDN</li><li><strong>Optional semantics</strong> — MiniLM model downloaded publicly and inferred on-device</li><li><strong>Experimental generation</strong> — Qwen 0.5B on WebGPU requires additional memory/download; its citations are structurally checked, not fact-verified</li></ul></div>
         </div>
       </section>
       <footer><div class="brand footer-brand"><div class="brand-mark">G<span>●</span></div><strong>GroundedDesk AI</strong></div><p>An open, educational document intelligence demonstration. Not production LLM/RAG software.</p><a href="https://github.com/arjun9669" target="_blank" rel="noopener noreferrer">Built for the Arjun Kumar AI Engineering portfolio ↗</a></footer>
