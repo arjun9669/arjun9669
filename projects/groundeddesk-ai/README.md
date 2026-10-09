@@ -10,7 +10,8 @@
 - Drag-and-drop and file picker for `.txt`, `.md`, and `.pdf` (max 5 MB per file, max 180,000 characters in extracted text)
 - Optional PDF.js dynamic browser import from a **pinned third-party CDN**. Loading PDF support requires internet access to that CDN, but parsing remains local in the browser. Text files work with zero network calls.
 - Built-in illustrative documents; visitor uploads stay in browser memory, never intentionally sent to a server
-- Responsive UI, source search, keyboard-accessible citation buttons that jump to actual source excerpts, and copy-answer button
+- Responsive UI, source search, keyboard-accessible citation buttons, and **downloadable Markdown evidence reports** with source excerpts
+- Local report generator refuses to export a citation if its quoted passage is not a literal substring of the cited excerpt; long extracts remain verbatim
 - Reproducible labeled offline corpus evaluation with honest metrics for source ranking, unsupported-query refusals and citation provenance
 - Node.js standard-library test suite and GitHub Actions CI
 
@@ -29,12 +30,21 @@ For automated checks (Node.js 20+):
 ```bash
 node --test tests/*.test.mjs
 node --check retrieval.mjs
+node --check report.mjs
 node --check app.mjs
 node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json
 ```
 
 No npm package installation is needed for text retrieval.
+
+## Local evidence export (no paid API)
+
+After a search, choose **Copy report** or **Download .md**. The downloaded file includes your question, extractive answer, ranked source filenames, literal excerpts and ranking scores; it is generated entirely in browser memory using [`report.mjs`](./report.mjs). Unsupported questions export a refusal instead of fabricated evidence.
+
+**Privacy:** exporting a report writes a local file on your own device. It does not upload anything, but the saved file may contain confidential passages. Do not share such reports without reviewing their contents. Clipboard copying also puts the report into the device clipboard, where other software may have access.
+
+**Evidence guarantee:** the exporter checks that each quote is an exact substring of its displayed source excerpt and rejects a corrupted citation. That checks provenance, not whether a quote fully answers the question or whether a source is trustworthy. The app remains a **deterministic, keyword-based demonstration**; no LLM or embeddings are added.
 
 ## Labeled evaluation and validation
 
