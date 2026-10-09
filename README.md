@@ -257,6 +257,8 @@ An independently owned browser-based document-question-answering demonstration c
 
 **[Reproducible evaluation](./projects/groundeddesk-ai/eval/queries.json):** [CI run](https://github.com/arjun9669/arjun9669/actions/runs/37999445547) passed nine tests and recorded 18/18 top-source matches, 10/10 out-of-domain refusals, and no mismatched citation excerpts on a **small, manually constructed example corpus**. These results are not production or independent benchmark claims.
 
+The tested standalone reference site is also staged on a [free GitHub Pages publishing branch](https://github.com/arjun9669/arjun9669/tree/gh-pages). [Activate Pages from repository settings](https://github.com/arjun9669/arjun9669/settings/pages) by selecting **Deploy from a branch → gh-pages → /(root)**. This is **not yet a verified live URL**, and it does not change the separately hosted Lovable application.
+
 
 ### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
