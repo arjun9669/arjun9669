@@ -21,6 +21,7 @@ let searchBusy = false;
 let evalBusy = false;
 let localGenerator = null;
 let generationLoading = false;
+let generationTestBusy = false;
 let recentTurns = [];
 
 function setGenerationStatus(message, isError = false) {
@@ -36,6 +37,9 @@ function updateGenerationControls() {
   mode.querySelector('option[value="generative"]').disabled = !localGenerator;
   if (!localGenerator) mode.value = "extractive";
   $("enable-generation").disabled = Boolean(localGenerator) || generationLoading || searchBusy;
+  $("evaluate-generation").disabled = !localGenerator || generationTestBusy || searchBusy ||
+    documents.length !== sampleFiles.length ||
+    !sampleFiles.every(([, name]) => documents.some(d => d.sample && d.name === name));
   $("enable-generation").textContent = localGenerator ? "Local Qwen model ready" :
     generationLoading ? "Loading model…" : "Load free local Qwen model (WebGPU)";
 }
@@ -111,6 +115,7 @@ function rebuildIndex() {
       : "Keyword mode active. Enable local embeddings to use hybrid retrieval.");
     updateSemanticControls();
   }
+  updateGenerationControls();
   $("doc-count").textContent = String(documents.length);
   renderDocuments();
 }
@@ -360,7 +365,7 @@ async function ask(question) {
   const value = String(question || "").trim();
   if (!value) { notify("Enter a question about the documents.", true); return; }
   if (!documents.length) { notify("Add a document before asking a question.", true); return; }
-  if (searchBusy || evalBusy) { notify("Wait for the current retrieval to finish.", true); return; }
+  if (searchBusy || evalBusy || generationTestBusy) { notify("Wait for the current retrieval to finish.", true); return; }
   searchBusy = true;
   $("ask-button").disabled = true;
   const startedAt = indexVersion;
@@ -442,6 +447,61 @@ async function enableGeneration() {
   }
 }
 
+async function evaluateGeneration() {
+  if (!localGenerator || generationTestBusy || searchBusy) return;
+  const expectedSampleNames = sampleFiles.map(([,name]) => name);
+  if (documents.length !== expectedSampleNames.length ||
+      !expectedSampleNames.every(name => documents.some(doc => doc.sample && doc.name === name))) {
+    setGenerationStatus("Model checking uses only the original three example documents.", true);
+    return;
+  }
+  const cases = [
+    ["Who should review an AI deployment before launch?", "AI Governance Playbook"],
+    ["Where should document metadata be stored?", "Cloud Architecture Guide"],
+    ["How can office lighting conserve electricity?", "Sustainability Operations Brief"],
+  ];
+  generationTestBusy = true;
+  updateGenerationControls();
+  const baseline = indexVersion;
+  const panel = $("generation-evaluation");
+  panel.hidden = false;
+  const started = performance.now();
+  let structurallyCited = 0;
+  let retrieved = 0;
+  const outputs = [];
+  try {
+    for (const [i,[question, expected]] of cases.entries()) {
+      if (baseline !== indexVersion) throw new Error("Documents changed; evaluation cancelled.");
+      panel.textContent = `Testing actual on-device Qwen model: ${i + 1}/${cases.length}…`;
+      const evidence = answerQuestion(question, indexed);
+      const retrievedCorrectly = evidence.answered && evidence.sources[0]?.filename === expected;
+      if (retrievedCorrectly) retrieved++;
+      let citationOk = false;
+      if (evidence.answered) {
+        const response = await generateCitedAnswer(localGenerator, question, evidence.sources);
+        citationOk = response.ok;
+      }
+      if (citationOk) structurallyCited++;
+      outputs.push(`${i + 1}. ${question} — expected source match: ${retrievedCorrectly ? "yes" : "no"}; citations accepted: ${citationOk ? "yes" : "no"}`);
+    }
+    const seconds = ((performance.now()-started)/1000).toFixed(1);
+    panel.textContent = [
+      "ACTUAL LOCAL-GENERATION TEST (not a factual-accuracy benchmark)",
+      `Qwen drafts passing citation-format checks: ${structurallyCited}/${cases.length}`,
+      `Expected first-source matches from keyword retrieval: ${retrieved}/${cases.length}`,
+      `Elapsed time on this device: ${seconds}s (model already loaded)`,
+      ...outputs,
+      "WARNING: Citation IDs can be valid even if the generated claim is false.",
+      "This is a three-question, fictional in-sample smoke test, NOT measured factual accuracy."
+    ].join("\n");
+  } catch (error) {
+    panel.textContent = "Local generation evaluation stopped: " + (error instanceof Error ? error.message : "unknown error");
+  } finally {
+    generationTestBusy = false;
+    updateGenerationControls();
+  }
+}
+$("evaluate-generation").addEventListener("click", evaluateGeneration);
 $("enable-generation").addEventListener("click", enableGeneration);
 $("answer-mode").addEventListener("change", () => {
   if ($("answer-mode").value === "generative" && !localGenerator) {
