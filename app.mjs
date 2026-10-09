@@ -1,4 +1,6 @@
-import { buildIndex, answerQuestion } from "./retrieval.mjs";
+import { buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs";
+import { hybridRank } from "./hybrid.mjs";
+import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs";
 import { createEvidenceReport } from "./report.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
@@ -9,6 +11,37 @@ const documents = [];
 let indexed = buildIndex([]);
 let currentAnswer = null;
 let visibleQuestion = "";
+let indexVersion = 0;
+let semanticVectors = null;
+let semanticExtractor = null;
+let semanticVersion = -1;
+let modelBusy = false;
+let searchBusy = false;
+let evalBusy = false;
+
+function semanticReady() {
+  return Boolean(semanticVectors && semanticExtractor && semanticVersion === indexVersion
+    && semanticVectors.length === indexed.chunks.length);
+}
+
+function setSemanticStatus(message, isError = false) {
+  const status = $("semantic-status");
+  if (status) {
+    status.textContent = message;
+    status.style.color = isError ? "#a2462a" : "";
+  }
+}
+
+function updateSemanticControls() {
+  const mode = $("retrieval-mode");
+  if (!mode) return;
+  mode.querySelector('option[value="hybrid"]').disabled = !semanticReady();
+  if (!semanticReady()) mode.value = "keyword";
+  $("enable-semantic").disabled = modelBusy || searchBusy || !indexed.chunks.length || indexed.chunks.length > MAX_SEMANTIC_CHUNKS;
+  $("evaluate-modes").disabled = !semanticReady() || evalBusy || searchBusy ||
+    documents.length !== sampleFiles.length ||
+    !sampleFiles.every(([, name]) => documents.some(d => d.sample && d.name === name));
+}
 const sampleFiles = [
   ["samples/ai-governance.txt", "AI Governance Playbook"],
   ["samples/cloud-architecture.txt", "Cloud Architecture Guide"],
@@ -23,6 +56,15 @@ function notify(message, isError = false) {
 
 function rebuildIndex() {
   indexed = buildIndex(documents);
+  indexVersion++;
+  semanticVectors = null;
+  semanticVersion = -1;
+  if ($("semantic-status")) {
+    setSemanticStatus(indexed.chunks.length > MAX_SEMANTIC_CHUNKS
+      ? `Keyword mode active. Semantic mode supports up to ${MAX_SEMANTIC_CHUNKS} passages. Remove some documents to enable it.`
+      : "Keyword mode active. Enable local embeddings to use hybrid retrieval.");
+    updateSemanticControls();
+  }
   $("doc-count").textContent = String(documents.length);
   renderDocuments();
 }
@@ -242,16 +284,140 @@ function renderResult(question, result) {
   }
 }
 
-function ask(question) {
-  const value = question.trim();
+async function ask(question) {
+  const value = String(question || "").trim();
   if (!value) { notify("Enter a question about the documents.", true); return; }
   if (!documents.length) { notify("Add a document before asking a question.", true); return; }
+  if (searchBusy || evalBusy) { notify("Wait for the current retrieval to finish.", true); return; }
+  searchBusy = true;
+  $("ask-button").disabled = true;
+  const startedAt = indexVersion;
   try {
-    const result = answerQuestion(value, indexed);
+    let result;
+    if ($("retrieval-mode").value === "hybrid" && semanticReady()) {
+      setSemanticStatus("Computing this question's embedding locally…");
+      const vector = await embedText(semanticExtractor, value);
+      if (indexVersion !== startedAt || !semanticReady()) {
+        result = answerQuestion(value, indexed);
+        setSemanticStatus("Documents changed during inference; safely used fresh keyword search.");
+      } else {
+        const ranking = hybridRank(value, indexed, vector, semanticVectors);
+        result = answerFromCandidates(value, ranking, 3, "Local MiniLM + BM25-style reciprocal-rank fusion (extractive; no generative LLM)");
+        setSemanticStatus("Hybrid mode ready: semantic model remains in this browser session.");
+      }
+    } else {
+      result = answerQuestion(value, indexed);
+    }
     renderResult(value, result);
     notify(result.answered ? "Evidence retrieved locally." : "No matching evidence in this session.");
-  } catch (error) { notify(error instanceof Error ? error.message : "Search failed.", true); }
+  } catch (error) {
+    // Fail safe: preserve answer availability and don't mislabel lexical as semantic.
+    $("retrieval-mode").value = "keyword";
+    renderResult(value, answerQuestion(value, indexed));
+    setSemanticStatus("Hybrid retrieval could not complete; returned to working keyword search.", true);
+    notify("Semantic query failed, so keyword fallback was used. " + (error instanceof Error ? error.message : ""), true);
+  } finally {
+    searchBusy = false;
+    $("ask-button").disabled = false;
+    updateSemanticControls();
+  }
 }
+
+async function enableSemantic() {
+  if (modelBusy || semanticReady()) return;
+  if (!indexed.chunks.length || indexed.chunks.length > MAX_SEMANTIC_CHUNKS) {
+    setSemanticStatus(`Need 1–${MAX_SEMANTIC_CHUNKS} indexed passages for the optional local model.`, true);
+    return;
+  }
+  modelBusy = true;
+  const version = indexVersion;
+  updateSemanticControls();
+  try {
+    setSemanticStatus("Loading free MiniLM model. The first download may take time and use significant mobile data…");
+    const model = await loadBrowserEmbedder(setSemanticStatus);
+    const vectors = await embedChunks(model, indexed.chunks, setSemanticStatus);
+    if (version !== indexVersion) {
+      setSemanticStatus("Documents changed during model setup. Enable again to re-index the current documents.", true);
+      return;
+    }
+    semanticExtractor = model;
+    semanticVectors = vectors;
+    semanticVersion = version;
+    $("retrieval-mode").value = "hybrid";
+    notify("On-device semantic embeddings are ready. Hybrid retrieval enabled.");
+    setSemanticStatus(`Hybrid ready: indexed ${vectors.length} passages locally using Xenova/all-MiniLM-L6-v2. No document inference API calls.`);
+  } catch (error) {
+    semanticVectors = null;
+    semanticVersion = -1;
+    setSemanticStatus(error instanceof Error ? error.message : "Semantic setup failed. Keyword mode remains available.", true);
+    notify("Semantic mode unavailable — keyword mode still works.", true);
+  } finally {
+    modelBusy = false;
+    updateSemanticControls();
+  }
+}
+
+async function evaluateModels() {
+  if (!semanticReady() || evalBusy) return;
+  const modeVersion = indexVersion;
+  evalBusy = true;
+  updateSemanticControls();
+  const panel = $("evaluation-output");
+  panel.hidden = false;
+  panel.textContent = "Starting REAL local-model evaluation against the included example documents…";
+  try {
+    const response = await fetch("./eval/queries.json");
+    if (!response.ok) throw new Error("Labeled evaluation fixture was unavailable");
+    const fixture = await response.json();
+    const cases = fixture.cases;
+    if (!Array.isArray(cases) || cases.length < 15) throw new Error("Invalid evaluation fixture");
+    let kwHits = 0, hyHits = 0, kwRefusals = 0, hyRefusals = 0, related = 0, unrelated = 0;
+    const start = performance.now();
+    for (const [i, item] of cases.entries()) {
+      if (indexVersion !== modeVersion || !semanticReady()) throw new Error("Documents changed; evaluation stopped.");
+      panel.textContent = `Running actual on-device semantic model: ${i + 1}/${cases.length} questions…`;
+      const kw = answerQuestion(item.question, indexed);
+      const questionVector = await embedText(semanticExtractor, item.question);
+      const hy = answerFromCandidates(item.question, hybridRank(item.question, indexed, questionVector, semanticVectors), 3,
+        "Local MiniLM + keyword RRF (extractive)");
+      if (item.expected_source === null) {
+        unrelated++;
+        if (!kw.answered) kwRefusals++;
+        if (!hy.answered) hyRefusals++;
+      } else {
+        related++;
+        if (kw.sources[0]?.filename === item.expected_source) kwHits++;
+        if (hy.sources[0]?.filename === item.expected_source) hyHits++;
+      }
+      if (i % 3 === 2) await new Promise(resolve => setTimeout(resolve, 0));
+    }
+    const secs = ((performance.now() - start) / 1000).toFixed(2);
+    panel.textContent = [
+      "ACTUAL LOCAL MODEL COMPARISON (not a production benchmark)",
+      `Document corpus: ${documents.length} fictional samples / ${indexed.chunks.length} chunks`,
+      `Supported questions: ${related}, out-of-domain questions: ${unrelated}`,
+      `First-source accuracy: keyword ${kwHits}/${related} vs hybrid ${hyHits}/${related}`,
+      `Out-of-domain refusals: keyword ${kwRefusals}/${unrelated} vs hybrid ${hyRefusals}/${unrelated}`,
+      `Total execution time: ${secs}s on this device (model was already loaded)`,
+      "MiniLM uses real on-device embeddings. No frozen vectors or invented metrics.",
+      "Curated toy questions are easy; scores are not independently validated accuracy.",
+    ].join("\n");
+  } catch (error) {
+    panel.textContent = "Evaluation couldn't finish: " + (error instanceof Error ? error.message : "unknown error");
+  } finally {
+    evalBusy = false;
+    updateSemanticControls();
+  }
+}
+
+$("enable-semantic").addEventListener("click", enableSemantic);
+$("retrieval-mode").addEventListener("change", () => {
+  if ($("retrieval-mode").value === "hybrid" && !semanticReady()) {
+    $("retrieval-mode").value = "keyword";
+    setSemanticStatus("Hybrid mode isn't ready. Enable the on-device model first.", true);
+  }
+});
+$("evaluate-modes").addEventListener("click", evaluateModels);
 
 $("query-form").addEventListener("submit", event => {
   event.preventDefault();

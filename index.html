@@ -48,6 +48,24 @@
           <div><span class="section-index">01 / WORKSPACE</span><h2>Your evidence workspace</h2></div>
           <div class="live-label"><span class="pulse-dot"></span> Extractive answering · no LLM required</div>
         </div>
+        <section class="retrieval-settings" aria-labelledby="retrieval-settings-heading">
+          <div class="retrieval-info">
+            <p class="micro-label">OPTIONAL · LOCAL SEMANTIC ENGINE</p>
+            <h3 id="retrieval-settings-heading">GroundedDesk AI 2.0 · hybrid retrieval</h3>
+            <p>Keyword search runs immediately. Enable free on-device MiniLM embeddings for meaning-aware passage ranking, combined with keyword matches. No API key or server inference; the first use downloads a public model and may be slow on phones.</p>
+            <p id="semantic-status" role="status" aria-live="polite">Keyword mode active. Your document contents stay in browser memory.</p>
+          </div>
+          <div class="retrieval-controls">
+            <label for="retrieval-mode">Search mode</label>
+            <select id="retrieval-mode" aria-label="Retrieval method">
+              <option value="keyword">Keyword (BM25-style)</option>
+              <option value="hybrid" disabled>Hybrid (keyword + local MiniLM)</option>
+            </select>
+            <button type="button" id="enable-semantic">Enable free semantic model</button>
+            <button type="button" id="evaluate-modes" disabled>Compare modes on sample questions</button>
+          </div>
+          <pre class="evaluation-output" id="evaluation-output" hidden aria-live="polite"></pre>
+        </section>
         <div class="panel-grid">
           <aside class="panel library" aria-labelledby="library-title">
             <div class="panel-title"><div><p class="micro-label">DOCUMENT LIBRARY</p><h3 id="library-title">Sources <span id="doc-count" class="count-badge">0</span></h3></div><button type="button" class="text-button" id="clear-docs">Clear all</button></div>
@@ -96,9 +114,9 @@
           <div class="architecture-main">
             <p class="micro-label">RETRIEVAL PIPELINE</p>
             <div class="pipeline" aria-label="Document retrieval flow"><span>01 · Extract</span><span class="arrow">→</span><span>02 · Chunk</span><span class="arrow">→</span><span>03 · Rank</span><span class="arrow">→</span><span>04 · Cite</span></div>
-            <p>Documents are processed inside your browser. A deterministic BM25-style lexical ranking finds relevant overlapping chunks, then answers quote evidence directly from the source material. No document uploads, LLM prompts, cloud inference, or fabricated accuracy scores are involved in the core demo.</p>
+            <p>Documents are processed inside your browser. Keyword mode uses BM25-style lexical passage ranking. Optional hybrid mode downloads a public MiniLM embedding model, computes vectors on your device, and combines keyword and cosine-similarity rankings through reciprocal-rank fusion. All answers remain verbatim excerpts with citations, not AI-generated explanations. The model/library download needs internet access, but document text is not sent to an inference server. Relevance and test-set scores are not production accuracy claims.</p>
           </div>
-          <div class="architecture-aside"><p class="micro-label">ENGINEERING NOTES</p><ul><li><strong>Private by default</strong> — no shared document storage</li><li><strong>Inspectable</strong> — ranking source and tests in repository</li><li><strong>Honest limitations</strong> — keyword matching is not semantic reasoning</li><li><strong>PDF dependency</strong> — PDF.js library loaded from a third-party CDN</li></ul></div>
+          <div class="architecture-aside"><p class="micro-label">ENGINEERING NOTES</p><ul><li><strong>Private by default</strong> — no shared document storage</li><li><strong>Inspectable</strong> — ranking source and tests in repository</li><li><strong>Honest limitations</strong> — keyword matching is not semantic reasoning</li><li><strong>PDF dependency</strong> — PDF.js library loaded from a third-party CDN</li><li><strong>Optional semantics</strong> — local MiniLM WASM inference needs an initial Hugging Face/CDN model download and compatible device</li></ul></div>
         </div>
       </section>
       <footer><div class="brand footer-brand"><div class="brand-mark">G<span>●</span></div><strong>GroundedDesk AI</strong></div><p>An open, educational document intelligence demonstration. Not production LLM/RAG software.</p><a href="https://github.com/arjun9669" target="_blank" rel="noopener noreferrer">Built for the Arjun Kumar AI Engineering portfolio ↗</a></footer>
