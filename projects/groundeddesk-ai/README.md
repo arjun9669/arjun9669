@@ -56,15 +56,22 @@ These are **in-sample toy-document metrics** on manually written, small question
 
 [**Doc Genius Local — open the live Lovable app**](https://doc-genius-local.lovable.app/) is a **separate hosted React/TypeScript implementation** of browser-side document QA. This GitHub folder contains a reproducible vanilla-JavaScript reference implementation, **not the deployed Lovable source code**. Editing this repository does not automatically deploy to Lovable. For the exact hosted project, see [Lovable editor](https://lovable.dev/projects/fd559d48-e6da-4a1e-86c3-13dc30ca15ef).
 
-## Publish to GitHub Pages
+## Publish for free using GitHub Pages
 
-This repository includes an **opt-in** [GitHub Actions Pages deployment workflow](../../.github/workflows/deploy-groundeddesk-pages.yml). To publish the static app:
+The tested browser app is **already staged** in the [`gh-pages` branch](https://github.com/arjun9669/arjun9669/tree/gh-pages), with `index.html`, `app.mjs`, `retrieval.mjs`, styles, and sample text files at the branch root. This keeps your GitHub profile's `main` branch unchanged and needs no Lovable credits or custom domain.
 
-1. In the `arjun9669/arjun9669` repository, open **Settings → Pages** and select **GitHub Actions** as the build/deployment source.
-2. Open **Actions → Deploy GroundedDesk to GitHub Pages → Run workflow** on `main`.
-3. Use the URL returned by the deployment job. The deployment workflow is intentionally manual so it won't overwrite or interfere with an existing Pages site without approval.
+**One-time account configuration (requires repository admin settings):**
 
-This produces a static public demo. It does not deploy any Python backend, vector database or LLM service. A preview URL is **not** assumed valid until the deployment job succeeds.
+1. Open [Settings → Pages](https://github.com/arjun9669/arjun9669/settings/pages).
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Choose branch **`gh-pages`** and folder **`/(root)`**, then select **Save**.
+4. Wait for GitHub to publish. Check the URL GitHub displays under Pages (normally `https://arjun9669.github.io/arjun9669/`). Do not advertise it as live until it opens and loads the sample documents.
+
+GitHub's connected app does not expose Pages administration, so the one-time Settings action cannot be completed from this assistant. If the Pages UI says a site is already configured for another purpose, do not overwrite its settings; use the opt-in GitHub Actions workflow or a separate project repository instead.
+
+**Updating the published branch:** commits to `main` do not automatically update the `gh-pages` branch. The deployment branch must be synchronized after future changes, and the existing manually triggered [Actions-based workflow](../../.github/workflows/deploy-groundeddesk-pages.yml) is an alternative if you switch the Pages source to **GitHub Actions**. The same repository should use **one publishing source at a time**. `GITHUB_TOKEN`-authored pushes to a publishing branch may not trigger a Pages build, so don't assume that adding a sync action alone would update the live site.
+
+This static site uses no paid AI services, server-side model, database or secrets. Text documents can be processed offline once the site is loaded; PDF parsing loads a pinned PDF.js dependency from a third-party CDN.
 
 ## Demo questions
 
