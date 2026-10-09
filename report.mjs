@@ -1,3 +1,5 @@
+import { validateDraft } from "./generation.mjs";
+
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
  * No external libraries, requests or persistence; every quote is verified.
@@ -28,6 +30,10 @@ export function createEvidenceReport(question, result) {
   }
   const sources = result.sources;
   if (result.answered && !sources.length) throw new Error("Answered result has no cited sources");
+  if (result.generated) {
+    const validation = validateDraft(result.answer, sources);
+    if (!validation.ok) throw new Error("Generated draft failed citation checks: " + validation.reason);
+  }
 
   const sections = [
     "# GroundedDesk — evidence report",
@@ -42,6 +48,11 @@ export function createEvidenceReport(question, result) {
   ];
 
   if (result.answered) {
+    if (result.generated) {
+      sections.push("**Locally AI-generated draft — citation IDs verified, not fact-checked:**", "");
+      sections.push(blockquote(result.answer), "");
+      sections.push("**Exact source excerpts supporting the draft (verify manually):**", "");
+    }
     for (const [index, source] of sources.entries()) {
       if (source.citation !== index + 1) throw new Error("Invalid citation numbering");
       if (typeof source.excerpt !== "string" || typeof source.quote !== "string"
@@ -74,7 +85,7 @@ export function createEvidenceReport(question, result) {
   sections.push(
     "---",
     "",
-    "*Locally generated extractive retrieval report. Source passages are quotes, not an AI-generated explanation. Retrieval scores are uncalibrated ranking values, not reliability probabilities. Hybrid mode uses a reciprocal-rank-fusion score, not a raw BM25 score. Do not distribute reports containing confidential uploaded documents.*",
+    "*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*",
     "",
   );
   return sections.join("\n");
