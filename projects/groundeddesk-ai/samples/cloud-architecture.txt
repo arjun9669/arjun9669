@@ -1,0 +1,11 @@
+Cloud Architecture — Sample System Design
+
+This document describes a generic example of a small document intelligence platform. It is a fictional system design for demonstration purposes.
+
+The web client handles login and document upload. A backend API validates file type and size before running document extraction and chunking. Text chunks receive embeddings and document metadata, then are written to a vector index.
+
+A user question passes through authentication and retrieval. The retrieval service selects relevant evidence passages and may rerank them before any language model receives the prompt. The response contains citations pointing to the relevant uploaded documents.
+
+Redis can store short-lived query results or rate-limit counters. PostgreSQL can store document metadata. Object storage can hold original PDFs where retention is allowed. Sensitive content should use encryption at rest and in transit, with least-privilege access.
+
+An operations dashboard should track request rate, failed requests, retrieval latency, answer latency, token costs and citation quality. Deployments require health checks and a rollback strategy.
