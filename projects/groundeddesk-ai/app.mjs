@@ -2,6 +2,7 @@ import { buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mj
 import { hybridRank } from "./hybrid.mjs";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs";
 import { createEvidenceReport } from "./report.mjs";
+import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -18,6 +19,50 @@ let semanticVersion = -1;
 let modelBusy = false;
 let searchBusy = false;
 let evalBusy = false;
+let localGenerator = null;
+let generationLoading = false;
+let recentTurns = [];
+
+function setGenerationStatus(message, isError = false) {
+  const status = $("generation-status");
+  if (!status) return;
+  status.textContent = message;
+  status.style.color = isError ? "#a2462a" : "";
+}
+
+function updateGenerationControls() {
+  const mode = $("answer-mode");
+  if (!mode) return;
+  mode.querySelector('option[value="generative"]').disabled = !localGenerator;
+  if (!localGenerator) mode.value = "extractive";
+  $("enable-generation").disabled = Boolean(localGenerator) || generationLoading || searchBusy;
+  $("enable-generation").textContent = localGenerator ? "Local Qwen model ready" :
+    generationLoading ? "Loading model…" : "Load free local Qwen model (WebGPU)";
+}
+
+function resetConversation() {
+  recentTurns = [];
+  const list = $("history-list");
+  if (list) list.replaceChildren();
+  if ($("history-count")) $("history-count").textContent = "0";
+}
+
+function addTurn(question, result) {
+  recentTurns.push({ question, result });
+  if (recentTurns.length > 8) recentTurns.shift();
+  const list = $("history-list");
+  list.replaceChildren();
+  for (const turn of [...recentTurns].reverse()) {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = turn.question + (turn.result.generated ? " · local AI" : " · extracts");
+    button.addEventListener("click", () => renderResult(turn.question, turn.result));
+    li.append(button);
+    list.append(li);
+  }
+  $("history-count").textContent = String(recentTurns.length);
+}
 
 function semanticReady() {
   return Boolean(semanticVectors && semanticExtractor && semanticVersion === indexVersion
@@ -57,6 +102,7 @@ function notify(message, isError = false) {
 function rebuildIndex() {
   indexed = buildIndex(documents);
   indexVersion++;
+  resetConversation();
   semanticVectors = null;
   semanticVersion = -1;
   if ($("semantic-status")) {
@@ -239,6 +285,30 @@ function renderResult(question, result) {
   actions.append(copy, download);
   heading.append(actions);
   const answerBox = make("div", "answer-box");
+  if (result.generated) {
+    answerBox.append(make("p", "generation-disclaimer",
+      "EXPERIMENTAL · On-device generated draft. Source IDs checked; factual accuracy NOT guaranteed."));
+    const paragraph = make("p", "generated-answer");
+    for (const piece of result.answer.split(/(\\[\\d+\\])/g)) {
+      const match = piece.match(/^\\[(\\d+)\\]$/);
+      if (!match) { paragraph.append(document.createTextNode(piece)); continue; }
+      const n = Number(match[1]);
+      const source = result.sources.find(x => x.citation === n);
+      if (!source) { paragraph.append(document.createTextNode(piece)); continue; }
+      const button = make("button", "inline-citation", piece);
+      button.type = "button";
+      button.setAttribute("aria-label", `Jump to source ${n}: ${source.filename}`);
+      button.addEventListener("click", () => {
+        const card = $(`source-${n}`);
+        if (!card) return;
+        card.setAttribute("tabindex", "-1");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+        card.focus({ preventScroll: true });
+      });
+      paragraph.append(button);
+    }
+    answerBox.append(paragraph);
+  } else
   if (result.answered) {
     for (const source of result.sources) {
       const paragraph = make("p", "cited-answer-paragraph");
@@ -278,7 +348,9 @@ function renderResult(question, result) {
       view.append(card);
     }
     view.append(make("p", "result-footnote",
-      "Scores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases."));
+      result.generated
+        ? "Local Qwen may produce unsupported claims despite valid citation IDs. Check every statement against the displayed excerpts. No cloud inference was used."
+        : "Scores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases."));
   } else {
     view.append(make("p", "result-footnote", "Try a different question or add a document containing relevant information. No answer was invented."));
   }
@@ -308,20 +380,80 @@ async function ask(question) {
     } else {
       result = answerQuestion(value, indexed);
     }
+    if (result.answered && $("answer-mode").value === "generative" && localGenerator &&
+        startedAt === indexVersion) {
+      try {
+        setGenerationStatus("Generating a short cited draft on this device's GPU…");
+        const validation = await generateCitedAnswer(localGenerator, value, result.sources);
+        if (startedAt !== indexVersion) {
+          result = answerQuestion(value, indexed);
+          setGenerationStatus("Documents changed during inference; model draft discarded.");
+        } else if (validation.ok) {
+          result = { ...result, answer: validation.text, generated: true };
+          setGenerationStatus("Local AI draft complete. Verify claims against the source excerpts.");
+        } else {
+          setGenerationStatus("Draft failed source-ID checks (" + validation.reason + "); showing exact source excerpts.", true);
+        }
+      } catch (error) {
+        setGenerationStatus("Local generation failed. Showing source excerpts instead. " +
+          (error instanceof Error ? error.message : ""), true);
+      }
+    }
+    if (startedAt !== indexVersion) result = answerQuestion(value, indexed);
     renderResult(value, result);
+    addTurn(value, result);
     notify(result.answered ? "Evidence retrieved locally." : "No matching evidence in this session.");
   } catch (error) {
     // Fail safe: preserve answer availability and don't mislabel lexical as semantic.
     $("retrieval-mode").value = "keyword";
-    renderResult(value, answerQuestion(value, indexed));
+    const fallback = answerQuestion(value, indexed);
+    renderResult(value, fallback);
+    addTurn(value, fallback);
     setSemanticStatus("Hybrid retrieval could not complete; returned to working keyword search.", true);
     notify("Semantic query failed, so keyword fallback was used. " + (error instanceof Error ? error.message : ""), true);
   } finally {
     searchBusy = false;
     $("ask-button").disabled = false;
     updateSemanticControls();
+    updateGenerationControls();
   }
 }
+
+async function enableGeneration() {
+  if (localGenerator || generationLoading) return;
+  if (!isWebGPUAvailable()) {
+    setGenerationStatus("WebGPU unavailable on this browser. Extractive retrieval still works.", true);
+    return;
+  }
+  generationLoading = true;
+  updateGenerationControls();
+  try {
+    const generator = await loadLocalGenerator(setGenerationStatus);
+    localGenerator = generator;
+    $("answer-mode").value = "generative";
+    setGenerationStatus("Local Qwen WebGPU model ready. Treat generated text as a draft; verify sources.");
+    notify("Experimental on-device answer generation enabled. No paid inference API.");
+  } catch (error) {
+    setGenerationStatus(error instanceof Error ? error.message : "Local model unavailable.", true);
+    notify("Local generator could not load; extractive search still works.", true);
+  } finally {
+    generationLoading = false;
+    updateGenerationControls();
+  }
+}
+
+$("enable-generation").addEventListener("click", enableGeneration);
+$("answer-mode").addEventListener("change", () => {
+  if ($("answer-mode").value === "generative" && !localGenerator) {
+    $("answer-mode").value = "extractive";
+    setGenerationStatus("Load the local model first.", true);
+  }
+});
+$("clear-conversation").addEventListener("click", () => {
+  resetConversation();
+  clearResult();
+  notify("Conversation cleared from this browser session.");
+});
 
 async function enableSemantic() {
   if (modelBusy || semanticReady()) return;
@@ -470,6 +602,8 @@ async function init() {
       addDocument({ name, text, sample: true });
     } catch { notify("Some samples could not load. You can still upload your own files.", true); }
   }
+  updateGenerationControls();
+  if (!isWebGPUAvailable()) setGenerationStatus("WebGPU unavailable here. Extractive and semantic retrieval remain usable.", true);
   if (documents.length) notify(`${documents.length} sample documents ready. Ask a question or upload your own text.`);
   else notify("No examples loaded. Please upload a TXT, Markdown or PDF document.", true);
 }
