@@ -56,15 +56,19 @@ These are **in-sample toy-document metrics** on manually written, small question
 
 [**Doc Genius Local — open the live Lovable app**](https://doc-genius-local.lovable.app/) is a **separate hosted React/TypeScript implementation** of browser-side document QA. This GitHub folder contains a reproducible vanilla-JavaScript reference implementation, **not the deployed Lovable source code**. Editing this repository does not automatically deploy to Lovable. For the exact hosted project, see [Lovable editor](https://lovable.dev/projects/fd559d48-e6da-4a1e-86c3-13dc30ca15ef).
 
-## Publish to GitHub Pages
+## Free GitHub Pages deployment — published
 
-This repository includes an **opt-in** [GitHub Actions Pages deployment workflow](../../.github/workflows/deploy-groundeddesk-pages.yml). To publish the static app:
+**GitHub reported a successful live deployment on October 9, 2026 (UTC).**
 
-1. In the `arjun9669/arjun9669` repository, open **Settings → Pages** and select **GitHub Actions** as the build/deployment source.
-2. Open **Actions → Deploy GroundedDesk to GitHub Pages → Run workflow** on `main`.
-3. Use the URL returned by the deployment job. The deployment workflow is intentionally manual so it won't overwrite or interfere with an existing Pages site without approval.
+- **[Public GitHub Pages URL](https://arjun9669.github.io/arjun9669/)**
+- [Successful Pages deployment workflow](https://github.com/arjun9669/arjun9669/actions/runs/37999849145) — build and deploy jobs both successful
+- [Publishing branch (`gh-pages`)](https://github.com/arjun9669/arjun9669/tree/gh-pages)
 
-This produces a static public demo. It does not deploy any Python backend, vector database or LLM service. A preview URL is **not** assumed valid until the deployment job succeeds.
+This uses a standalone static site in the `gh-pages` branch, separate from the GitHub profile source in `main`. GitHub supplied the page URL in the deployment logs; automatic server checks may be unable to open public Pages sites from some environments, so test uploads, sample retrieval and citation navigation in your own browser before claiming full end-to-end verification.
+
+**Updating this site:** changing the app source in `main/projects/groundeddesk-ai` does not automatically update the published `gh-pages` branch. Copy changed static files into `gh-pages` and allow GitHub's Pages build/deployment to complete. Keep the [manually triggered Actions deployment workflow](../../.github/workflows/deploy-groundeddesk-pages.yml) as an alternative only if the Pages publishing source is changed to GitHub Actions; do not mix publishing methods.
+
+No Lovable credits, API keys, hosted LLM or server-side database are required. Text files are read locally in browser memory. Optional PDF parsing downloads a pinned PDF.js library from a third-party CDN.
 
 ## Demo questions
 
