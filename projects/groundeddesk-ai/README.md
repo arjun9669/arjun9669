@@ -48,7 +48,9 @@ Run `node eval/run.mjs` from this directory to measure **this exact source code*
 
 A `--json` option emits machine-readable per-question outcomes. A `--strict` option fails on fabricated/mismatched citation excerpts. The [GitHub CI workflow](../../.github/workflows/groundeddesk-ci.yml) runs these checks automatically and attaches a JSON evaluation artifact to each run. No dependency installation or LLM credentials are required for this test suite.
 
-These are **in-sample toy-document metrics** on manually written, small questions: not independently validated accuracy, robustness, semantic retrieval quality or production latency. No evaluation score is published here until computed by the script.
+These are **in-sample toy-document metrics** on manually written, small questions: not independently validated accuracy, robustness, semantic retrieval quality or production latency.
+
+**Verified initial run:** [GitHub Actions #37999445547](https://github.com/arjun9669/arjun9669/actions/runs/37999445547) executed the fixture on October 9, 2026 (UTC) with **18/18 first-source matches**, **18/18 supported questions answered**, **10/10 unrelated questions refused**, **0 source provenance errors**, and **9 automated tests passing**. The tiny curated dataset was constructed using the included fictional documents, so scores this high are expected to be easier than on real documents. **Do not cite these as real-world model accuracy.** Re-run `node eval/run.mjs` after changes and inspect individual failures; measured processing timings are hardware- and workload-dependent.
 
 ## Related live showcase
 
