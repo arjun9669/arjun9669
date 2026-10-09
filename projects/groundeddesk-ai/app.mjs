@@ -165,7 +165,29 @@ function renderResult(question, result) {
     });
     heading.append(copy);
   }
-  view.append(heading, make("div", "answer-box", result.answer));
+  const answerBox = make("div", "answer-box");
+  if (result.answered) {
+    for (const source of result.sources) {
+      const paragraph = make("p", "cited-answer-paragraph");
+      const jump = make("button", "inline-citation", `[${source.citation}]`);
+      jump.type = "button";
+      jump.setAttribute("aria-label", `Jump to source ${source.citation}: ${source.filename}`);
+      jump.addEventListener("click", () => {
+        const card = $(`source-${source.citation}`);
+        if (!card) return;
+        card.setAttribute("tabindex", "-1");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+        card.focus({ preventScroll: true });
+        card.classList.add("source-highlight");
+        setTimeout(() => card.classList.remove("source-highlight"), 2000);
+      });
+      paragraph.append(jump, document.createTextNode(" " + source.quote));
+      answerBox.append(paragraph);
+    }
+  } else {
+    answerBox.textContent = result.answer;
+  }
+  view.append(heading, answerBox);
 
   if (result.answered) {
     view.append(make("h5", "evidence-heading", "SOURCE EVIDENCE"));
@@ -252,5 +274,6 @@ async function init() {
     } catch { notify("Some samples could not load. You can still upload your own files.", true); }
   }
   if (documents.length) notify(`${documents.length} sample documents ready. Ask a question or upload your own text.`);
+  else notify("No examples loaded. Please upload a TXT, Markdown or PDF document.", true);
 }
 init();

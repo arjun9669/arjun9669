@@ -27,5 +27,16 @@ jobs:
         run: |
           node --check projects/groundeddesk-ai/retrieval.mjs
           node --check projects/groundeddesk-ai/app.mjs
+          node --check projects/groundeddesk-ai/eval/run.mjs
       - name: Run deterministic retrieval tests
-        run: node --test projects/groundeddesk-ai/tests/retrieval.test.mjs
+        run: node --test projects/groundeddesk-ai/tests/*.test.mjs
+      - name: Evaluate example corpus, refusal and citation provenance
+        run: |
+          node projects/groundeddesk-ai/eval/run.mjs --strict
+          node projects/groundeddesk-ai/eval/run.mjs --json > groundeddesk-evaluation.json
+      - name: Archive reproducible metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: groundeddesk-offline-eval
+          path: groundeddesk-evaluation.json
+          retention-days: 14

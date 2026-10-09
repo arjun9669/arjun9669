@@ -255,6 +255,9 @@ An independently owned browser-based document-question-answering demonstration c
 
 [GroundedDesk AI — standalone source, tests, and local setup](./projects/groundeddesk-ai/README.md) shows a **separate** vanilla JavaScript implementation of the same extractive citation concept. It is **not the exact source code deployed by Lovable**; the live React/TypeScript application is managed in the linked Lovable project. [Inspect the reference retrieval engine](./projects/groundeddesk-ai/retrieval.mjs) and [its tests](./projects/groundeddesk-ai/tests/retrieval.test.mjs).
 
+**[Reproducible evaluation](./projects/groundeddesk-ai/eval/queries.json):** [CI run](https://github.com/arjun9669/arjun9669/actions/runs/37999445547) passed nine tests and recorded 18/18 top-source matches, 10/10 out-of-domain refusals, and no mismatched citation excerpts on a **small, manually constructed example corpus**. These results are not production or independent benchmark claims.
+
+
 ### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
 📖 **[Engineering case study — attributable commits, architecture, recorded evaluations and limitations](./case-studies/GLASS_EXPERT_AI.md)**
