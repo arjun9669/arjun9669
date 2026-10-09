@@ -4,7 +4,7 @@
 
 ## Features
 
-- BM25-style keyword passage ranking (default), plus optional browser-only MiniLM embedding and hybrid reciprocal-rank fusion
+- BM25-style keyword passage ranking (default), plus optional browser-only MiniLM and hybrid reciprocal-rank fusion, and optional local Qwen WebGPU-generated drafts
 - Extractive passages **copied from** indexed source documents; nonmatching queries refuse instead of inventing an answer
 - Exact source filename, excerpt, relevant terms and score for each citation
 - Drag-and-drop and file picker for `.txt`, `.md`, and `.pdf` (max 5 MB per file, max 180,000 characters in extracted text)
@@ -33,6 +33,7 @@ node --check retrieval.mjs
 node --check report.mjs
 node --check hybrid.mjs
 node --check semantic.mjs
+node --check generation.mjs
 node --check app.mjs
 node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json
@@ -47,6 +48,22 @@ After a search, choose **Copy report** or **Download .md**. The downloaded file 
 **Privacy:** exporting a report writes a local file on your own device. It does not upload anything, but the saved file may contain confidential passages. Do not share such reports without reviewing their contents. Clipboard copying also puts the report into the device clipboard, where other software may have access.
 
 **Evidence guarantee:** the exporter checks that each quote is an exact substring of its displayed source excerpt and rejects a corrupted citation. That checks provenance, not whether a quote fully answers the question or whether a source is trustworthy. The app remains a **deterministic, keyword-based demonstration**; no LLM or embeddings are added.
+
+## GroundedDesk AI 3.0 — optional generative answers on the device
+
+The same **[free GitHub Pages app](https://arjun9669.github.io/arjun9669/)** now offers a third, explicitly opt-in capability: **Local AI · cited draft**. It uses [Hugging Face Transformers.js 3.0.0](https://huggingface.co/blog/transformersjs-v3) and the publicly hosted [onnx-community/Qwen2.5-0.5B-Instruct](https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct) model in **WebGPU** with four-bit quantization. The model's q4 ONNX weights alone are approximately **786 MB**, so use Wi-Fi and a device with sufficient GPU memory. Some browsers, especially on mobile, will not support the required WebGPU setup. The first load needs public model/library downloads; it does **not** require a key, payment, server-side inference or Lovable credits.
+
+**How to use:** open the app, optionally enable MiniLM hybrid retrieval (recommended for paraphrase queries), then click **Load free local Qwen model (WebGPU)**. When the model is ready, choose **Local AI · cited draft** in Answer mode and ask questions. The existing keyword and hybrid retrieval engines choose source passages; Qwen drafts at most a few short sentences from retrieved excerpts and is prompted to cite each sentence as `[1]`, `[2]`, etc. Source buttons open the corresponding literal source excerpt. **All source text is passed to the model running on your device, not to a hosted inference API.**
+
+**Important limits:**
+- A generated answer is a **draft**. We validate that citation IDs exist and that every sentence has a citation. This does **not prove factual entailment**, and a fabricated claim could still cite a real passage. Read the source excerpts before trusting or sharing generated claims.
+- Retrieval with **no supporting excerpts** never invokes the language model; it returns the original refusal. Model failure, invalid citation structure, unavailable WebGPU or document edits during inference revert to **working extractive search**. The default is still extractive, not paid generative inference.
+- **Session-only recent questions:** the last eight question/answer turns are kept in browser memory and erased on refresh, clear, or document-index changes. No user accounts, persistent conversations or cross-device sync.
+- Optional Markdown exports include the AI draft **and separately quoted source evidence** with a factuality disclaimer. Saving or copying a report places contents on your device; don't share reports containing private documents.
+- The **Check local AI drafts on 3 sample questions** control runs the real browser-loaded model, recording citation-format acceptance, expected first-source match and elapsed time on the device. It's only a **tiny, fictional-document smoke test, not an accuracy or hallucination benchmark**, and no numbers are hard-coded.
+- Offline Node.js tests exercise prompts, citation numbering, output parsing, corrupted source handling, WebGPU detection and mock model responses. They **cannot validate that downloaded model weights execute on all browsers**, nor can they measure real-world correctness. Use the opt-in browser model smoke test and check individual outputs.
+
+The project now contains [`generation.mjs`](./generation.mjs) (WebGPU model loader plus source-ID safeguards), [`tests/generation.test.mjs`](./tests/generation.test.mjs) (no-download deterministic tests), and the original independent retrieval evaluation. This is a free **local LLM-assisted retrieval application**, but not an audited/production knowledge system.
 
 ## GroundedDesk 2.0 — free opt-in semantic + hybrid retrieval
 
