@@ -73,11 +73,10 @@ function bestSentence(content, terms) {
   return best.slice(start, start + 420);
 }
 
-export function answerQuestion(question, index, maxSources = 3) {
+
+export function keywordRank(question, index) {
   const unique = [...new Set(tokenize(question))];
-  if (!unique.length || !index.chunks.length) {
-    return { answered: false, answer: "I can't find this in the provided documents.", sources: [] };
-  }
+  if (!unique.length || !index.chunks.length) return [];
   const n = index.chunks.length;
   const candidates = [];
   for (const chunk of index.chunks) {
@@ -95,7 +94,15 @@ export function answerQuestion(question, index, maxSources = 3) {
       candidates.push({ ...chunk, score, matched, fraction });
     }
   }
-  candidates.sort((a,b) => b.score - a.score || b.matched - a.matched || a.filename.localeCompare(b.filename));
+  return candidates.sort((a,b) => b.score - a.score || b.matched - a.matched || a.filename.localeCompare(b.filename));
+}
+
+export function answerFromCandidates(question, candidates, maxSources = 3, mode = "Deterministic extractive retrieval (BM25-style, no LLM)") {
+  if (!Array.isArray(candidates)) throw new TypeError("Invalid ranked candidates");
+  const unique = [...new Set(tokenize(question))];
+  if (!unique.length || !candidates.length) {
+    return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode };
+  }
   const picked = [];
   const seen = new Set();
   for (const candidate of candidates) {
@@ -104,19 +111,24 @@ export function answerQuestion(question, index, maxSources = 3) {
     picked.push(candidate);
     if (picked.length >= maxSources) break;
   }
-  if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [] };
+  if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode };
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
     quote: bestSentence(candidate.content, unique),
-    score: Math.round(candidate.score * 100) / 100,
+    score: Math.round(candidate.score * 10000) / 10000,
+    lexicalScore: candidate.lexicalScore ?? null,
+    semanticScore: candidate.semanticScore ?? null,
     matchedTerms: unique.filter(term => candidate.tf.has(term)),
   }));
   return {
     answered: true,
     answer: sources.map(s => `[${s.citation}] ${s.quote}`).join("\n\n"),
-    sources,
-    mode: "Deterministic extractive retrieval (BM25-style, no LLM)",
-    note: "Relevance scores rank passages; they are not probabilities or verified answer accuracy."
+    sources, mode,
+    note: "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
   };
+}
+
+export function answerQuestion(question, index, maxSources = 3) {
+  return answerFromCandidates(question, keywordRank(question, index), maxSources);
 }

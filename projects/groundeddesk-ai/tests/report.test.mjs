@@ -18,7 +18,7 @@ test("Markdown report preserves question, literal evidence, and filenames", () =
   assert.match(report, /> Where does PostgreSQL store document metadata\?/);
   assert.match(report, /cloud\\-architecture\\.txt/);
   assert.match(report, /PostgreSQL stores document metadata/);
-  assert.match(report, /BM25-style rank score/);
+  assert.match(report, /Retrieval rank score/);
   assert.equal(report, createEvidenceReport("Where does PostgreSQL store document metadata?", answer));
 });
 

@@ -4,7 +4,7 @@
 
 ## Features
 
-- BM25-style passage ranking with stopword filtering and document-aware top results
+- BM25-style keyword passage ranking (default), plus optional browser-only MiniLM embedding and hybrid reciprocal-rank fusion
 - Extractive passages **copied from** indexed source documents; nonmatching queries refuse instead of inventing an answer
 - Exact source filename, excerpt, relevant terms and score for each citation
 - Drag-and-drop and file picker for `.txt`, `.md`, and `.pdf` (max 5 MB per file, max 180,000 characters in extracted text)
@@ -31,6 +31,8 @@ For automated checks (Node.js 20+):
 node --test tests/*.test.mjs
 node --check retrieval.mjs
 node --check report.mjs
+node --check hybrid.mjs
+node --check semantic.mjs
 node --check app.mjs
 node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json
@@ -46,9 +48,22 @@ After a search, choose **Copy report** or **Download .md**. The downloaded file 
 
 **Evidence guarantee:** the exporter checks that each quote is an exact substring of its displayed source excerpt and rejects a corrupted citation. That checks provenance, not whether a quote fully answers the question or whether a source is trustworthy. The app remains a **deterministic, keyword-based demonstration**; no LLM or embeddings are added.
 
+## GroundedDesk 2.0 — free opt-in semantic + hybrid retrieval
+
+The **[public GitHub Pages app](https://arjun9669.github.io/arjun9669/)** now supports two explicit search methods:
+
+- **Keyword (default):** the original offline BM25-style lexical search; starts immediately and does not download an embedding model.
+- **Hybrid (opt-in):** selects **Enable free semantic model**, then dynamically downloads [Hugging Face Transformers.js v3](https://huggingface.co/blog/transformersjs-v3) and the Apache-2.0-licensed [Xenova/all-MiniLM-L6-v2 model](https://huggingface.co/Xenova/all-MiniLM-L6-v2). Browser-side WASM computes mean-pooled normalized embeddings, cosine similarity, and weighted reciprocal-rank fusion of lexical + semantic passage ranks. The result is still a **verbatim source excerpt with citations** — not a generated answer.
+
+There are **no API keys, paid model calls, databases or document-upload endpoints**. Transformers.js, model weights and optional PDF.js are **downloaded from public third-party servers**, so this is **not fully offline on first use**; these servers can observe ordinary file-download requests and network metadata, but this app does not send user document content to model APIs. Remote dependency availability, browser support and connection speeds may vary. Model downloads can use considerable mobile data and CPU/RAM, so semantic mode is opt-in. The pipeline is pinned to the documented Transformers.js v3.0.0 CDN import, with q8/WASM inference and a limit of **72 indexed chunks** per session. Larger document collections remain searchable in keyword mode. Removing or adding documents invalidates semantic vectors until the user re-enables indexing.
+
+**Real local-model comparison:** After loading the model with the three original sample documents, click **Compare modes on sample questions** to compute actual keyword-vs-hybrid top-1 source matches, out-of-domain refusals and elapsed local inference time against the same labeled toy fixture. No fixed or fabricated semantic benchmark numbers are committed. This evaluation deliberately works only with the included sample corpus, not uploaded/private documents. It can give different results or fail to load depending on browser/network hardware. The [Node tests](./tests/hybrid.test.mjs) use **test-double vectors** only to validate cosine scoring and fusion mathematics; those vectors are never presented as a measured semantic model benchmark.
+
+**Fallback:** If the library/model download, WASM inference, indexing or query embedding fails, the app retains usable keyword search. Semantic-only matches have a heuristic cosine threshold (0.36), so the mode can still miss paraphrases or retrieve irrelevant passages. These retrieval confidence thresholds are **not calibrated probabilities** and this is not a production or generative LLM RAG system.
+
 ## Labeled evaluation and validation
 
-Run `node eval/run.mjs` from this directory to measure **this exact source code** against [the labeled fixture](./eval/queries.json) and the three bundled demonstration documents. The evaluator reports:
+Run `node eval/run.mjs` from this directory to measure **this exact source code** against [the labeled fixture](./eval/queries.json) and the three bundled demonstration documents. The **offline CLI evaluator measures keyword mode only** (no model/network needed) and reports:
 
 - **Top-1 source accuracy** for supported questions: fraction whose first citation comes from the expected document.
 - **Supported-question answer rate**: percentage for which retrieval returned a cited result. An answered result is not necessarily correct.
