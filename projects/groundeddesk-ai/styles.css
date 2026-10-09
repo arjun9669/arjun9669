@@ -86,7 +86,9 @@ h3{font-size:18px;letter-spacing:-.45px;margin:5px 0 0}
 #ask-button:hover{background:#086c63}
 .question-label{color:#7d8b9d;font-size:10px;font-weight:800;letter-spacing:1px}
 .question-text{font-size:19px;letter-spacing:-.45px;margin:7px 0 20px}
-.result-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 12px}
+.result-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 12px;flex-wrap:wrap}
+.report-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.report-actions button{min-height:34px;white-space:nowrap}
 .result-heading span{color:#168b7b;font-size:11px;font-weight:800}
 .copy-button{background:#f4f7f8;border:1px solid #e5ecee;color:#546677;padding:8px 10px;border-radius:6px;font-size:11px}
 .answer-box{white-space:pre-wrap;border-left:3px solid #20b39c;background:#f5fbf9;border-radius:0 9px 9px 0;padding:16px;color:#284050;font-size:13px;line-height:1.8}
