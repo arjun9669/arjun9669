@@ -1,4 +1,5 @@
 import { buildIndex, answerQuestion } from "./retrieval.mjs";
+import { createEvidenceReport } from "./report.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -153,18 +154,48 @@ function renderResult(question, result) {
   view.append(make("h4", "question-text", question));
 
   const heading = make("div", "result-heading");
-  heading.append(make("span", "", result.answered ? `${result.sources.length} CITED SOURCE(S)` : "NO SUPPORTING EVIDENCE"));
-  if (result.answered) {
-    const copy = make("button", "copy-button", "Copy answer");
-    copy.type = "button";
-    copy.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(`${visibleQuestion}\n\n${result.answer}\n\n${result.sources.map(s => `[${s.citation}] ${s.filename}`).join("\n")}`);
-        notify("Answer copied to clipboard.");
-      } catch { notify("Clipboard access was blocked by the browser.", true); }
-    });
-    heading.append(copy);
-  }
+  heading.append(make("span", "", result.answered
+    ? `${result.sources.length} CITED SOURCE(S)`
+    : "NO SUPPORTING EVIDENCE"));
+
+  const actions = make("div", "report-actions");
+  const copy = make("button", "copy-button", "Copy report");
+  copy.type = "button";
+  copy.setAttribute("aria-label", "Copy answer and evidence report");
+  copy.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(createEvidenceReport(question, result));
+      notify("Evidence report copied to clipboard.");
+    } catch (error) {
+      notify(error instanceof Error && error.message.startsWith("Evidence check")
+        ? error.message : "Clipboard access was blocked or the report could not be verified.", true);
+    }
+  });
+
+  const download = make("button", "copy-button", "Download .md");
+  download.type = "button";
+  download.setAttribute("aria-label", "Download local Markdown evidence report");
+  download.addEventListener("click", () => {
+    let blobUrl;
+    try {
+      const report = createEvidenceReport(question, result);
+      const blob = new Blob([report], { type: "text/markdown;charset=utf-8" });
+      blobUrl = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = blobUrl;
+      anchor.download = "groundeddesk-evidence.md";
+      document.body.append(anchor);
+      anchor.click();
+      anchor.remove();
+      notify("Markdown evidence report prepared for local download.");
+    } catch (error) {
+      notify(error instanceof Error ? error.message : "Evidence report unavailable.", true);
+    } finally {
+      if (blobUrl) setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+    }
+  });
+  actions.append(copy, download);
+  heading.append(actions);
   const answerBox = make("div", "answer-box");
   if (result.answered) {
     for (const source of result.sources) {
