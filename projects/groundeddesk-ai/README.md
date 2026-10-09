@@ -56,22 +56,19 @@ These are **in-sample toy-document metrics** on manually written, small question
 
 [**Doc Genius Local — open the live Lovable app**](https://doc-genius-local.lovable.app/) is a **separate hosted React/TypeScript implementation** of browser-side document QA. This GitHub folder contains a reproducible vanilla-JavaScript reference implementation, **not the deployed Lovable source code**. Editing this repository does not automatically deploy to Lovable. For the exact hosted project, see [Lovable editor](https://lovable.dev/projects/fd559d48-e6da-4a1e-86c3-13dc30ca15ef).
 
-## Publish for free using GitHub Pages
+## Free GitHub Pages deployment — published
 
-The tested browser app is **already staged** in the [`gh-pages` branch](https://github.com/arjun9669/arjun9669/tree/gh-pages), with `index.html`, `app.mjs`, `retrieval.mjs`, styles, and sample text files at the branch root. This keeps your GitHub profile's `main` branch unchanged and needs no Lovable credits or custom domain.
+**GitHub reported a successful live deployment on October 9, 2026 (UTC).**
 
-**One-time account configuration (requires repository admin settings):**
+- **[Public GitHub Pages URL](https://arjun9669.github.io/arjun9669/)**
+- [Successful Pages deployment workflow](https://github.com/arjun9669/arjun9669/actions/runs/37999849145) — build and deploy jobs both successful
+- [Publishing branch (`gh-pages`)](https://github.com/arjun9669/arjun9669/tree/gh-pages)
 
-1. Open [Settings → Pages](https://github.com/arjun9669/arjun9669/settings/pages).
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Choose branch **`gh-pages`** and folder **`/(root)`**, then select **Save**.
-4. Wait for GitHub to publish. Check the URL GitHub displays under Pages (normally `https://arjun9669.github.io/arjun9669/`). Do not advertise it as live until it opens and loads the sample documents.
+This uses a standalone static site in the `gh-pages` branch, separate from the GitHub profile source in `main`. GitHub supplied the page URL in the deployment logs; automatic server checks may be unable to open public Pages sites from some environments, so test uploads, sample retrieval and citation navigation in your own browser before claiming full end-to-end verification.
 
-GitHub's connected app does not expose Pages administration, so the one-time Settings action cannot be completed from this assistant. If the Pages UI says a site is already configured for another purpose, do not overwrite its settings; use the opt-in GitHub Actions workflow or a separate project repository instead.
+**Updating this site:** changing the app source in `main/projects/groundeddesk-ai` does not automatically update the published `gh-pages` branch. Copy changed static files into `gh-pages` and allow GitHub's Pages build/deployment to complete. Keep the [manually triggered Actions deployment workflow](../../.github/workflows/deploy-groundeddesk-pages.yml) as an alternative only if the Pages publishing source is changed to GitHub Actions; do not mix publishing methods.
 
-**Updating the published branch:** commits to `main` do not automatically update the `gh-pages` branch. The deployment branch must be synchronized after future changes, and the existing manually triggered [Actions-based workflow](../../.github/workflows/deploy-groundeddesk-pages.yml) is an alternative if you switch the Pages source to **GitHub Actions**. The same repository should use **one publishing source at a time**. `GITHUB_TOKEN`-authored pushes to a publishing branch may not trigger a Pages build, so don't assume that adding a sync action alone would update the live site.
-
-This static site uses no paid AI services, server-side model, database or secrets. Text documents can be processed offline once the site is loaded; PDF parsing loads a pinned PDF.js dependency from a third-party CDN.
+No Lovable credits, API keys, hosted LLM or server-side database are required. Text files are read locally in browser memory. Optional PDF parsing downloads a pinned PDF.js library from a third-party CDN.
 
 ## Demo questions
 
