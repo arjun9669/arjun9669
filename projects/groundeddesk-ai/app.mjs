@@ -289,8 +289,8 @@ function renderResult(question, result) {
     answerBox.append(make("p", "generation-disclaimer",
       "EXPERIMENTAL · On-device generated draft. Source IDs checked; factual accuracy NOT guaranteed."));
     const paragraph = make("p", "generated-answer");
-    for (const piece of result.answer.split(/(\\[\\d+\\])/g)) {
-      const match = piece.match(/^\\[(\\d+)\\]$/);
+    for (const piece of result.answer.split(/(\[\d+\])/g)) {
+      const match = piece.match(/^\[(\d+)\]$/);
       if (!match) { paragraph.append(document.createTextNode(piece)); continue; }
       const n = Number(match[1]);
       const source = result.sources.find(x => x.citation === n);
