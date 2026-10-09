@@ -33,6 +33,16 @@ node --check app.mjs
 
 No npm package installation is needed for text retrieval.
 
+## Publish to GitHub Pages
+
+This repository includes an **opt-in** [GitHub Actions Pages deployment workflow](../../.github/workflows/deploy-groundeddesk-pages.yml). To publish the static app:
+
+1. In the `arjun9669/arjun9669` repository, open **Settings → Pages** and select **GitHub Actions** as the build/deployment source.
+2. Open **Actions → Deploy GroundedDesk to GitHub Pages → Run workflow** on `main`.
+3. Use the URL returned by the deployment job. The deployment workflow is intentionally manual so it won't overwrite or interfere with an existing Pages site without approval.
+
+This produces a static public demo. It does not deploy any Python backend, vector database or LLM service. A preview URL is **not** assumed valid until the deployment job succeeds.
+
 ## Demo questions
 
 - "How do we review AI systems before launch?"
