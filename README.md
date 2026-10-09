@@ -240,6 +240,8 @@ Contributed to **Glass Expert AI**, a bilingual domain-focused RAG application f
 
 ### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
+📖 **[Engineering case study — attributable commits, architecture, recorded evaluations and limitations](./case-studies/GLASS_EXPERT_AI.md)**
+
 **Collaborative project; see attributable commits.** Implements a React/FastAPI application for document-based glass science questions, using PostgreSQL/pgvector retrieval, reranking, Redis, JWT authentication, English/Farsi support, and recorded RAG evaluations. The repository also contains fine-tuning and LLM-serving code, developed collaboratively.
 
 - [My development branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) · [RAG ingestion and API implementation](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a) · [Frontend and engineering API contribution](https://github.com/MTAAI/Glass_Engineer/commit/75f7be7c6dc95690b8f0929a5381d29a4aa66ee9)
