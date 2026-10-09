@@ -1,0 +1,11 @@
+AI Governance — Example Playbook
+
+Purpose: This illustrative guidance explains how a small software team reviews AI use cases before launch. It is an educational sample and is not a company's internal policy.
+
+Every AI use case should have a clearly named owner. The owner documents the user benefit, input-data categories, expected outputs, limitations and rollback procedure. Sensitive customer records must not be included in demos or public repositories.
+
+For retrieval-augmented generation systems, document-grounded answers should provide explicit source citations. The evaluation plan should measure retrieval relevance, source attribution, unsupported-claim frequency and refusal behavior. Human reviewers should inspect a representative evaluation sample.
+
+An AI deployment review checks access control, secret handling, content retention, audit logs and failure recovery. Production systems should have measurable service objectives and alerts for errors and excessive latency.
+
+If an evaluation reveals unsupported answers or leaked sensitive content, deployment should be paused while the team investigates and improves the affected controls.
