@@ -80,8 +80,10 @@
               <option value="generative" disabled>Local AI · cited draft (experimental)</option>
             </select>
             <button type="button" id="enable-generation">Load free local Qwen model (WebGPU)</button>
+            <button type="button" id="evaluate-generation" disabled>Check local AI drafts on 3 sample questions</button>
             <button type="button" id="clear-conversation">Clear session conversation</button>
           </div>
+          <pre id="generation-evaluation" class="generation-evaluation" hidden aria-live="polite"></pre>
         </section>
         <div class="panel-grid">
           <aside class="panel library" aria-labelledby="library-title">
