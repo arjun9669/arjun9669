@@ -238,6 +238,14 @@ Contributed to **Glass Expert AI**, a bilingual domain-focused RAG application f
 
 # 🚀 Featured AI Projects
 
+### 📚 [GroundedDesk AI — Document Intelligence Demo](./projects/groundeddesk-ai/README.md)
+
+**Independently owned, inspectable retrieval application.** Responsive in-browser document Q&A with TXT/Markdown/PDF import, overlapping passage chunking, lexical/BM25-style relevance ranking, source-linked evidence, refusal handling, example corpus, and automated Node.js retrieval tests. The demo works without API keys and does not send document text to a backend.
+
+- [Read the source and run locally](./projects/groundeddesk-ai/README.md) · [Retrieval engine](./projects/groundeddesk-ai/retrieval.mjs) · [Automated tests](./projects/groundeddesk-ai/tests/retrieval.test.mjs)
+- **Tech:** JavaScript ES modules, browser document extraction, citation provenance, local search, CI.
+- **Transparent scope:** Extractive search baseline, not a generative LLM, production RAG stack or cloud deployment. Public hosting can be configured separately.
+
 ### 🔬 [Glass Expert AI — Bilingual RAG for Engineering](https://github.com/MTAAI/Glass_Engineer)
 
 📖 **[Engineering case study — attributable commits, architecture, recorded evaluations and limitations](./case-studies/GLASS_EXPERT_AI.md)**
