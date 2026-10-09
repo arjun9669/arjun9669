@@ -25,7 +25,7 @@ test("keyword ranking is independently reproducible", () => {
 });
 
 test("synthetic fixture vectors exercise semantic-only rank fusion, NOT model accuracy", () => {
-  const question="How is roof condensation controlled?";
+  const question="How is condensation handled above the house?";
   const queryVector=[1,0,0];
   // Test doubles: roof document gets high vector similarity even if vocabulary differs.
   const vectors=index.chunks.map(chunk=>chunk.filename==="roof.txt"?[1,0,0]:[0,1,0]);
