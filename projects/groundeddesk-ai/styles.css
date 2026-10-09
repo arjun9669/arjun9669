@@ -58,7 +58,7 @@ h3{font-size:18px;letter-spacing:-.45px;margin:5px 0 0}
 .search-wrap input{height:40px;background:transparent;border:0;width:100%;min-width:0;font-size:12px;outline:none}
 .document-list{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:8px;max-height:320px;overflow-y:auto}
 .document-card{border:1px solid #e9edf0;border-radius:9px;padding:12px;display:flex;align-items:center;gap:10px}
-.document-card:has(.source-highlight){outline:2px solid #33af9d;background:#effaf7}
+.document-card.source-highlight{outline:2px solid #33af9d;background:#effaf7}
 .doc-icon{background:#eef2f7;color:#56657d;border-radius:7px;min-width:34px;height:34px;display:grid;place-items:center;font-size:11px;font-weight:800}
 .doc-details{min-width:0;flex:1}
 .doc-details strong{display:block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;font-size:12px}
