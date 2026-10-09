@@ -57,7 +57,7 @@ export function createEvidenceReport(question, result) {
         "",
         "**File:** " + inline(source.filename),
         "",
-        "**BM25-style rank score:** " + (Number.isFinite(source.score) ? source.score.toFixed(2) : "not recorded"),
+        "**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** " + (Number.isFinite(source.score) ? source.score.toFixed(4) : "not recorded"),
         "",
         "**Quoted sentence / passage:**",
         "",
@@ -74,7 +74,7 @@ export function createEvidenceReport(question, result) {
   sections.push(
     "---",
     "",
-    "*Locally generated extractive retrieval report. Source passages are quotes, not an AI-generated explanation. BM25-style scores are uncalibrated ranking values, not reliability probabilities. Do not distribute reports containing confidential uploaded documents.*",
+    "*Locally generated extractive retrieval report. Source passages are quotes, not an AI-generated explanation. Retrieval scores are uncalibrated ranking values, not reliability probabilities. Hybrid mode uses a reciprocal-rank-fusion score, not a raw BM25 score. Do not distribute reports containing confidential uploaded documents.*",
     "",
   );
   return sections.join("\n");
