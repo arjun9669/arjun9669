@@ -27,6 +27,8 @@ jobs:
         run: |
           node --check projects/groundeddesk-ai/retrieval.mjs
           node --check projects/groundeddesk-ai/report.mjs
+          node --check projects/groundeddesk-ai/hybrid.mjs
+          node --check projects/groundeddesk-ai/semantic.mjs
           node --check projects/groundeddesk-ai/app.mjs
           node --check projects/groundeddesk-ai/eval/run.mjs
       - name: Run deterministic retrieval tests
