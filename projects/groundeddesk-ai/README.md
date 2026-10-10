@@ -1,6 +1,6 @@
 # GroundedDesk AI — independently runnable, evidence-cited document Q&A
 
-**No-API-key client-side reference implementation.** Open [index.html](./index.html) through a local server to load sample documents, ask natural-language questions and view source citations. No account or API key is required. This is a retrieval and evidence-demonstration project, not a generative LLM or production document management service.
+**No-API-key client-side reference implementation with optional local models.** Open [index.html](./index.html) through a local server to load sample documents, ask natural-language questions and view source citations. No account or API key is required. This is a research and evidence demonstration, with optional locally generated LLM drafts; it is not production document management or a remotely hosted LLM.
 
 ## Features
 
@@ -34,6 +34,7 @@ node --check report.mjs
 node --check hybrid.mjs
 node --check semantic.mjs
 node --check generation.mjs
+node --check research.mjs
 node --check app.mjs
 node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json
@@ -47,7 +48,36 @@ After a search, choose **Copy report** or **Download .md**. The downloaded file 
 
 **Privacy:** exporting a report writes a local file on your own device. It does not upload anything, but the saved file may contain confidential passages. Do not share such reports without reviewing their contents. Clipboard copying also puts the report into the device clipboard, where other software may have access.
 
-**Evidence guarantee:** the exporter checks that each quote is an exact substring of its displayed source excerpt and rejects a corrupted citation. That checks provenance, not whether a quote fully answers the question or whether a source is trustworthy. The app remains a **deterministic, keyword-based demonstration**; no LLM or embeddings are added.
+**Evidence guarantee:** the exporter checks that each quote is an exact substring of its displayed source excerpt and rejects a corrupted citation. That checks provenance, not whether a quote fully answers the question or whether a source is trustworthy. The report and research features are deterministic; separate opt-in MiniLM and Qwen modules also exist in this project.
+
+## GroundedDesk AI 4.0 — multi-document research and comparison
+
+**Live demo:** [GroundedDesk on GitHub Pages](https://arjun9669.github.io/arjun9669/) after this release's Pages deployment succeeds.
+
+GroundedDesk 4.0 adds a **browser-only evidence research workspace** that works without model downloads, APIs, credentials, subscriptions or a backend. The earlier 1.0 keyword, 2.0 hybrid MiniLM and 3.0 optional Qwen functionality remains in the same site.
+
+### What's new
+
+- **Research workflow:** Ask one research question across all loaded documents. The three deterministic steps are *retrieve* relevant lexical passages, *cross-check* which different document sources match, and *report* literal quotations plus unmatched documents. The source list is restricted to one ranked excerpt per document (at most six documents per report). This is a **scripted retrieval workflow**, not a self-directed internet agent or a generative research synthesis.
+- **Document comparison:** Choose two separate uploaded/sample files. Enter an optional topic to retrieve the best matching quotation from each; with no topic, the workbench displays the opening source excerpt. It also lists shared keywords. Shared words do **not** establish agreement, inconsistency or factual equivalence; a missing keyword match is not proof a document lacks that information.
+- **Prompt-injection review indicators:** A small, explainable list of patterns flags obvious instruction-like source passages (for example, "ignore previous instructions"). This cannot detect every malicious instruction and is **not a security guarantee**. Document text is displayed as untrusted text, never executed or interpreted as application commands.
+- **Evidence export:** Copy or download a locally generated Markdown report with citations, side-by-side extracts, gaps, and warning labels. Review privately uploaded passages before sharing the file or clipboard content.
+- **Offline unit tests:** Provenance checks, distinct-document selection, no-answer behavior, suspicious-instruction flags, whitespace normalization and Markdown formatting. These are deterministic code tests, not claims of independently measured research or LLM accuracy.
+
+### Run and check locally
+
+From `projects/groundeddesk-ai`:
+
+```bash
+python -m http.server 8765
+node --check research.mjs
+node --test tests/*.test.mjs
+node eval/run.mjs --strict
+```
+
+Research and side-by-side comparison use **keyword retrieval by design** so they work on phones and browsers without WebGPU and have no model download requirement. They do not automatically invoke the Qwen generator or MiniLM vectors. The user must explicitly choose those existing modes for ordinary question answering.
+
+This is a prototype for portfolio demonstration, not an audited production AI system. Citation integrity checks establish retrieval provenance after whitespace normalization; they do not prove semantic relevance or truth. Results are limited to text extracted from files the user chooses to load into their browser.
 
 ## GroundedDesk AI 3.0 — optional generative answers on the device
 
@@ -142,9 +172,9 @@ Answer workbench with clickable evidence
 
 ## Honest limitations
 
-This is **not** true LLM-based RAG: it uses no embedding model, external vector database or answer-generating LLM. It is a deterministic, inspectable retrieval-and-citation baseline. Keyword overlap can miss paraphrases and can surface semantically irrelevant matches. Scores are uncalibrated ranking values, not accuracy probabilities. The no-data-persistence claim applies to app code: browser extensions, device management and hosting infrastructure are outside its control. PDF.js is loaded from a public CDN; users who need strict offline operation should bundle dependencies locally.
+This is **not a production RAG system**. The default path and 4.0 research workflow use deterministic lexical retrieval, with separate optional local MiniLM embeddings and a local Qwen generator where supported. There is no production vector database, hosted inference API, authenticated storage or independently validated entailment checking. Keyword overlap can miss paraphrases and can surface semantically irrelevant matches. Scores are uncalibrated ranking values, not accuracy probabilities. The no-data-persistence claim applies to app code: browser extensions, device management and hosting infrastructure are outside its control. PDF.js is loaded from a public CDN; users who need strict offline operation should bundle dependencies locally.
 
-A future backend implementation could add embeddings, hybrid retrieval, evaluation datasets, rate limiting, authenticated storage, queueing and monitored inference. No production service levels or fabricated benchmark results are claimed.
+A future production implementation could add authenticated storage, stronger retrieval/entailment evaluation, rate limiting, queueing and monitored inference. No production service levels or fabricated benchmark results are claimed.
 
 ## Author
 
