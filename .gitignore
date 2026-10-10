@@ -1,0 +1,5 @@
+# Local generated artifacts
+evaluation.json
+.DS_Store
+*.log
+node_modules/

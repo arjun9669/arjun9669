@@ -1,0 +1,40 @@
+name: GroundedDesk CI
+
+on:
+  push:
+    branches: [main, groundeddesk-standalone]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check
+        run: |
+          node --check app.mjs
+          node --check retrieval.mjs
+          node --check hybrid.mjs
+          node --check semantic.mjs
+          node --check generation.mjs
+          node --check research.mjs
+          node --check report.mjs
+          node --check eval/run.mjs
+      - name: Unit tests
+        run: node --test tests/*.test.mjs
+      - name: Offline labeled corpus evaluation
+        run: |
+          node eval/run.mjs --strict
+          node eval/run.mjs --json > evaluation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: groundeddesk-evaluation
+          path: evaluation.json
+          retention-days: 14
