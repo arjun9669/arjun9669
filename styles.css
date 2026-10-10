@@ -157,6 +157,30 @@ footer a{color:#7bdbca;font-weight:700}
 .chat-history li button{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;padding:8px 10px;width:100%;border:1px solid #e4eeeb;border-radius:6px;background:white;color:#345557;font-size:12px}
 .chat-history li button:hover,.chat-history li button:focus-visible{background:#eaf6f2}
 @media(max-width:800px){.generation-settings{grid-template-columns:1fr;gap:14px;padding:17px}}
+.research-workspace{margin-top:30px;background:#fbfdfd;border:1px solid #dce9e7;border-radius:15px;padding:26px}
+.research-heading{margin:0 0 10px;align-items:center}
+.research-workspace .research-explainer{font-size:12px;line-height:1.8;color:#58707b;margin:0 0 18px;max-width:880px}
+.research-panels{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.research-panel{display:flex;flex-direction:column;gap:8px;border:1px solid #dce7e6;border-radius:11px;background:white;padding:19px}
+.research-panel h3{color:#173d44;font-size:16px;margin:0 0 7px}
+.research-panel label{font-size:11px;font-weight:800;color:#506f77;margin-top:5px}
+.research-panel input,.research-panel select,.research-panel textarea{width:100%;box-sizing:border-box;min-height:39px;padding:10px 12px;border:1px solid #b7cecb;border-radius:7px;background:#fff;color:#183b45;resize:vertical;font-size:12px}
+.research-panel button{padding:11px 15px;border:0;border-radius:7px;background:#0e5a5e;color:white;font-size:12px;font-weight:800;margin-top:8px;min-height:40px}
+.research-panel button:disabled{opacity:.5;cursor:not-allowed}
+.research-panel p{margin:4px 0 0;color:#789096;font-size:11px;line-height:1.6}
+.research-results{background:white;border:1px solid #dce8e6;padding:20px;margin-top:20px;border-radius:12px;scroll-margin-top:20px}
+.research-results-heading{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.research-results-heading h3{margin:0;color:#12383c;font-size:18px}
+.research-results-heading .report-actions button{background:#edf8f5;border:1px solid #badbd3;border-radius:6px;color:#12685d;min-height:35px;font-size:11px;padding:8px 10px}
+.research-summary{font-size:12px;color:#325d65;margin:15px 0}
+.research-steps{padding-left:22px;color:#486e6e;font-size:12px;line-height:1.8}
+.research-evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:15px}
+.research-evidence{padding:14px;border-radius:9px;border:1px solid #dce9e6;background:#f9fcfa;min-width:0}
+.research-evidence h4{font-size:12px;margin:0 0 8px;color:#144f4e;overflow-wrap:anywhere}
+.research-evidence-text{font-size:12px;line-height:1.75;color:#445f65;white-space:pre-wrap;overflow-wrap:anywhere}
+.research-risk{font-size:11px;background:#fff0de;color:#894600;border-radius:7px;padding:9px;line-height:1.5}
+.research-gaps,.research-disclaimer,.research-empty{font-size:11px;line-height:1.75;color:#697d83;margin-top:15px}
+@media(max-width:800px){.research-panels{grid-template-columns:1fr}.research-workspace{padding:16px}}
 @media(max-width:980px){.hero-inner{gap:30px}.metric-grid{min-width:280px}.panel-grid{grid-template-columns:1fr}.library{min-height:unset}.chat{min-height:570px}.architecture-grid{grid-template-columns:1fr}.architecture-aside{border-left:0;border-top:1px solid #eef0f3;padding-left:0;padding-top:20px}}
 @media(max-width:680px){.site-header{height:auto;padding:16px 5%;flex-wrap:wrap;gap:14px}.header-links{gap:16px;order:3;width:100%;justify-content:space-between}.private-pill{margin-left:auto}.hero{padding-top:32px;padding-bottom:42px}.hero-inner{display:block}.metric-grid{margin-top:30px;min-width:0}.hero h1{letter-spacing:-1.4px}.workbench,.architecture{padding-left:4%;padding-right:4%;padding-top:38px}.section-heading{align-items:flex-start;flex-direction:column;gap:8px}.panel-grid{grid-template-columns:minmax(0,1fr)}.library{padding:18px}.chat-heading{padding:18px}.answer-space{padding:19px}.query-form{padding:14px}.query-footer{flex-wrap:wrap}.architecture-grid{padding:20px}footer{display:block}footer>*{margin-bottom:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -3,6 +3,7 @@ import { hybridRank } from "./hybrid.mjs";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs";
 import { createEvidenceReport } from "./report.mjs";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs";
+import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -23,6 +24,7 @@ let localGenerator = null;
 let generationLoading = false;
 let generationTestBusy = false;
 let recentTurns = [];
+let currentResearch = null;
 
 function setGenerationStatus(message, isError = false) {
   const status = $("generation-status");
@@ -107,6 +109,10 @@ function rebuildIndex() {
   indexed = buildIndex(documents);
   indexVersion++;
   resetConversation();
+  if (document.getElementById("research-results")) {
+    clearResearch();
+    updateResearchControls();
+  }
   semanticVectors = null;
   semanticVersion = -1;
   if ($("semantic-status")) {
@@ -651,6 +657,144 @@ for (const eventName of ["dragleave", "drop"]) {
 }
 zone.addEventListener("drop", async event => {
   if (event.dataTransfer?.files) await loadFiles(event.dataTransfer.files);
+});
+
+function clearResearch() {
+  currentResearch = null;
+  const panel = $("research-results");
+  if (panel) {
+    panel.hidden = true;
+    $("research-result-body").replaceChildren();
+  }
+}
+
+function updateResearchControls() {
+  for (const selectId of ["compare-left", "compare-right"]) {
+    const select = $(selectId);
+    if (!select) continue;
+    const previous = select.value;
+    select.replaceChildren();
+    for (const doc of documents) {
+      const option = document.createElement("option");
+      option.value = doc.id;
+      option.textContent = doc.name;
+      select.append(option);
+    }
+    if (documents.some(doc => doc.id === previous)) select.value = previous;
+  }
+  if (documents.length > 1 && $("compare-left").value === $("compare-right").value) {
+    $("compare-right").value = documents.find(doc => doc.id !== $("compare-left").value).id;
+  }
+  $("run-comparison").disabled = documents.length < 2;
+  $("run-research").disabled = documents.length < 1;
+}
+
+function researchEl(tag, cls, text = "") {
+  const element = document.createElement(tag);
+  if (cls) element.className = cls;
+  if (text) element.textContent = text;
+  return element;
+}
+
+function presentResearch(result) {
+  currentResearch = result;
+  const panel = $("research-results"), body = $("research-result-body");
+  panel.hidden = false;
+  body.replaceChildren();
+  $("research-result-title").textContent = result.kind === "research"
+    ? "Cross-document evidence and research steps" : "Side-by-side excerpts";
+
+  if (result.kind === "research") {
+    body.append(researchEl("p", "research-summary",
+      result.matchedDocuments + "/" + result.availableDocuments +
+      " documents returned matching evidence. This is keyword retrieval, not a factual conclusion."));
+    const steps = researchEl("ol", "research-steps");
+    for (const step of result.plan.steps) steps.append(researchEl("li", "", step.title + " — " + step.detail));
+    body.append(steps);
+  } else {
+    body.append(researchEl("p", "research-summary",
+      "Shared vocabulary: " + (result.sharedTerms.join(", ") || "No shared long keywords.") +
+      ". Shared terms do not establish factual agreement."));
+  }
+
+  const evidenceGrid = researchEl("div", "research-evidence-grid");
+  for (const source of result.sources) {
+    const card = researchEl("article", "research-evidence");
+    card.append(researchEl("h4", "", "[" + source.citation + "] " + source.filename));
+    const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
+    card.append(researchEl("p", "research-evidence-text",
+      excerpt || "No matching passage found for this topic using keyword retrieval."));
+    if (source.warning) card.append(researchEl("p", "research-risk",
+      "Potential instruction-like content detected. Treated as untrusted source text, never an instruction."));
+    evidenceGrid.append(card);
+  }
+  if (!result.sources.length) {
+    body.append(researchEl("p", "research-empty", "No matching evidence found in the loaded documents."));
+  } else {
+    body.append(evidenceGrid);
+  }
+  if (result.kind === "research" && result.uncovered.length) {
+    body.append(researchEl("p", "research-gaps",
+      "No keyword match found in: " + result.uncovered.join("; ") + ". This does not prove the information is absent."));
+  }
+  panel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function getResearchMarkdown() {
+  if (!currentResearch) throw new Error("Run research or comparison before exporting.");
+  return formatResearchMarkdown(currentResearch);
+}
+
+$("research-form").addEventListener("submit", event => {
+  event.preventDefault();
+  try {
+    if (!documents.length) throw new Error("Load at least one document first.");
+    const result = buildResearchResult($("research-query").value, documents, indexed);
+    presentResearch(result);
+    notify(result.answered ? "Source-grounded multi-document report prepared." : "No evidence matched this research question.");
+  } catch (error) {
+    notify(error instanceof Error ? error.message : "Research failed.", true);
+  }
+});
+
+$("compare-form").addEventListener("submit", event => {
+  event.preventDefault();
+  try {
+    const left = documents.find(doc => doc.id === $("compare-left").value);
+    const right = documents.find(doc => doc.id === $("compare-right").value);
+    const result = compareDocuments(left, right, $("compare-topic").value);
+    presentResearch(result);
+    notify("Comparison created using literal source passages.");
+  } catch (error) {
+    notify(error instanceof Error ? error.message : "Comparison failed.", true);
+  }
+});
+
+$("research-copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(getResearchMarkdown());
+    notify("Research report copied locally.");
+  } catch {
+    notify("Could not copy the report. Check clipboard permission.", true);
+  }
+});
+
+$("research-download").addEventListener("click", () => {
+  let url;
+  try {
+    url = URL.createObjectURL(new Blob([getResearchMarkdown()], { type:"text/markdown;charset=utf-8" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "groundeddesk-research-report.md";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    notify("Markdown research report prepared for local download.");
+  } catch (error) {
+    notify(error instanceof Error ? error.message : "Could not download research report.", true);
+  } finally {
+    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
 });
 
 async function init() {
