@@ -33,10 +33,13 @@ export function planResearch(question) {
 
 function assertSources(sources, documents) {
   const byId = new Map(documents.map(d => [d.id, d]));
+  // The shared chunker normalizes repeated spaces/tabs before retrieval.
+  // Check provenance against that *normalized* original text rather than
+  // treating whitespace normalization as an invented passage.
   for (const source of sources) {
     const document = byId.get(source.documentId);
     if (!document || document.name !== source.filename ||
-        !document.text.includes(source.excerpt) ||
+        !document.text.replace(/\\r\\n?/g,"\\n").replace(/[ \\t]+/g," ").trim().includes(source.excerpt) ||
         !source.excerpt.includes(source.quote)) {
       throw new Error("Source provenance verification failed");
     }
@@ -106,7 +109,7 @@ export function compareDocuments(documentA, documentB, question = "") {
       const plain = doc.text.trim();
       excerpt = plain.slice(0, 360);
     }
-    if (excerpt && !doc.text.includes(excerpt)) throw new Error("Comparison evidence is not from source");
+    if (excerpt && !doc.text.replace(/\\r\\n?/g,"\\n").replace(/[ \\t]+/g," ").trim().includes(excerpt)) throw new Error("Comparison evidence is not from source");
     return { citation:i+1, documentId:doc.id, filename:doc.name,
       excerpt, warning:hasInstructionRisk(excerpt), supported:Boolean(excerpt) };
   });
