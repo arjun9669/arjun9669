@@ -18,7 +18,7 @@ test("deterministic research planner validates question and shows auditable step
 });
 
 test("research collects independent cited excerpts from matching documents",()=>{
-  const out=buildResearchResult("What storage and document metadata controls do we use?",docs);
+  const out=buildResearchResult("Where is document metadata stored?",docs);
   assert.equal(out.kind,"research");
   assert.ok(out.sources.length>=1);
   assert.ok(out.sources.some(s=>s.filename==="cloud.txt"));
