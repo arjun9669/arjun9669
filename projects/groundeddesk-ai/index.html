@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light"/>
   <meta name="theme-color" content="#0b1726"/>
   <meta name="description" content="GroundedDesk AI — private browser-side document intelligence and citation-aware evidence search."/>
-  <title>GroundedDesk AI 3.0 | Local Document Intelligence</title>
+  <title>GroundedDesk AI 4.0 | Local Document Research</title>
   <link rel="stylesheet" href="./styles.css"/>
   <script defer type="module" src="./app.mjs"></script>
 </head>
@@ -129,6 +129,43 @@
             </form>
           </section>
         </div>
+        <section class="research-workspace" aria-labelledby="research-title">
+          <div class="section-heading research-heading">
+            <div><span class="section-index">GROUNDedDESK 4.0 / RESEARCH WORKFLOW</span><h2 id="research-title">Compare documents. Build an evidence report.</h2></div>
+            <span class="live-label">Browser-only · scripted research · no paid services</span>
+          </div>
+          <p class="research-explainer">Run transparent keyword-based, multi-step source gathering. Compare two loaded documents or collect evidence across several documents. Excerpts are literal, not AI-written summaries. Suspicious instruction-like passages are flagged as untrusted data.</p>
+          <div class="research-panels">
+            <form id="research-form" class="research-panel">
+              <h3>Multi-document research</h3>
+              <label for="research-query">Question across the document library</label>
+              <textarea id="research-query" rows="2" maxlength="600" placeholder="Example: How do our documents describe controls and monitoring?" required></textarea>
+              <button type="submit" id="run-research">Gather cited evidence</button>
+              <p>Workflow: retrieve matching passages → check document coverage → report gaps and suspicious instructions. It is not autonomous web browsing.</p>
+            </form>
+            <form id="compare-form" class="research-panel">
+              <h3>Side-by-side document comparison</h3>
+              <label for="compare-left">Document A</label>
+              <select id="compare-left" required aria-label="First document to compare"></select>
+              <label for="compare-right">Document B</label>
+              <select id="compare-right" required aria-label="Second document to compare"></select>
+              <label for="compare-topic">Optional comparison topic</label>
+              <input id="compare-topic" maxlength="600" placeholder="Example: access control or monitoring" />
+              <button type="submit" id="run-comparison">Compare source excerpts</button>
+            </form>
+          </div>
+          <div class="research-results" id="research-results" hidden aria-live="polite">
+            <div class="research-results-heading">
+              <h3 id="research-result-title">Research results</h3>
+              <div class="report-actions">
+                <button type="button" id="research-copy">Copy Markdown report</button>
+                <button type="button" id="research-download">Download .md</button>
+              </div>
+            </div>
+            <div id="research-result-body"></div>
+            <p class="research-disclaimer">Lexical search may miss paraphrases. Missing evidence is not proof that a fact is absent. Always review source content before relying on it.</p>
+          </div>
+        </section>
         <div id="alert" class="status-alert" role="status" aria-live="polite"></div>
       </section>
       <section id="about" class="architecture" aria-labelledby="architecture-heading">
