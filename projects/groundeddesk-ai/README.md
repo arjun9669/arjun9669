@@ -1,3 +1,5 @@
+> **Historical reference snapshot.** Active development, current releases and benchmark evidence live in [GroundedDesk-AI](https://github.com/arjun9669/GroundedDesk-AI). This profile copy is not automatically synchronized.
+
 # GroundedDesk AI — independently runnable, evidence-cited document Q&A
 
 **No-API-key client-side reference implementation with optional local models.** Open [index.html](./index.html) through a local server to load sample documents, ask natural-language questions and view source citations. No account or API key is required. This is a research and evidence demonstration, with optional locally generated LLM drafts; it is not production document management or a remotely hosted LLM.

@@ -56,7 +56,7 @@ My public projects demonstrate Python/ML foundations, document-grounded RAG work
 
 | Project | Public evidence |
 |---|---|
-| **Doc Genius Local** (hosted demo) | [Launch live document Q&A](https://doc-genius-local.lovable.app/) · [Separate reference implementation](./projects/groundeddesk-ai/README.md) |
+| **Doc Genius Local** (hosted demo) | [Launch live document Q&A](https://doc-genius-local.lovable.app/) · [Active GroundedDesk source](https://github.com/arjun9669/GroundedDesk-AI) · [Historical reference](./projects/groundeddesk-ai/README.md) |
 | **Glass Expert AI** (team project) | [Initial RAG pipeline contribution](https://github.com/MTAAI/Glass_Engineer/commit/29d459a5a3f43e064b8ad8dd682abec04229f99a) · [React UI and API contributions](https://github.com/MTAAI/Glass_Engineer/commit/75f7be7c6dc95690b8f0929a5381d29a4aa66ee9) · [Arjun branch](https://github.com/MTAAI/Glass_Engineer/tree/Arjun) |
 | **AI Market Research Desk** (owned) | [Code and setup](https://github.com/arjun9669/ai-research-desk) · [GitHub Actions history](https://github.com/arjun9669/ai-research-desk/actions) |
 | **Agentic RAG** (collaborative prototype) | [Router, Planner, Executor and Synthesizer source](https://github.com/zainmuhammadaimta/Agentic_rag/tree/main/src/agents) |
